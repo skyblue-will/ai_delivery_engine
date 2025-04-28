@@ -24,6 +24,10 @@ This document defines the end-to-end workflow for delivering technology solution
 |-----------|----------------|------------------------|-----------------|
 | Validate that a digital/software solution is the right answer to the business problem, and if so, determine the appropriate approach. | • Stakeholder interviews<br>• Current-state analysis<br>• Process vs. technology assessment<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
 
+### Recommended AI Models
+- **Primary**: GPT-4o (o3) - Excels at complex stakeholder insight analysis and business case validation
+- **Alternative**: Claude 3.7 Opus - Strong reasoning capabilities for assessing alternative approaches
+
 ### Real-World Connection
 The discovery artefacts ensure decision-makers have a clear **business case** before engineering resources are committed, including validation that a digital solution (vs. process change, policy, etc.) is actually needed.
 
@@ -34,6 +38,10 @@ The discovery artefacts ensure decision-makers have a clear **business case** be
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
 | Convert discovery insights into a scoped, budgeted, and time-boxed delivery plan. | • Define MVP vs. future scope<br>• Select Delivery Tier<br>• Establish success metrics<br>• Architecture & risk assessment | • `v0.x.0.md` plan drafted and approved<br>• Context Wrapper template selected | • Approved Version Plan (`v0.x.0.md`)<br>• Architecture Decision Records (ADRs)<br>• Updated Scope Document |
+
+### Recommended AI Models
+- **Primary**: Claude 3.7 Opus - Exceptional architecture reasoning and technical planning
+- **Alternative**: GPT-4o - Strong for breaking down large initiatives into structured phases
 
 ### Compliance Note
 Security and legal teams validate data-handling requirements _before_ development begins.
@@ -46,6 +54,10 @@ Security and legal teams validate data-handling requirements _before_ developmen
 |-----------|----------------|------------------------|-----------------|
 | Build the solution iteratively with disciplined, AI-assisted development practices. | • Implement features in short cycles (feature branches)<br>• Apply **Context Wrappers** based on Delivery Tier<br>• Continuous code review & linting<br>• Update **Codebase Guide** with each significant change | • Automated CI checks green<br>• Codebase Guide updated in PRs<br>• Scope creep flagged in weekly triage | • Incremental feature branches<br>• Updated Codebase Guide<br>• Technical documentation |
 
+### Recommended AI Models
+- **Primary**: Claude 3.7 Sonnet - Optimal balance of code quality and development speed
+- **Alternative**: GPT-4o - Particularly strong for cross-language development and complex refactoring
+
 ### Framework Tie-in
 Context Wrappers enforce branch discipline, test coverage thresholds, and documentation completeness, preventing drift from the approved plan.
 
@@ -56,6 +68,10 @@ Context Wrappers enforce branch discipline, test coverage thresholds, and docume
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
 | Validate that the implementation meets functional, non-functional, and compliance requirements. | • Unit & integration testing<br>• Model performance validation<br>• Security & privacy audits | • Test matrices approved<br>• CI pipeline enforces required coverage<br>• Privacy impact assessment signed off | • Test Reports<br>• Model Evaluation Metrics<br>• Compliance Sign-off |
+
+### Recommended AI Models
+- **Primary**: Claude 3.5 Sonnet - Excels at generating comprehensive test cases
+- **Alternative**: GPT-4o - Strong for security vulnerability analysis and test scenario generation
 
 ### Best Practice (2025)
 Shift-left testing: integrate synthetic data generation for edge-case coverage early in development.
@@ -68,6 +84,10 @@ Shift-left testing: integrate synthetic data generation for edge-case coverage e
 |-----------|----------------|------------------------|-----------------|
 | Release the solution safely into the target environment with rollback capability. | • Infrastructure-as-Code (IaC) updates<br>• Blue/green or canary releases<br>• Release notes & change log | • Deployment runbooks reviewed<br>• Release approved by change authority | • Deployed artefacts<br>• Release Notes<br>• Updated runbooks |
 
+### Recommended AI Models
+- **Primary**: Claude 3.5 Sonnet - Effective for generating deployment scripts and release documentation
+- **Alternative**: Llama 3 70B - Cost-effective for routine deployment assistance and runbook generation
+
 ### Compliance Trigger
 Data residency and user-consent mechanisms go live; legal signs off on production deployment.
 
@@ -78,6 +98,10 @@ Data residency and user-consent mechanisms go live; legal signs off on productio
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
 | Ensure the solution remains reliable, performant, and compliant in production. | • Implement observability (logs, metrics, traces)<br>• Model drift detection<br>• Post-release incident reviews | • SLO dashboards reviewed weekly<br>• Monthly compliance health check | • Monitoring Dashboards<br>• Incident Reports<br>• Continuous Improvement Tasks |
+
+### Recommended AI Models
+- **Primary**: GPT-4o - Superior pattern recognition for anomaly detection and incident analysis
+- **Alternative**: Claude 3.5 Sonnet - Strong for generating monitoring dashboards and SLO documentation
 
 ### Feedback Loop
 Findings feed back into the **Planning** and **Development** phases for iterative improvement.
