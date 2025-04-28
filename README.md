@@ -2,8 +2,8 @@
 
 > **Governance-first delivery system for AI-enabled software**
 
-[![License](https://img.shields.io/github/license/user/ai-delivery-framework)](LICENSE)
-[![Last Update](https://img.shields.io/github/last-commit/user/ai-delivery-framework)](https://github.com/user/ai-delivery-framework/commits/main)
+[![License](https://img.shields.io/github/license/will/ai_delivery_framework)](LICENSE)
+[![Last Update](https://img.shields.io/github/last-commit/will/ai_delivery_framework)](https://github.com/will/ai_delivery_framework/commits/main)
 
 ---
 
