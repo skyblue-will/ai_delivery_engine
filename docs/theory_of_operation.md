@@ -26,6 +26,19 @@ The framework operates through three integrated governance mechanisms:
 
 Together, these three mechanisms form a "governance triangle" that keeps AI-assisted development predictable, auditable, and scalable.
 
+### Practical Driving Analogy
+
+To illustrate how the three mechanisms work together in day-to-day delivery, imagine operating a modern vehicle:
+
+| Framework Element | Driving Analogy | Responsibility |
+|-------------------|-----------------|----------------|
+| **Scope Documents (v0.x.0)** | The **map & route** – clearly defines where you are going and which path to follow. | Sets direction and measures progress. |
+| **Codebase Guide** | The **dashboard** – shows real-time status of speed, fuel, and system health. | Provides continuous visibility of the current state. |
+| **Context Wrappers** | The **safety systems** – lane assist, automatic braking, compliance alerts. | Enforces guardrails appropriate to the delivery tier. |
+| **AI + Human Implementation** | The **driver** holding the steering wheel. | Makes tactical decisions within the governed boundaries. |
+
+This analogy underscores that the governance triangle is not bureaucratic overhead – it is an integrated control system that guides and protects every step toward the defined outcomes.
+
 ## Progressive Rigor Model
 
 A key innovation of the framework is its progressive rigor model, which recognizes that engineering standards should scale with project maturity. Early prototypes need minimal structure, while production systems require comprehensive governance.
