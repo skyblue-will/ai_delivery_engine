@@ -45,11 +45,11 @@ The framework enforces these guardrails through three linked assets—**Codebase
 
 | Component | Role | Maintained By |
 |-----------|------|--------------|
-| **Codebase Guide** | Canonical "as-is" description of the system | Engineers after each merge |
-| **Scope Documents** | "To-be" plan for each version, including acceptance criteria | Product & Engineering before work starts |
+| **[Codebase Guide](core/codebase_guide.md)** | Canonical "as-is" description of the system | Engineers after each merge |
+| **[Scope Documents](core/scope_doc_template.md)** | "To-be" plan for each version, including acceptance criteria | Product & Engineering before work starts |
 | **Context Wrappers** | Tier-specific rules injected into AI tools & CI/CD | Prompt layer + automation |
 
-Together these assets form a **closed-loop control system** that keeps AI-generated code aligned with business goals and compliance requirements.
+Together these assets form a **closed-loop control system** that keeps AI-generated code aligned with business goals and compliance requirements. Each **Scope Document** defines target changes that, when implemented, require updates to the **Codebase Guide** to maintain an accurate system description.
 
 ---
 
@@ -86,6 +86,13 @@ sequenceDiagram
     Ops->>Dev: 6. Observability & Feedback
     Dev->>AI: 7. Update Codebase Guide
 ```
+
+The workflow creates a continuous feedback loop:
+1. **[Scope Document](core/scope_doc_template.md)** defines what you're building (future state)
+2. Code is generated with AI assistance, following tier rules
+3. Code is reviewed and deployed
+4. **[Codebase Guide](core/codebase_guide.md)** is updated to document what you built (current state)
+5. Cycle repeats with each new version
 
 ---
 

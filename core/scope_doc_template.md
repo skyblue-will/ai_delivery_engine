@@ -140,6 +140,19 @@ date: "YYYY-MM-DD"
 
 ---
 
+## 12. Codebase Guide Updates
+
+The following sections of the [Codebase Guide](./codebase_guide.md) will need updates after implementing this scope:
+
+* **Project Structure** - [New directories or significant changes]
+* **Key Modules & Components** - [New modules or updated functionality]
+* **Data Flow** - [Changes to data processing pipelines]
+* **Entry Points & Core Logic** - [New or modified entry points]
+* **Known Quirks / Tech Debt** - [New or resolved technical debt items]
+* **Diagrams** - [Required updates to system diagrams]
+
+---
+
 *Prepared by: [Author Name/Role] ([AI Assistant Model] if applicable)*  
 *Date: [Date of preparation/approval]*  
 *Delivery Tier: [Tier level]* 

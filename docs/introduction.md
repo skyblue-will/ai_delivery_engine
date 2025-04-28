@@ -20,11 +20,11 @@ The framework delivers that through:
 
 | Asset | Role | Maintained By |
 |-------|------|--------------|
-| **Codebase Guide** | Canonical reference for the *current* system. | Engineers after each merge |
-| **Versioned Scope Document** | Defines the *target* state for each release. | Product + Engineering before work starts |
+| **[Codebase Guide](../core/codebase_guide.md)** | Canonical reference for the *current* system. | Engineers after each merge |
+| **[Versioned Scope Document](../core/scope_doc_template.md)** | Defines the *target* state for each release. | Product + Engineering before work starts |
 | **Context Wrapper** | Enforces delivery discipline according to Delivery Tier. | Prompt layer & CI/CD hooks |
 
-These three assets act as **living contracts** that keep AI-generated work auditable and aligned with business goals.
+These three assets act as **living contracts** that keep AI-generated work auditable and aligned with business goals. The **Scope Document** and **Codebase Guide** work together in a continuous cycle—scope defines what you will build, and the guide documents what you've built.
 
 ---
 
@@ -98,11 +98,11 @@ This balances early agility with the audit trail production demands.
 ## 8. Getting Started (Quick Steps)
 
 1. **Clone / Fork** this repository.
-2. **Read** the sample `meta/codebase_guide_template.md` and `meta/scope_doc_template.md`.
-3. **Define** your Delivery Tier in `meta/delivery_tiers.md`.
-4. **Draft** your first Scope Document (e.g. `v0.1.0.md`).
+2. **Read** the sample [`core/codebase_guide.md`](../core/codebase_guide.md) and [`core/scope_doc_template.md`](../core/scope_doc_template.md).
+3. **Define** your Delivery Tier in [`docs/delivery_tiers.md`](delivery_tiers.md).
+4. **Draft** your first Scope Document (e.g. `v0.1.0.md`) based on the template.
 5. **Follow** the workflow described above, using the Context Wrapper for your tier.
-6. **Commit** code and tests; update the Codebase Guide on merge.
+6. **Commit** code and tests; **update the Codebase Guide after each significant change** to maintain system documentation.
 
 ---
 
