@@ -1,122 +1,86 @@
-# 📖 **README.md — AI Delivery Framework**
-
----
-
 # **AI Delivery Framework**
 
-**Building software with AI —  
-with structure, discipline, and scalability.**
+_A professional method for AI-assisted software delivery._
 
 ---
 
-## **Overview**
+## 1. Purpose
 
-The AI Delivery Framework is a structured system for building real-world software products using AI-assisted development — without sacrificing engineering discipline, scalability, or maintainability.
+The **AI Delivery Framework** enables teams to deliver real-world software with the speed of AI tooling **without compromising engineering discipline, compliance, or scalability**.
 
-It provides a complete workflow for scoped, modular, and testable delivery, ensuring that AI accelerates software development without introducing chaos or technical debt.
+The framework is governed by three living assets:
 
-This framework is open to anyone who wants to combine AI-driven speed with professional-grade software engineering standards.
+1. **Codebase Guide** – authoritative description of the _current_ codebase.
+2. **Versioned Scope Documents** – describe the _target_ state for each iteration (e.g. `v0.x.0.md`).
+3. **Context Wrappers** – enforce delivery discipline according to **Delivery Tiers**.
 
----
-
-## **Core Principles**
-
-- **Scope Before Code**  
-  Every project or feature begins with a versioned, clearly defined scope document.
-
-- **Modular and Testable Code**  
-  AI-generated code must be scoped, modular, and delivered alongside tests.
-
-- **Environment Discipline**  
-  Docker-based development environments and CI/CD pipelines are mandated from early stages.
-
-- **Adaptive Rigor**  
-  Engineering standards scale with project maturity, managed via clearly defined Delivery Tiers.
-
-- **Tool and Model Agnostic**  
-  The framework works with any AI model (e.g., GPT-4, Claude, local LLMs) and tech stack.
-
-- **Compliance When Needed**  
-  Regulatory and policy compliance modules (e.g., GDPR, HIPAA) are added only when required by project type, stage, or geography.
+Together these assets form the governance core that keeps fast-moving AI work predictable and auditable.
 
 ---
 
-## **Framework Workflow**
+## 2. Core Governance Components
 
-1. **Project Initialization**  
-   Set risk profile and assign a Delivery Tier.
-
-2. **Scoping**  
-   Write versioned, actionable scope documents.
-
-3. **Model Selection**  
-   Choose appropriate AI model(s) based on task and delivery needs.
-
-4. **Prompt Structuring**  
-   Break work into modular, testable prompts.
-
-5. **Testing & Validation**  
-   Apply appropriate testing rigor based on Delivery Tier.
-
-6. **Environment Management**  
-   Enforce Docker-based environments and automated deployment pipelines.
-
-7. **Controlled Scaling**  
-   Increase delivery standards progressively as the project matures.
-
-8. **Governance and Evolution**  
-   Regularly review tools, models, and standards to stay current.
+| Component | Purpose | Location |
+|-----------|---------|----------|
+| **Codebase Guide** | Live reference for the "as-is" system. | `meta/codebase_guide_template.md` |
+| **Scope Document** | Defines the "to-be" functionality for each version. | `meta/scope_doc_template.md` |
+| **Context Wrapper** | Applies delivery rules based on Delivery Tier. | Applied via prompting layer |
 
 ---
 
-## **Delivery Tiers**
+## 3. Operating Principles
 
-| Tier | Best For | Engineering Discipline |
-|:-----|:---------|:------------------------|
-| **Tier 1: Prototype** | Discovery, internal proofs of concept | Minimal |
-| **Tier 2: MVP** | Internal tools, first external pilots | Moderate (+ GDPR Lite if handling personal data) |
-| **Tier 3: Beta** | Public releases, scaling pilots | High |
-| **Tier 4: Production** | Fully launched products | Full |
-| **Tier 5: Enterprise** | High-compliance, high-security deployments | Maximum |
-
----
-
-## **Adaptability to Policies and Regulations**
-
-The AI Delivery Framework is modular and adaptable, allowing teams to bolt on compliance modules as needed — like choosing options when buying appliances.
-
-- **GDPR Lite** (basic user data protection) must be considered **from MVP stage onwards** if personal data is collected.
-- Full regulatory compliance (e.g., GDPR Full, HIPAA, SOC2) is applied only when project type, stage, or geography demands it.
-- Internal company standards (secure coding, CI/CD, cloud policies) are layered in at the appropriate Delivery Tier.
-
-This ensures that early-stage projects stay fast and flexible while production-grade systems remain compliant and auditable.
+1. **Scope Before Code** – every change begins with a versioned scope document.
+2. **Modular & Testable** – AI-generated code must be small, composable, and covered by tests.
+3. **Environment Discipline** – Docker-based dev environments and CI/CD from day one.
+4. **Adaptive Rigor** – delivery standards scale through **Delivery Tiers**.
+5. **Tool & Model Agnostic** – compatible with any AI model or tech stack.
+6. **Compliance When Required** – bolt-on modules (GDPR, HIPAA, etc.) only when the project stage demands.
 
 ---
 
-## **Future Refinements**
+## 4. Delivery Workflow (High Level)
 
-Framework development is ongoing, driven by real-world use and needs.
-
-Planned areas for refinement include:
-- **Fine-Tuned Agents**  
-  Lightweight AI agents to assist in scoping, Delivery Tier assignment, and model selection.
-
-- **AI-Promoted Scoping Tools**  
-  Interactive Q&A-based scoping tools to accelerate and standardise project setup.
-
-- **Enhanced Delivery Tiers**  
-  Further maturity models for scaling from startup to enterprise.
-
-- **Compliance Modules Expansion**  
-  Predefined templates for GDPR, HIPAA, PCI-DSS, and SOC2 to reduce integration friction.
-
-The framework is committed to continuous improvement — not static doctrine.
+1. **Project Initialisation** – assess risk and set Delivery Tier.
+2. **Scoping** – write or update the versioned scope document.
+3. **Model & Tool Selection** – choose LLMs and dev tools that fit the tier.
+4. **Prompt Structuring** – decompose work into modular, testable prompts.
+5. **Implementation & Testing** – code + tests generated via AI within the governed context.
+6. **Review & Merge** – human review reinforced by automated checks.
+7. **Continuous Delivery** – CI/CD pipeline ships artefacts appropriate to the tier.
+8. **Governance Update** – update Codebase Guide and plan next scope.
 
 ---
 
-## **Repository Structure**
+## 5. Delivery Tiers
 
-```
+| Tier | Use Case | Engineering Rigor |
+|------|----------|-------------------|
+| **1 – Prototype** | Exploratory spikes, internal proofs | Minimal |
+| **2 – MVP** | Early user validation | Moderate (GDPR Lite if personal data) |
+| **3 – Beta** | Public pilots, early scaling | High |
+| **4 – Production** | Launched products | Full |
+| **5 – Enterprise** | Highly regulated, high-security | Maximum |
+
+Delivery standards (testing depth, code review, compliance gates) **increase progressively** with each tier.
+
+---
+
+## 6. Compliance Integration
+
+The framework keeps compliance _modular_:
+
+- **GDPR Lite** is required from **Tier 2** if personal data is processed.
+- Additional modules (GDPR Full, HIPAA, SOC2, PCI-DSS) are integrated _only_ when legally or contractually required.
+- Internal security guidelines inherit from company policy at Tier 3 and above.
+
+This staged model protects early-stage agility while guaranteeing auditability for production systems.
+
+---
+
+## 7. Repository Map
+
+```text
 /framework-delivery/
 ├── README.md
 ├── LICENSE
@@ -132,39 +96,44 @@ The framework is committed to continuous improvement — not static doctrine.
 │   ├── current_tooling_landscape.md
 │   └── recommended_tool_criteria.md
 ├── examples/
-│   ├── flowerpot_booking_form/
+│   └── flowerpot_booking_form/
 ├── docs/
 │   ├── introduction.md
 │   ├── why_framework.md
 │   ├── faq.md
 │   ├── shipping_plan.md
-│   ├── lessons_learned.md
+│   └── lessons_learned.md
 ├── branding/
 │   ├── logo.png
 │   └── brand_sheet.pdf
-├── roadmap.md
+└── roadmap.md
 ```
 
 ---
 
-## **Current Status**
+## 8. Getting Started
 
-- **Version:** v0.1.0
-- **Stage:** Private pre-release with foundational examples underway
-- **License:** MIT License
+1. **Clone / Fork** the repository.
+2. **Select a Delivery Tier** based on project risk.
+3. **Draft a Scope Document** for your first version.
+4. **Generate Code** using the Context Wrapper for your tier.
+5. **Commit, Test, and Ship** via the prescribed workflow.
 
----
-
-## **How to Use**
-
-- Clone or fork the repository.
-- Review the meta templates to understand the framework structure.
-- Build or adapt projects following the defined workflow.
-- Use appropriate Delivery Tiers and bolt-on compliance modules based on real-world needs.
+_For detailed guidance see `docs/introduction.md`._
 
 ---
 
-## **License**
+## 9. Roadmap (Snapshot)
 
-MIT License.  
-See [LICENSE](LICENSE) for full terms.
+- **Fine-Tuned Agents** – automate scoping and tier assignment.
+- **Interactive Scoping Tools** – Q&A workflow.
+- **Expanded Compliance Modules** – GDPR, HIPAA, PCI-DSS, SOC2 templates.
+- **Enhanced Delivery Tiers** – deeper maturity models for enterprise scale.
+
+Roadmap items are tracked in [`roadmap.md`](roadmap.md) and governed by scope documents per release.
+
+---
+
+## 10. License
+
+MIT License. See [`LICENSE`](LICENSE) for full terms.

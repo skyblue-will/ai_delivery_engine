@@ -1,11 +1,108 @@
-# Introduction to AI Delivery Framework
+# Introduction
 
-## Purpose
+Welcome to the **AI Delivery Framework** – a governance-first method for building software with AI assistance. This document explains **why the framework exists, how it is structured, and when to apply it**.
 
-## Core Principles
+---
 
-## Target Audience
+## 1. Why the Framework Exists
 
-## Key Benefits
+Traditional software processes cannot simply bolt on a large-language-model (LLM) and expect predictable results. Teams need a way to harness AI speed **without sacrificing engineering rigour, compliance, or maintainability**.
 
-## How to Use This Framework 
+The AI Delivery Framework fills that gap by providing:
+
+* A **clear governance core** (Codebase Guide + Scope Docs + Context Wrappers).
+* A **tiered maturity model** that lets standards grow with product risk.
+* A **tool- and model-agnostic approach** so teams can adopt new AI capabilities rapidly.
+
+---
+
+## 2. Governance Core
+
+| Asset | Role | Maintained By |
+|-------|------|--------------|
+| **Codebase Guide** | Canonical reference for the *current* system. | Engineers after each merge |
+| **Versioned Scope Document** | Defines the *target* state for each release. | Product + Engineering before work starts |
+| **Context Wrapper** | Enforces delivery discipline according to Delivery Tier. | Prompt layer & CI/CD hooks |
+
+These three assets act as **living contracts** that keep AI-generated work auditable and aligned with business goals.
+
+---
+
+## 3. Delivery Tiers (Snapshot)
+
+| Tier | Typical Use | Key Engineering Gates |
+|------|-------------|-----------------------|
+| 1 – Prototype | Internal spikes | Minimal checks |
+| 2 – MVP | Early user validation | Tests + GDPR Lite* |
+| 3 – Beta | Public pilot | Full test suite + secure coding review |
+| 4 – Production | Launched product | CI/CD, SRE readiness, compliance gates |
+| 5 – Enterprise | Regulated, high-security | Continuous compliance, advanced audit |
+
+\* GDPR Lite applies if personal data is processed.
+
+---
+
+## 4. Target Audience
+
+* **Engineering Teams** looking to boost velocity with AI while retaining discipline.
+* **Start-ups** that need to scale standards progressively as they find product-market fit.
+* **Enterprises** that must prove compliance and auditability when integrating LLM tooling.
+
+---
+
+## 5. Workflow Overview
+
+```mermaid
+graph TD
+    A[Project Initialisation] --> B[Scope Document]
+    B --> C[Context Wrapper Selection]
+    C --> D[Prompt-Driven Development]
+    D --> E[Automated + Human Review]
+    E --> F[CI/CD Deployment]
+    F --> G[Governance Update]
+```
+
+1. **Project Initialisation** – set risk profile and assign Delivery Tier.
+2. **Scope Document** – capture the to-be state in a versioned markdown file.
+3. **Context Wrapper** – load prompts that enforce tier-specific rules.
+4. **Prompt-Driven Development** – generate modular code + tests via AI.
+5. **Review & Deployment** – automated checks plus human approval; ship via CI/CD.
+6. **Governance Update** – update Codebase Guide and plan the next iteration.
+
+---
+
+## 6. Compliance Philosophy
+
+Compliance is **modular and progressive**:
+
+* **Start minimal** – no premature heavyweight controls at Tier 1.
+* **Add as needed** – GDPR Lite from Tier 2 when personal data appears.
+* **Scale to full** – HIPAA, SOC2, PCI-DSS integrated only when required.
+
+This ensures early-stage agility while guaranteeing auditability for production systems.
+
+---
+
+## 7. Getting Started (Quick Steps)
+
+1. **Clone / Fork** this repository.
+2. **Read** the sample `meta/codebase_guide_template.md` and `meta/scope_doc_template.md`.
+3. **Define** your Delivery Tier in `meta/delivery_tiers.md`.
+4. **Draft** your first Scope Document (e.g. `v0.1.0.md`).
+5. **Follow** the workflow described above, using the Context Wrapper for your tier.
+6. **Commit** code and tests; update the Codebase Guide on merge.
+
+---
+
+## 8. Further Reading
+
+| Topic | Document |
+|-------|----------|
+| Full Workflow | `docs/why_framework.md` |
+| FAQ | `docs/faq.md` |
+| Roadmap | `roadmap.md` |
+| Lessons Learned | `docs/lessons_learned.md` |
+
+---
+
+*Last updated: {{DATE}}* 
