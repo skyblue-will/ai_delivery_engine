@@ -1,87 +1,90 @@
-# **AI Model Strategy Guide — AI Delivery Framework**
+# **AI Model Guide — AI Delivery Framework**
 
 ---
 
 ## 🎯 Purpose
 
-Provide a concise, governance-aligned reference for **selecting, adapting, and operating AI models** inside projects that adopt the AI Delivery Framework. This guide connects everyday model decisions to the framework's governance core — *Codebase Guide*, *Scope Documents*, and *Context Wrappers* — ensuring technical choices stay transparent, auditable, and upgrade-ready.
+This guide helps teams make practical decisions about **selecting and using AI models** in projects that follow the AI Delivery Framework. It connects everyday technical choices to the framework's core governance components (Codebase Guide, Scope Documents, and Context Wrappers).
 
-*
-Who should read this?* Machine-learning engineers, architects, and delivery leads who need clear guard-rails for model operations without slowing down iteration speed.
+*Who should read this?* Project leads, developers, and architects who need clear guidelines for using AI effectively in their projects.
 
 ---
 
-## 1. Model Selection Criteria
+## 1. Model Selection Guidelines
 
-| Dimension | Questions to Ask | Governance Tie-In |
+| Question | What to Consider | How It Connects to Framework |
 |-----------|-----------------|-------------------|
-| **Use Case Fit** | • What artefact must the model produce?  <br>• What latency/throughput is acceptable? | Must be stated in the active *Scope Document* under **Functional Requirements**. |
-| **Data Sensitivity** | • Does the task involve personal or regulated data? | Determines minimum *Delivery Tier* and activates GDPR-Lite or full compliance modules. |
-| **Accuracy vs. Creativity** | • Is factual correctness paramount or is exploratory generation acceptable? | Drives evaluation metrics in §5 and prompts structure in §3. |
-| **Cost Envelope** | • What is the target run-rate per call / month? | Must be budgeted in the *Scope Document*; audited in CI cost guardrails. |
-| **Model Openness** | • Open-source, proprietary API, or bespoke? | Affects **Deployment Considerations** in §6 and licensing checks. |
+| **What are you trying to accomplish?** | • What specific output do you need?<br>• How fast must it work? | Document these requirements in your *Scope Document* under **Functional Requirements**. |
+| **What data are you working with?** | • Does your task involve sensitive data? | Determines which *Delivery Tier* applies and what compliance rules to follow. |
+| **How important is accuracy?** | • Do you need factual precision or creative generation? | Influences how you'll evaluate success (see Section 4). |
+| **What's your budget?** | • What can you afford to spend per month? | Document budget limits in the *Scope Document*. |
+| **Open or proprietary?** | • Will you use free open-source or paid commercial models? | Affects deployment options (Section 5) and licensing. |
 
-> **Recommendation:** Default to a **small, open model** for Tier 1–2 projects; graduate to larger proprietary or fine-tuned variants as accuracy and scale demands rise.
-
----
-
-## 2. Fine-Tuning & Adaptation Approaches
-
-| Approach | When to Use | Tooling | Compliance Gates |
-|----------|------------|---------|------------------|
-| **Prompt-only** (zero / few-shot) | Rapid prototyping; Tier 0-1 | Context Wrapper | None |
-| **Instruction Tuning** | Stable tasks with domain-specific phrasing; Tier 2-3 | PEFT / LoRA on open models | Data processing documentation required in *Codebase Guide*. |
-| **Full Fine-Tuning** | High-precision, domain-sensitive workloads; Tier 3-5 | Off-line training pipeline (e.g., HuggingFace Trainer) | Full data governance (GDPR, model cards). |
-| **RLHF / RLAIF** | Complex preference alignment, production chatbots; Tier 4-5 | Dedicated RL stack | Mandatory internal audit + red-teaming. |
-
-Implementation artefacts (configs, scripts, datasets) **must live in `tools/modeling/`** and be referenced by the Codebase Guide.
+> **Recommendation:** Start simple with smaller, open models for early-stage projects (Tiers 1-2); move to more advanced options as your needs grow.
 
 ---
 
-## 3. Prompt Engineering Best Practices
+## 2. Model Adaptation Approaches
 
-1. **System Layer = Context Wrapper**  
-   Always inject the tier-appropriate wrapper before any user or developer messages.
-2. **Structured Inputs**  
-   Where possible, favour JSON/YAML payloads for deterministic parsing downstream.
-3. **Few-Shot Canonical Examples**  
-   Maintain examples in version-controlled fixture files; update alongside feature changes.
-4. **Streaming & Tool Calls**  
-   Decompose complex tasks into tool-enabled sub-calls rather than massive prompts.
-5. **Prompt Registry**  
-   Store reusable prompt files in `core/prompts/` and document them in the Codebase Guide.
+| Approach | When It Makes Sense | Documentation Needed |
+|----------|------------|------------------|
+| **Basic Prompting** | Quick prototypes; Tier 0-1 projects | Document prompt patterns in your codebase |
+| **Instruction Tuning** | When you need domain-specific understanding; Tier 2-3 | Document data processing in *Codebase Guide* |
+| **Fine-Tuning** | Specialized tasks requiring high precision; Tier 3-5 | Full data documentation and model specifications |
+| **Advanced Training** | Production systems with complex requirements; Tier 4-5 | Comprehensive documentation and testing records |
 
-> **Tip:** Treat prompts as **first-class code** — reviewed, tested, and versioned.
+Store all training configurations and scripts in the `tools/modeling/` directory and reference them in your Codebase Guide.
 
 ---
 
-## 4. Evaluation Methodology
+## 3. Effective Prompting Practices
 
-| Layer | Metric | Minimum Acceptance |
+1. **Use Context Wrappers**  
+   Always use the appropriate wrapper for your project's tier to ensure consistency.
+   
+2. **Structure Your Inputs**  
+   When possible, use structured formats (JSON/YAML) for more reliable results.
+   
+3. **Provide Clear Examples**  
+   Keep example inputs/outputs in version-controlled files for consistency.
+   
+4. **Break Down Complex Tasks**  
+   Split complex operations into smaller steps rather than using enormous prompts.
+   
+5. **Organize Your Prompts**  
+   Store reusable prompts in `core/prompts/` and document them properly.
+
+> **Tip:** Treat your prompts like code — review them, test them, and version them.
+
+---
+
+## 4. Measuring Success
+
+| Aspect | How to Measure | Minimum Target |
 |-------|--------|--------------------|
-| **Offline** | BLEU / ROUGE / accuracy depending on task | ≥ baseline open-model score +10% |
-| **Human Review** | Likert 1-5 usefulness | ≥ 4 for Tier 2+, documented in PR description |
-| **Fairness & Bias** | Bias amplification on synthetic sets | No *critical* disparities (Δ < 5 pp) |
-| **Performance** | p95 latency | < 2× target SLO |
+| **Quality** | Appropriate metrics for your specific task | Better than baseline by at least 10% |
+| **User Satisfaction** | Rating scale (1-5) | 4+ for Tier 2 and above projects |
+| **Fairness** | Testing for bias with diverse inputs | No significant disparities |
+| **Speed** | Response time | Within defined service targets |
 
-Evaluation scripts live under `tools/evaluation/` and must be **CI-executable**. Results are attached to PR artefacts and summarised in the Scope Document's *Acceptance* section.
+Keep evaluation scripts in `tools/evaluation/` and include results in your project documentation.
 
 ---
 
-## 5. Deployment Considerations
+## 5. Deployment Basics
 
-1. **Model Versioning** — Tag every model artefact with *semantic version* matching the repository release (e.g., `v0.2.0-model`).
-2. **Packaging** — Use [OpenAI Model Packaging Standard 2025] or Docker images pushed to an internal registry.
-3. **Rollout Strategy** — Canary first, guarded by feature flags for Tier 3+.
-4. **Observability** — Emit structured logs (`prompt`, `response`, `latency_ms`, `token_count`).
-5. **Security** — Encrypt model weights at rest; enforce least-privilege IAM for inference APIs.
+1. **Version Control** — Label every model version to match your code releases
+2. **Packaging** — Use standard formats for model distribution
+3. **Rollout** — Test with a small audience first before full deployment
+4. **Monitoring** — Track performance, usage, and errors
+5. **Security** — Protect model data and access appropriately
 
-Deployment templates and scripts must be referenced in the Codebase Guide *Deployment Process* section.
+Document your deployment process in the Codebase Guide.
 
 ---
 
 ## 6. Summary
 
-The AI Model Strategy Guide links day-to-day modelling choices to the AI Delivery Framework's governance spine. By following the selection matrix, fine-tuning gates, prompt best practices, and evaluation criteria herein, teams can iterate quickly **without losing compliance, transparency, or control**.
+This guide connects practical AI implementation decisions to the AI Delivery Framework's governance structure. By following these guidelines, teams can work efficiently while maintaining appropriate standards for quality, security, and compliance.
 
-> **Remember:** *Every model decision is also a governance decision.* 
+> **Remember:** Good AI implementation requires both technical skill and responsible governance. 
