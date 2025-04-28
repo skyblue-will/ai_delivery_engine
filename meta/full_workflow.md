@@ -1,7 +1,7 @@
 # AI Project Full Workflow
 
 ## Purpose
-This document defines the end-to-end workflow for delivering AI solutions using the **AI Delivery Framework**. It maps each lifecycle phase to the framework's governance artefacts—**Codebase Guide**, **Scope Documents**, and **Context Wrappers**—so teams can maintain engineering discipline, compliance, and executive-grade transparency.
+This document defines the end-to-end workflow for delivering technology solutions with an **AI-first delivery approach** using the **AI Delivery Framework**. It maps each lifecycle phase to the framework's governance artefacts—**Codebase Guide**, **Scope Documents**, and **Context Wrappers**—so teams can maintain engineering discipline, compliance, and executive-grade transparency.
 
 > **When to use this file**: Refer to it as the canonical, high-level playbook when kicking off a new project or auditing progress against framework standards.
 
@@ -22,7 +22,7 @@ This document defines the end-to-end workflow for delivering AI solutions using 
 
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
-| Validate that an AI solution is the right answer to the business problem. | • Stakeholder interviews<br>• Current-state analysis<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
+| Validate that a solution is the right answer to the business problem. | • Stakeholder interviews<br>• Current-state analysis<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
 
 ### Real-World Connection
 The discovery artefacts ensure decision-makers have a clear **business case** before engineering resources are committed.
@@ -44,7 +44,7 @@ Security and legal teams validate data-handling requirements _before_ developmen
 
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
-| Build the AI solution iteratively with disciplined, AI-assisted development practices. | • Implement features in short cycles (feature branches)<br>• Apply **Context Wrappers** based on Delivery Tier<br>• Continuous code review & linting<br>• Update **Codebase Guide** with each significant change | • Automated CI checks green<br>• Codebase Guide updated in PRs<br>• Scope creep flagged in weekly triage | • Incremental feature branches<br>• Updated Codebase Guide<br>• Technical documentation |
+| Build the solution iteratively with disciplined, AI-assisted development practices. | • Implement features in short cycles (feature branches)<br>• Apply **Context Wrappers** based on Delivery Tier<br>• Continuous code review & linting<br>• Update **Codebase Guide** with each significant change | • Automated CI checks green<br>• Codebase Guide updated in PRs<br>• Scope creep flagged in weekly triage | • Incremental feature branches<br>• Updated Codebase Guide<br>• Technical documentation |
 
 ### Framework Tie-in
 Context Wrappers enforce branch discipline, test coverage thresholds, and documentation completeness, preventing drift from the approved plan.
@@ -66,7 +66,7 @@ Shift-left testing: integrate synthetic data generation for edge-case coverage e
 
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
-| Release the AI system safely into the target environment with rollback capability. | • Infrastructure-as-Code (IaC) updates<br>• Blue/green or canary releases<br>• Release notes & change log | • Deployment runbooks reviewed<br>• Release approved by change authority | • Deployed artefacts<br>• Release Notes<br>• Updated runbooks |
+| Release the solution safely into the target environment with rollback capability. | • Infrastructure-as-Code (IaC) updates<br>• Blue/green or canary releases<br>• Release notes & change log | • Deployment runbooks reviewed<br>• Release approved by change authority | • Deployed artefacts<br>• Release Notes<br>• Updated runbooks |
 
 ### Compliance Trigger
 Data residency and user-consent mechanisms go live; legal signs off on production deployment.
@@ -77,7 +77,7 @@ Data residency and user-consent mechanisms go live; legal signs off on productio
 
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
-| Ensure the AI system remains reliable, performant, and compliant in production. | • Implement observability (logs, metrics, traces)<br>• Model drift detection<br>• Post-release incident reviews | • SLO dashboards reviewed weekly<br>• Monthly compliance health check | • Monitoring Dashboards<br>• Incident Reports<br>• Continuous Improvement Tasks |
+| Ensure the solution remains reliable, performant, and compliant in production. | • Implement observability (logs, metrics, traces)<br>• Model drift detection<br>• Post-release incident reviews | • SLO dashboards reviewed weekly<br>• Monthly compliance health check | • Monitoring Dashboards<br>• Incident Reports<br>• Continuous Improvement Tasks |
 
 ### Feedback Loop
 Findings feed back into the **Planning** and **Development** phases for iterative improvement.
@@ -91,4 +91,4 @@ The AI Project Full Workflow provides a disciplined, end-to-end roadmap anchored
 - **Scope Documents & Version Plans**: Contract between business and engineering.
 - **Context Wrappers**: Enforce delivery discipline commensurate with risk.
 
-Follow this workflow to deliver AI systems that are **scalable, compliant, and trusted by executives and engineers alike**. 
+Follow this workflow to deliver solutions that are **scalable, compliant, and trusted by executives and engineers alike**. 
