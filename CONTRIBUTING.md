@@ -44,6 +44,17 @@ This document outlines how to effectively contribute to the framework.
 - Proposing tool integrations that remain vendor-neutral.
 - Enhancing example projects to show real-world usage.
 
+### **Pilot Project Contributions**
+
+If your team runs a delivery using the framework, consider contributing:
+
+1. A **Scope Document** that defined the work.
+2. The resulting **Codebase Guide** delta.
+3. A short **Case Study** (metrics table + lessons learned) under `docs/scopes/`.
+4. Any automation scripts or CI checks you built to enforce Delivery Tier rules.
+
+These real-world artefacts are the fastest way to move the framework from theory to proven practice.
+
 ---
 
 ## **Community Expectations**

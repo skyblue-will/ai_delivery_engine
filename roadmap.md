@@ -37,6 +37,15 @@ The AI Delivery Framework is intentionally designed as a starting point, not a f
 | **Compliance** | Referenced but unstructured | Formal GDPR/HIPAA modules | Actionable regulatory integration |
 | **CI/CD** | Basic validation | Framework compliance checks | Automatic governance enforcement |
 
+## 0.4.x (Pilot Validation)
+
+| Goal | Current State | Target State | Benefit |
+|------|--------------|--------------|---------|
+| **Real-World Pilots** | No formal pilots | 2 projects (greenfield & brownfield) | Proof of framework effectiveness |
+| **Metrics Dashboard** | Not started | Lead-time, defect, compliance KPIs | Quantifiable value for adopters |
+| **Slim Documentation** | Theory-heavy | Remove / archive unused sections | Leaner, easier adoption |
+| **Case Study Publication** | None | Publish detailed write-ups | Credibility & community learning |
+
 ## 1.0.x (Production)
 
 | Goal | Current State | Target State | Benefit |
