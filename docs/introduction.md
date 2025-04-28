@@ -117,17 +117,4 @@ This balances early agility with the audit trail production demands.
 
 ---
 
-## 10. Framework Evolution
-
-AI Delivery Framework evolves through real projects. Key drivers:
-
-* **Road testing** – validate across projects of increasing complexity.
-* **Continuous refinement** – adjust patterns and governance as we learn.
-* **Community insights** – fold practitioner feedback into standards.
-* **New AI capabilities** – leverage advances without relaxing discipline.
-
-Expect the framework to mature rapidly as more teams adopt it.
-
----
-
-*Last updated: {{DATE}}*
+For planned changes and version history, see `roadmap.md`.

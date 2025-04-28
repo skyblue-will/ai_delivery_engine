@@ -33,8 +33,6 @@ The framework enforces these guardrails through three linked assets—**Codebase
 
 **Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.
 
-**Status.** Early versions are being hardened through real projects. Your feedback shapes the roadmap.
-
 ---
 
 ## 2. The Governance Triangle
