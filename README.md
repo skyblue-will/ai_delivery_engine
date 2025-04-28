@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/github/license/skyblue-will/AI-Delivery-Framework)](LICENSE)
 [![Last Update](https://img.shields.io/github/last-commit/skyblue-will/AI-Delivery-Framework)](https://github.com/skyblue-will/AI-Delivery-Framework/commits/main)
 
+**At a Glance:**
+* **Structured Process** — Govern AI coding with live documentation that evolves with your codebase.
+* **Tiered Rigor** — Scale engineering standards progressively from prototype to enterprise-grade.
+* **Tool Agnostic** — Works with any AI assistant, any language, and any development toolchain.
+* **Fast Implementation** — Adopt in minutes, see benefits in your first sprint.
+
 ---
 
 ## Table of Contents
