@@ -50,7 +50,19 @@ These three assets act as **living contracts** that keep AI-generated work audit
 
 ---
 
-## 5. Workflow Overview
+## 5. Supported AI Tools
+
+The framework is specifically designed for integration with AI-powered code editors including:
+
+* **Cursor** - Uses the governance triangle to guide AI generation within established boundaries
+* **Winsurf** - Leverages context wrappers to maintain discipline in AI-assisted development
+* Other AI coding assistants that support custom context/rules injection
+
+By providing structured governance through these tools, the framework keeps AI development on track while maximizing productivity benefits.
+
+---
+
+## 6. Workflow Overview
 
 ```mermaid
 graph TD
@@ -71,7 +83,7 @@ graph TD
 
 ---
 
-## 6. Compliance Philosophy
+## 7. Compliance Philosophy
 
 Compliance is **modular and progressive**:
 
@@ -83,7 +95,7 @@ This ensures early-stage agility while guaranteeing auditability for production 
 
 ---
 
-## 7. Getting Started (Quick Steps)
+## 8. Getting Started (Quick Steps)
 
 1. **Clone / Fork** this repository.
 2. **Read** the sample `meta/codebase_guide_template.md` and `meta/scope_doc_template.md`.
@@ -94,7 +106,7 @@ This ensures early-stage agility while guaranteeing auditability for production 
 
 ---
 
-## 8. Further Reading
+## 9. Further Reading
 
 | Topic | Document |
 |-------|----------|
@@ -105,4 +117,4 @@ This ensures early-stage agility while guaranteeing auditability for production 
 
 ---
 
-*Last updated: {{DATE}}* 
+*Last updated: {{DATE}}*
