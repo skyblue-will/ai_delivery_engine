@@ -22,10 +22,10 @@ This document defines the end-to-end workflow for delivering technology solution
 
 | Objective | Key Activities | Governance Checkpoints | Primary Outputs |
 |-----------|----------------|------------------------|-----------------|
-| Validate that a solution is the right answer to the business problem. | • Stakeholder interviews<br>• Current-state analysis<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
+| Validate that a digital/software solution is the right answer to the business problem, and if so, determine the appropriate approach. | • Stakeholder interviews<br>• Current-state analysis<br>• Process vs. technology assessment<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
 
 ### Real-World Connection
-The discovery artefacts ensure decision-makers have a clear **business case** before engineering resources are committed.
+The discovery artefacts ensure decision-makers have a clear **business case** before engineering resources are committed, including validation that a digital solution (vs. process change, policy, etc.) is actually needed.
 
 ---
 
