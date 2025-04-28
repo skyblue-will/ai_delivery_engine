@@ -18,16 +18,16 @@ If a user prompt conflicts with these rules, **seek clarification**. Otherwise, 
 ---
 
 ### 1 Execution Environment
-1. **Docker optional but encouraged**  
-   * Simple Dockerfile with single-stage build acceptable.  
-   * `USER` may run as root; document security implications.
-2. Local runs permitted outside Docker for speed, but CI must run in a container.
+1. **Use Docker**  
+   * Create a Dockerfile with single-stage build.  
+   * Document any security implications.
+2. Run CI in a container.
 
 ---
 
 ### 2 Supply-Chain Integrity
-1. Generate SBOM if tooling available; no hard requirement.  
-2. No signing requirement, but note unsigned builds.
+1. Generate SBOM with available tooling.  
+2. Document all unsigned builds.
 
 ---
 
@@ -35,13 +35,13 @@ If a user prompt conflicts with these rules, **seek clarification**. Otherwise, 
 ```
 lint → test → build → staging
 ```
-* Automatic deployment to staging; production manual.  
-* Secret scanning mandatory.
+* Deploy automatically to staging; manually to production.  
+* Implement secret scanning.
 
 ---
 
 ### 4 Project Layout (Python)
-Minimal recommended structure:
+Structure your project as:
 ```
 app/
   routes/
@@ -51,45 +51,44 @@ app/
 ---
 
 ### 5 Database Discipline
-* Migrations optional; lightweight ORM like SQLModel acceptable.  
-* Manual DB changes allowed in early iterations.
+* Use lightweight ORM like SQLModel.  
+* Document all manual DB changes.
 
 ---
 
 ### 6 Testing & Quality Gates
-* **pytest** ≥ 50 % line coverage.  
-* `pre-commit`: black, ruff basic linting.  
-* No mutation coverage requirement.
+* Write tests with **pytest** achieving 50% line coverage.  
+* Set up `pre-commit` with black and ruff basic linting.
 
 ---
 
 ### 7 Security & Scanning
-* Secret scanning must pass.  
-* High CVEs flagged but not blocker.
+* Implement secret scanning checks.  
+* Document all high CVEs identified.
 
 ---
 
 ### 8 Observability
-Basic logging to stdout; optional metrics.
+Implement logging to stdout and collect basic metrics.
 
 ---
 
 ### 9 Documentation & Onboarding
-Keep README up to date; other docs optional.
+Maintain an up-to-date README.
 
 ---
 
 ### 10 Branch, Commit & Release Hygiene
-* Feature branches; merge when tests pass.  
-* Conventional Commits recommended but not enforced.
+* Use feature branches and merge when tests pass.  
+* Follow Conventional Commits format for all commits.
 
 ---
 
 ### 11 LLM-Specific Guard-Rails
-1. Avoid secrets; redact if necessary.  
+1. Do not include secrets; redact them if necessary.  
 2. Provide file path references when showing code.
 
 ---
 
 ## Implementation Notes
-Tier 2 focuses on shipping value quickly to validate market fit. Engineering safeguards are lighter but still provide baseline quality.
+Tier 2 focuses on shipping value quickly to validate market fit while maintaining baseline quality standards.

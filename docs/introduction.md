@@ -6,7 +6,7 @@ Welcome to the **AI Delivery Framework** – a governance-first method for build
 
 ## 1. Why the Framework Exists
 
-Traditional software processes cannot simply bolt on a large-language-model (LLM) and expect predictable results. Teams need a way to harness AI speed **without sacrificing engineering rigour, compliance, or maintainability**.
+Traditional software processes cannot simply bolt on a large-language-model (LLM) and expect predictable results. Teams need a way to harness AI speed **while striving to maintain engineering rigour, compliance, and maintainability**.
 
 The AI Delivery Framework fills that gap by providing:
 
@@ -91,7 +91,7 @@ Compliance is **modular and progressive**:
 * **Add as needed** – GDPR Lite from Tier 2 when personal data appears.
 * **Scale to full** – HIPAA, SOC2, PCI-DSS integrated only when required.
 
-This ensures early-stage agility while guaranteeing auditability for production systems.
+This approach aims to balance early-stage agility with appropriate auditability for production systems.
 
 ---
 
@@ -114,6 +114,19 @@ This ensures early-stage agility while guaranteeing auditability for production 
 | FAQ | `docs/faq.md` |
 | Roadmap | `roadmap.md` |
 | Lessons Learned | `docs/lessons_learned.md` |
+
+---
+
+## 10. Framework Evolution
+
+The AI Delivery Framework is not a finished product – it is a starting point designed to evolve through practical application. Key aspects of this evolution include:
+
+* **Road Testing** – The framework needs real-world validation across diverse projects of increasing complexity
+* **Continuous Refinement** – Patterns, practices, and governance mechanisms will be adjusted based on implementation experience
+* **Community Insights** – Contributions from practitioners will help strengthen the framework's effectiveness
+* **Adaptation to Changing AI Capabilities** – As AI tools evolve, the framework will adapt to leverage new capabilities while maintaining governance
+
+This framework represents our best current understanding of structured AI-assisted development, but we expect it to grow and improve significantly as teams apply it to build bigger and better software projects. Your experiences and feedback are essential to this evolution.
 
 ---
 

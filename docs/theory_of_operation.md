@@ -2,7 +2,7 @@
 
 ## Genesis & Philosophy
 
-The AI Delivery Framework emerged in response to a critical challenge in modern software development: how to harness the extraordinary speed of AI-assisted development without sacrificing engineering discipline, governance, and compliance.
+The AI Delivery Framework emerged in response to a critical challenge in modern software development: how to harness the extraordinary speed of AI-assisted development while aiming to maintain engineering discipline, governance, and compliance.
 
 The framework was built on the fundamental observation that many AI-generated codebases suffer from similar problems:
 - Lack of clear structure and documentation
@@ -18,7 +18,7 @@ Rather than constrain AI's generative capabilities, the framework provides a str
 
 The framework operates through three integrated governance mechanisms:
 
-1. **Codebase Guide (As-Is)** - Provides an always-accurate reference to the current state of the system, allowing new team members and AI tools to comprehend existing code.
+1. **Codebase Guide (As-Is)** - Provides a continuously updated reference to the current state of the system, allowing new team members and AI tools to comprehend existing code.
 
 2. **Scope Documents (To-Be)** - Codifies the specific changes planned for each version, with clear acceptance criteria and traceability to business requirements.
 
@@ -55,4 +55,4 @@ The framework works with:
 - Any programming language
 - Any cloud or on-premises infrastructure
 
-This flexibility ensures teams can adopt the framework incrementally, first applying it to the most critical governance areas and expanding coverage as the project matures. 
+This flexibility helps teams adopt the framework incrementally, first applying it to the most critical governance areas and expanding coverage as the project matures. 

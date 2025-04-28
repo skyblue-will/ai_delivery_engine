@@ -1,6 +1,6 @@
 # Delivery Tiers
 
-The AI Delivery Framework uses a progressive rigor model that scales engineering discipline based on project maturity and risk. This ensures early-stage projects can move quickly while guaranteeing enterprise standards for production systems.
+The AI Delivery Framework uses a progressive rigor model that scales engineering discipline based on project maturity and risk. This aims to help early-stage projects move quickly while supporting appropriate standards for production systems.
 
 ## Tier Structure
 

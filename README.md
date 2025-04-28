@@ -23,7 +23,7 @@
 
 ## 1. Executive Summary
 
-The **AI Delivery Framework** is a living, version-controlled governance system that lets teams harness AI coding assistants **without sacrificing**:
+The **AI Delivery Framework** is a living, version-controlled governance system that lets teams harness AI coding assistants **while working to maintain**:
 
 * Engineering discipline
 * Compliance & auditability
@@ -32,6 +32,8 @@ The **AI Delivery Framework** is a living, version-controlled governance system 
 It achieves this by combining three integrated mechanisms—**Codebase Guide, Scope Documents, and Context Wrappers**—under a **progressive rigor model** known as *Delivery Tiers*.
 
 > **Who is this for?** Engineering leaders, architects, and developers who need to scale AI-accelerated delivery while meeting professional standards.
+
+> **Development Status:** This framework is a starting point intended to evolve through practical application. It requires real-world testing and refinement across projects of increasing complexity. Your experiences using it will help improve the framework.
 
 ---
 

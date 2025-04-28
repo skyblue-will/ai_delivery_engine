@@ -23,16 +23,16 @@ If a user prompt conflicts with these rules, **pause and ask for explicit overri
    * `USER` non-root; `HEALTHCHECK`; reproducible `buildx --platform linux/amd64,arm64`.  
    * `.dockerignore`, pinned base digest, SBOM & provenance in image labels.  
 
-2. **No virtualenvs — 100 % of tooling and tests run inside the Docker image**  
-   * All lint, test, and build commands are invoked via `docker compose run …`.  
-   * Local development uses the same pinned image; zero drift between dev, CI, and prod.
+2. **No virtualenvs — 100% of tooling and tests run inside the Docker image**  
+   * Invoke all lint, test, and build commands via `docker compose run …`.  
+   * Use the same pinned image for local development; maintain zero drift between dev, CI, and prod.
 
 ---
 
 ### 2 Supply-Chain Integrity  
-1. **SLSA 3+**: build workflow emits provenance JSON, stored with the image.  
-2. **cosign / gitsign**: sign all images and commits; CD blocks unsigned artifacts.  
-3. **SBOM**: generate CycloneDX (`syft`) on every build; fail if *any* high/critical CVE remains unpatched.
+1. **SLSA 3+**: Emit provenance JSON from build workflow, stored with the image.  
+2. **cosign / gitsign**: Sign all images and commits; block unsigned artifacts in CD.  
+3. **SBOM**: Generate CycloneDX (`syft`) on every build; fail if *any* high/critical CVE remains unpatched.
 
 ---
 
@@ -40,9 +40,9 @@ If a user prompt conflicts with these rules, **pause and ask for explicit overri
 ```
 lint → test → build → sbom+scan → sign → provenance → deploy(canary) → promote
 ```
-* Progressive delivery (blue/green or Flagger) with auto-rollback on error-budget burn.  
-* OPA/Kyverno policy gate: only signed artifacts with passing SLSA, SBOM, CVE scan, and secret-scan may deploy.  
-* OIDC keyless pushes; no long-lived registry creds.
+* Implement progressive delivery (blue/green or Flagger) with auto-rollback on error-budget burn.  
+* Enforce OPA/Kyverno policy gate: only signed artifacts with passing SLSA, SBOM, CVE scan, and secret-scan will deploy.  
+* Use OIDC keyless pushes; prohibit long-lived registry credentials.
 
 ---
 
@@ -56,46 +56,46 @@ app/
   models/        # ORM entities
   cli.py         # Typer CLI
 ```
-* Async FastAPI; no logic in `routes/`.  
-* Separate DTOs vs ORM models.  
-* No hard-coded settings; rely on `pydantic_settings` + env vars.
+* Use Async FastAPI; exclude all logic from `routes/`.  
+* Keep DTOs and ORM models separate.  
+* Store settings only in `pydantic_settings` + env vars; never hard-code.
 
 ---
 
 ### 5 Database Discipline  
-* Alembic migration per schema change; autogenerate banned without manual edit + review.  
-* CI: `upgrade head && downgrade -1` on disposable DB.  
-* Destructive migration → mandatory reversible script or back-fill.
+* Create one Alembic migration per schema change; prohibit autogenerate without manual edit + review.  
+* Run `upgrade head && downgrade -1` on disposable DB in CI.  
+* For destructive migrations, require reversible script or back-fill.
 
 ---
 
 ### 6 Testing & Quality Gates  
-* **pytest** ≥ 90 % line + 70 % mutation coverage (`mutmut`).  
-* `pre-commit`: ruff, black, isort, mypy, bandit, gitleaks, detect-secrets.  
-* Snapshot OpenAPI; break build on diff.  
-* Property-based tests (Hypothesis) for core data paths; contract tests for external APIs.
+* Achieve 90% line + 70% mutation coverage (`mutmut`) with **pytest**.  
+* Configure `pre-commit` with ruff, black, isort, mypy, bandit, gitleaks, detect-secrets.  
+* Create OpenAPI snapshot; break build on diff.  
+* Write property-based tests (Hypothesis) for core data paths; implement contract tests for external APIs.
 
 ---
 
 ### 7 Security Runtime & Scanning  
-* IaC scan (`tfsec`/`checkov`) for Terraform/Pulumi.  
-* Fuzzing (oss-fuzz) and DAST (OWASP ZAP) scheduled nightly.  
-* Falco/eBPF rules enforced in prod.  
+* Run IaC scan (`tfsec`/`checkov`) for all Terraform/Pulumi.  
+* Schedule fuzzing (oss-fuzz) and DAST (OWASP ZAP) nightly.  
+* Enforce Falco/eBPF rules in production.  
 
 ---
 
 ### 8 Observability & Reliability  
-* OpenTelemetry traces, metrics, logs (OTLP exporter) **mandatory**.  
-* `/healthz`, `/readyz`, graceful shutdown via `lifespan`.  
-* Continuous profiling (Pyroscope) enabled.  
-* Define SLOs + error budgets; block deploy if burn rate > 2 × budget.
+* Implement OpenTelemetry traces, metrics, logs (OTLP exporter).  
+* Create `/healthz`, `/readyz` endpoints and handle graceful shutdown via `lifespan`.  
+* Enable continuous profiling (Pyroscope).  
+* Define SLOs + error budgets; block deployment if burn rate > 2 × budget.
 
 ---
 
 ### 9 Documentation & Onboarding  
-* `docs/` via MkDocs; CI fails on broken links.  
-* ADRs in `docs/adr/`.  
-* `codebase_guide.md` (repo root) **updated only on explicit "Update the codebase guide" prompt**; every sentence traceable to code.  
+* Create `docs/` via MkDocs; fail CI on broken links.  
+* Store ADRs in `docs/adr/`.  
+* Update `codebase_guide.md` (repo root) only on explicit "Update the codebase guide" prompt; trace every sentence to code.  
 * Auto-render C4 diagrams with `diagrams` library on guide update.
 
 ---
@@ -108,28 +108,28 @@ product_management/
   ...
 ```
 * Each file lists the BA-approved scope for that semantic version.  
-* When asked "check codebase vs vX.Y.Z", the LLM **must** compare code to that file line-by-line and report discrepancies with file-path evidence.  
-* Scope files are **read-only** to the LLM.
+* When asked "check codebase vs vX.Y.Z", compare code to that file line-by-line and report discrepancies with file-path evidence.  
+* Treat scope files as **read-only**.
 
 ---
 
 ### 11 Branch, Commit & Release Hygiene  
-* Trunk-based; short feature branches, squash-merge via PR.  
-* Conventional Commits, signed with gitsign; automated changelog on tag.  
-* Docker images tagged `v<semver>-<gitsha>`; no `latest`.
+* Use trunk-based development; limit feature branches to short lifespan, squash-merge via PR.  
+* Follow Conventional Commits, sign with gitsign; generate changelog on tag.  
+* Tag Docker images as `v<semver>-<gitsha>`; never use `latest`.
 
 ---
 
 ### 12 LLM-Specific Guard-Rails  
 1. Never emit secrets, personal data, or license-incompatible code.  
-2. Cite file paths or commit SHAs when claiming "implemented."  
-3. Run static analysis after generation; refuse to commit if scans fail.
+2. Include file paths or commit SHAs when claiming "implemented."  
+3. Run static analysis after generation; block any commit if scans fail.
 
 ---
 
 ## Implementation Notes
 
-* This context wrapper represents the most rigorous enterprise-grade configuration
-* Apply the entire context when building mission-critical applications
-* All security, compliance, and operational requirements are non-negotiable
-* Implementation teams should verify each directive is enforced by CI/CD pipelines
+* This context wrapper defines the most rigorous enterprise-grade configuration.
+* Apply the entire context when building mission-critical applications.
+* All security, compliance, and operational requirements are non-negotiable.
+* Verify each directive is enforced by CI/CD pipelines.
