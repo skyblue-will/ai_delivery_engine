@@ -6,12 +6,12 @@ The AI Delivery Framework uses a progressive rigor model that scales engineering
 
 | Tier | Use Case | Engineering Rigor | Context Wrapper |
 |------|----------|-------------------|-----------------|
-| **0 – Exploration** | Initial learning, chat-only exploration | None (no code committed) | [tier0_exploration_context_wrapper.md](../meta/context_wrappers/tier0_exploration_context_wrapper.md) |
-| **1 – Prototype** | Exploratory spikes, internal proofs | Minimal | [tier1_hobby_context_wrapper.md](../meta/context_wrappers/tier1_hobby_context_wrapper.md) |
-| **2 – MVP** | Early user validation | Moderate (GDPR Lite if personal data) | [tier2_mvp_context_wrapper.md](../meta/context_wrappers/tier2_mvp_context_wrapper.md) |
-| **3 – Beta** | Public pilots, early scaling | High | [tier3_beta_context_wrapper.md](../meta/context_wrappers/tier3_beta_context_wrapper.md) |
-| **4 – Production** | Launched products | Full | [tier4_production_context_wrapper.md](../meta/context_wrappers/tier4_production_context_wrapper.md) |
-| **5 – Enterprise** | Highly regulated, high-security | Maximum | [tier5_enterprise_context_wrapper.md](../meta/context_wrappers/tier5_enterprise_context_wrapper.md) |
+| **0 – Exploration** | Initial learning, chat-only exploration | None (no code committed) | [tier0_exploration_context_wrapper.md](../core/context_wrappers/tier0_exploration_context_wrapper.md) |
+| **1 – Prototype** | Exploratory spikes, internal proofs | Minimal | [tier1_hobby_context_wrapper.md](../core/context_wrappers/tier1_hobby_context_wrapper.md) |
+| **2 – MVP** | Early user validation | Moderate (GDPR Lite if personal data) | [tier2_mvp_context_wrapper.md](../core/context_wrappers/tier2_mvp_context_wrapper.md) |
+| **3 – Beta** | Public pilots, early scaling | High | [tier3_beta_context_wrapper.md](../core/context_wrappers/tier3_beta_context_wrapper.md) |
+| **4 – Production** | Launched products | Full | [tier4_production_context_wrapper.md](../core/context_wrappers/tier4_production_context_wrapper.md) |
+| **5 – Enterprise** | Highly regulated, high-security | Maximum | [tier5_enterprise_context_wrapper.md](../core/context_wrappers/tier5_enterprise_context_wrapper.md) |
 
 ## Key Dimensions by Tier
 
