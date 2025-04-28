@@ -17,8 +17,9 @@ def container_diagram():
             meta = Blank("meta/")
             docs = Blank("docs/")
             tools = Blank("tools/")
+            scripts = Blank("scripts/")
             github = Blank(".github/")
-        repo >> [core, meta, docs, tools, github]
+        repo >> [core, meta, docs, tools, scripts, github]
 
 
 def component_diagram():
@@ -44,11 +45,13 @@ def component_diagram():
         with Cluster("Tools & Meta"):
             tools_dir = Blank("tools/")
             meta_dir = Blank("meta/")
+            scripts_dir = Blank("scripts/")
         
         codebase_guide >> [intro, theory, tiers]
         scope_template >> [tier0, tier1, tier2, tier3, tier4, tier5]
         [tier0, tier1, tier2, tier3, tier4, tier5] >> tools_dir
         meta_dir >> codebase_guide
+        scripts_dir >> codebase_guide
 
 
 def main():

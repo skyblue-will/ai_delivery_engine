@@ -12,6 +12,7 @@ This guide provides an authoritative description of the current codebase state.
 | `meta/` | Framework design documentation and templates |
 | `docs/` | User-facing documentation and architecture diagrams |
 | `tools/` | Tool recommendations and tooling landscape information |
+| `scripts/` | Utility scripts for repository maintenance |
 | `.github/` | CI/CD workflows and repository configuration |
 
 ## 2. Key Modules & Components
@@ -24,9 +25,13 @@ This guide provides an authoritative description of the current codebase state.
 | `docs/introduction.md` | Framework onboarding documentation |
 | `docs/theory_of_operation.md` | Conceptual foundation explanation |
 | `docs/delivery_tiers.md` | Progressive rigor model details |
+| `docs/architecture/generate_c4_diagrams.py` | Script to generate architecture diagrams |
 | `meta/governance_core.md` | Framework governance principles |
+| `meta/full_workflow.md` | Detailed workflow documentation |
+| `meta/model_strategy.md` | Strategy for model interaction and usage |
 | `tools/recommended_tool_criteria.md` | Criteria for tool selection |
 | `tools/current_tooling_landscape.md` | Overview of available AI tools |
+| `scripts/consolidate_codebase.py` | Script to consolidate codebase into a single text file |
 
 ## 3. Data Flow
 
@@ -41,6 +46,7 @@ Contributor → Selects Delivery Tier → Uses Context Wrapper with AI →
 2. Select appropriate delivery tier from `core/context_wrappers/`
 3. Use corresponding context wrapper with AI tools
 4. Update codebase guide after significant changes
+5. Generate consolidated codebase view with `scripts/consolidate_codebase.py`
 
 ## 5. Known Quirks / Tech Debt
 
