@@ -13,21 +13,29 @@ The AI Delivery Framework is intentionally designed as a starting point, not a f
 
 **This roadmap represents our current vision, but will itself evolve based on the insights gained through road testing the framework in real projects.** We encourage users to share their experiences, challenges, and successes to help improve future iterations.
 
-## 0.3.x (Current)
+## 0.1.x (Initial Release)
+
+| Goal | Current State | Target State | Benefit |
+|------|--------------|--------------|---------|
+| **Core Framework** | Pre-release | Stable foundation | Framework ready for early testing |
+| **Documentation** | In development | Essential guides complete | Clear pathway for adoption |
+| **Delivery Tiers** | Tiers 0-5 defined | Initial implementation | Structured approach to governance |
+
+## 0.2.x (Enhancement)
+
+| Goal | Current State | Target State | Benefit |
+|------|--------------|--------------|---------|
+| **Best Models** | Not defined | Model recommendations for each activity type | Optimal tool selection for different tasks |
+| **Q&A Tooling** | None | Scoping assistance tools | Help determining business requirements and delivery tier |
+| **Context Wrappers** | Basic templates | Enhanced wrappers with better guidance | Improved AI interactions |
+
+## 0.3.x (Maturity)
 
 | Goal | Current State | Target State | Benefit |
 |------|--------------|--------------|---------|
 | **Governance Core** | Basic templates | Enhanced templates with traceability | Better planning and accountability |
-| **Documentation** | Scattered references | Focused, essential guides | Faster onboarding |
-| **Delivery Tiers** | Tiers 1-5 | Expanded tier spectrum (0-5) | Support for a wider range of project stages |
-
-## 0.4.x (Next)
-
-| Goal | Current State | Target State | Benefit |
-|------|--------------|--------------|---------|
 | **Compliance** | Referenced but unstructured | Formal GDPR/HIPAA modules | Actionable regulatory integration |
-| **CI/CD** | Basic Markdown validation | Framework compliance checks | Automatic governance enforcement |
-| **Context Generation** | Manual wrapper selection | Interactive tier selection tools | Reduced friction in adoption |
+| **CI/CD** | Basic validation | Framework compliance checks | Automatic governance enforcement |
 
 ## 1.0.x (Production)
 
@@ -35,6 +43,14 @@ The AI Delivery Framework is intentionally designed as a starting point, not a f
 |------|--------------|--------------|---------|
 | **Enterprise** | Individual focus | Enterprise integration patterns | Potential for large organization adoption |
 | **Analytics** | No measurement | Governance impact metrics | Framework effectiveness measurements |
-| **AI Agents** | Manual process | Agent-assisted governance | Reduced management overhead |
+| **Certification** | No program | Certified professionals program | Industry recognition and standardization |
 
-Updates tracked via versioned scope documents and governed by the framework's own processes. 
+## Long-term Vision
+
+| Goal | Description | Benefit |
+|------|------------|---------|
+| **Agentic AI Integration** | AI agents that operate within the framework | Reduced human intervention while maintaining governance |
+| **Framework Evolution** | Self-improving system based on real-world usage | Continuous optimization of delivery practices |
+| **Industry Standard** | Recognized methodology for AI-assisted development | Common language for professional AI development |
+
+All updates tracked via versioned scope documents and governed by the framework's own processes. 
