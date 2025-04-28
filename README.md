@@ -11,7 +11,15 @@
 * **Tool Agnostic** — Works with any AI assistant, any language, and any development toolchain.
 * **Fast Implementation** — Adopt in minutes, see benefits in your first sprint.
 
-**Who should use it\?\*\* Engineering leaders and delivery teams who want AI speed with professional rigor.\n\n> **Documentation-First Reminder**  \n> This repository is intentionally **doc-heavy**; the framework itself *is the product*.  \n> All code samples, scripts, and CI pieces serve only to demonstrate and enforce the governance model.  \n> We actively invite **real-world pilot projects** to validate and refine the Delivery Tiers, metrics, and compliance gates.  \n> See the updated [Roadmap](roadmap.md#04x-pilot-validation) and [Contributing](CONTRIBUTING.md#pilot-project-contributions) guides for participation.\n\n---
+**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.
+
+> **Documentation-First Reminder**  
+> This repository is intentionally **doc-heavy**; the framework itself *is the product*.  
+> All code samples, scripts, and CI pieces serve only to demonstrate and enforce the governance model.  
+> We actively invite **real-world pilot projects** to validate and refine the Delivery Tiers, metrics, and compliance gates.  
+> See the updated [Roadmap](roadmap.md#04x-pilot-validation) and [Contributing](CONTRIBUTING.md#pilot-project-contributions) guides for participation.
+
+---
 
 ## Table of Contents
 
@@ -36,8 +44,6 @@ AI Delivery Framework is a version-controlled governance system that lets teams 
 * Long-term maintainability
 
 The framework enforces these guardrails through three linked assets—**Codebase Guide, Scope Documents, and Context Wrappers**—coordinated by escalating **Delivery Tiers**.
-
-**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.
 
 ---
 
