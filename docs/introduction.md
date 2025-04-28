@@ -1,14 +1,14 @@
 # Introduction
 
-Welcome to the **AI Delivery Framework** – a governance-first method for building software with AI assistance. This document explains **why the framework exists, how it is structured, and when to apply it**.
+AI Delivery Framework is a governance-first approach to AI-assisted software delivery. This document covers why it exists, how it works, and when to use it.
 
 ---
 
 ## 1. Why the Framework Exists
 
-Traditional software processes cannot simply bolt on a large-language-model (LLM) and expect predictable results. Teams need a way to harness AI speed **while striving to maintain engineering rigour, compliance, and maintainability**.
+Bolting an LLM onto a legacy process rarely works. Teams need AI speed without losing rigour, compliance, or maintainability.
 
-The AI Delivery Framework fills that gap by providing:
+The framework delivers that through:
 
 * A **clear governance core** (Codebase Guide + Scope Docs + Context Wrappers).
 * A **tiered maturity model** that lets standards grow with product risk.
@@ -91,7 +91,7 @@ Compliance is **modular and progressive**:
 * **Add as needed** – GDPR Lite from Tier 2 when personal data appears.
 * **Scale to full** – HIPAA, SOC2, PCI-DSS integrated only when required.
 
-This approach aims to balance early-stage agility with appropriate auditability for production systems.
+This balances early agility with the audit trail production demands.
 
 ---
 
@@ -119,14 +119,14 @@ This approach aims to balance early-stage agility with appropriate auditability 
 
 ## 10. Framework Evolution
 
-The AI Delivery Framework is not a finished product – it is a starting point designed to evolve through practical application. Key aspects of this evolution include:
+AI Delivery Framework evolves through real projects. Key drivers:
 
-* **Road Testing** – The framework needs real-world validation across diverse projects of increasing complexity
-* **Continuous Refinement** – Patterns, practices, and governance mechanisms will be adjusted based on implementation experience
-* **Community Insights** – Contributions from practitioners will help strengthen the framework's effectiveness
-* **Adaptation to Changing AI Capabilities** – As AI tools evolve, the framework will adapt to leverage new capabilities while maintaining governance
+* **Road testing** – validate across projects of increasing complexity.
+* **Continuous refinement** – adjust patterns and governance as we learn.
+* **Community insights** – fold practitioner feedback into standards.
+* **New AI capabilities** – leverage advances without relaxing discipline.
 
-This framework represents our best current understanding of structured AI-assisted development, but we expect it to grow and improve significantly as teams apply it to build bigger and better software projects. Your experiences and feedback are essential to this evolution.
+Expect the framework to mature rapidly as more teams adopt it.
 
 ---
 

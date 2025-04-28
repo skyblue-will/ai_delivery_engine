@@ -23,17 +23,17 @@
 
 ## 1. Executive Summary
 
-The **AI Delivery Framework** is a living, version-controlled governance system that lets teams harness AI coding assistants **while working to maintain**:
+AI Delivery Framework is a version-controlled governance system that lets teams use AI coding assistants without losing:
 
 * Engineering discipline
-* Compliance & auditability
+* Compliance and auditability
 * Long-term maintainability
 
-It achieves this by combining three integrated mechanisms—**Codebase Guide, Scope Documents, and Context Wrappers**—under a **progressive rigor model** known as *Delivery Tiers*.
+The framework enforces these guardrails through three linked assets—**Codebase Guide, Scope Documents, and Context Wrappers**—coordinated by escalating **Delivery Tiers**.
 
-> **Who is this for?** Engineering leaders, architects, and developers who need to scale AI-accelerated delivery while meeting professional standards.
+**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.
 
-> **Development Status:** This framework is a starting point intended to evolve through practical application. It requires real-world testing and refinement across projects of increasing complexity. Your experiences using it will help improve the framework.
+**Status.** Early versions are being hardened through real projects. Your feedback shapes the roadmap.
 
 ---
 
@@ -121,11 +121,11 @@ sequenceDiagram
 
 ## 8. Contributing
 
-We welcome improvements that strengthen the framework's governance core. Please read the [Contribution Guide](CONTRIBUTING.md) and ensure all pull requests:
+Contributions that reinforce the governance core are welcome. Before opening a pull request:
 
-* Reference an approved Scope Document
-* Update the Codebase Guide if structural changes occur
-* Pass the relevant Context Wrapper checks for your tier
+* Link to an approved Scope Document.
+* Update the Codebase Guide if you change structure.
+* Pass the Context Wrapper checks for your tier.
 
 ---
 
