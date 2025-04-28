@@ -47,7 +47,9 @@ This approach prevents over-engineering early-stage projects while ensuring matu
 
 ## Implementation Strategy
 
-The framework is designed to be tool and model agnostic. It works with:
+While the framework is designed to be tool and model agnostic, it is particularly optimized for integration with AI-powered code editors such as **Cursor** and **Winsurf**. These tools provide the ideal environment to apply the governance triangle in real-time as code is being generated.
+
+The framework works with:
 - Any AI coding model or assistant
 - Any development toolchain
 - Any programming language
