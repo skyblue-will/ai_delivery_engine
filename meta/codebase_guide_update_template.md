@@ -1,6 +1,17 @@
 # Codebase Guide Update Template
 
-This document provides explicit instructions for updating the Codebase Guide after implementing changes defined in a Scope Document.
+## Purpose and Importance
+
+This template is designed to be copied and pasted as a prompt for AI tools like Cursor or Winsurf. When provided to these AI assistants, it will guide them to properly update the AI Delivery Framework's `codebase_guide.md`, which serves as the authoritative reference for the current state of the codebase.
+
+**Why This Matters:**
+- **Single Source of Truth**: The codebase guide provides an accurate snapshot of the system that all team members and AI tools can rely on.
+- **Onboarding Efficiency**: New developers can quickly understand the system without extensive exploration.
+- **AI Context Reliability**: Ensures AI tools have accurate, up-to-date information when generating code or providing recommendations.
+- **Governance Anchor**: Acts as a central reference point for compliance and architectural decisions.
+- **Drift Prevention**: Regular updates prevent documentation from becoming outdated and misleading.
+
+To use this template, simply copy the entire contents of this file and paste it as a prompt to your AI assistant (Cursor, Winsurf, etc.) after implementing changes defined in a Scope Document. The AI will then analyze your codebase and generate an updated codebase guide that reflects the actual state of the code.
 
 ---
 
