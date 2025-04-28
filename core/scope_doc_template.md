@@ -151,6 +151,8 @@ The following sections of the [Codebase Guide](./codebase_guide.md) will need up
 * **Known Quirks / Tech Debt** - [New or resolved technical debt items]
 * **Diagrams** - [Required updates to system diagrams]
 
+Follow the detailed instructions in the [Codebase Guide Update Template](../meta/codebase_guide_update_template.md) to ensure a complete and accurate guide update.
+
 ---
 
 *Prepared by: [Author Name/Role] ([AI Assistant Model] if applicable)*  

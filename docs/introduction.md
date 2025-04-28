@@ -79,7 +79,7 @@ graph TD
 3. **Context Wrapper** – load prompts that enforce tier-specific rules.
 4. **Prompt-Driven Development** – generate modular code + tests via AI.
 5. **Review & Deployment** – automated checks plus human approval; ship via CI/CD.
-6. **Governance Update** – update Codebase Guide and plan the next iteration.
+6. **Governance Update** – update [Codebase Guide](../core/codebase_guide.md) using the [update template](../meta/codebase_guide_update_template.md) and plan the next iteration.
 
 ---
 

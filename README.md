@@ -91,7 +91,7 @@ The workflow creates a continuous feedback loop:
 1. **[Scope Document](core/scope_doc_template.md)** defines what you're building (future state)
 2. Code is generated with AI assistance, following tier rules
 3. Code is reviewed and deployed
-4. **[Codebase Guide](core/codebase_guide.md)** is updated to document what you built (current state)
+4. **[Codebase Guide](core/codebase_guide.md)** is updated to document what you built (current state) using the [update template](meta/codebase_guide_update_template.md)
 5. Cycle repeats with each new version
 
 ---
