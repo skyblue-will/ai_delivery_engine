@@ -4,7 +4,7 @@
 
 # Contributing to AI Delivery Framework
 
-Thank you for considering contributing to the AI Delivery Framework.
+This document outlines how to effectively contribute to the framework.
 
 ---
 
@@ -48,9 +48,7 @@ Thank you for considering contributing to the AI Delivery Framework.
 
 ## **Community Expectations**
 
-Please engage constructively and respectfully.
+Engage constructively and respectfully.
 This project follows a Code of Conduct (see CODE_OF_CONDUCT.md).
 
 ---
-
-Thank you for helping build a professional, evolving, AI-driven software delivery system.
