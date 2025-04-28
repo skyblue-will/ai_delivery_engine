@@ -3,36 +3,52 @@ from diagrams.generic.blank import Blank
 
 
 def context_diagram():
-    with Diagram("C4 Context", filename="docs/architecture/c4_context", outformat="png", show=False):
+    with Diagram("C4 Context", filename="c4_context", outformat="png", show=False):
         developer = Blank("Engineer / Contributor")
         repo = Blank("AI Delivery Framework Repo")
         developer >> repo
 
 
 def container_diagram():
-    with Diagram("C4 Container", filename="docs/architecture/c4_container", outformat="png", show=False):
+    with Diagram("C4 Container", filename="c4_container", outformat="png", show=False):
         repo = Blank("AI Delivery Framework Repo")
         with Cluster("Top-level Directories"):
+            core = Blank("core/")
             meta = Blank("meta/")
             docs = Blank("docs/")
             tools = Blank("tools/")
-            examples = Blank("examples/")
-            branding = Blank("branding/")
-        repo >> [meta, docs, tools, examples, branding]
+            github = Blank(".github/")
+        repo >> [core, meta, docs, tools, github]
 
 
 def component_diagram():
-    with Diagram("C4 Component", filename="docs/architecture/c4_component", outformat="png", show=False):
-        with Cluster("meta/"):
-            codebase = Blank("codebase_guide_template.md")
-            scope = Blank("scope_doc_template.md")
-            wrappers = Blank("context_wrappers/")
-        docs_dir = Blank("docs/")
-        tools_dir = Blank("tools/")
-        examples_dir = Blank("examples/")
-        codebase >> docs_dir
-        scope >> tools_dir
-        wrappers >> examples_dir
+    with Diagram("C4 Component", filename="c4_component", outformat="png", show=False):
+        with Cluster("Governance Core"):
+            codebase_guide = Blank("core/codebase_guide.md")
+            scope_template = Blank("core/scope_doc_template.md")
+            
+            with Cluster("Context Wrappers"):
+                tier0 = Blank("tier0_exploration")
+                tier1 = Blank("tier1_hobby")
+                tier2 = Blank("tier2_mvp")
+                tier3 = Blank("tier3_beta")
+                tier4 = Blank("tier4_production")
+                tier5 = Blank("tier5_enterprise")
+        
+        with Cluster("Documentation"):
+            intro = Blank("introduction.md")
+            theory = Blank("theory_of_operation.md")
+            tiers = Blank("delivery_tiers.md")
+            arch = Blank("architecture/")
+        
+        with Cluster("Tools & Meta"):
+            tools_dir = Blank("tools/")
+            meta_dir = Blank("meta/")
+        
+        codebase_guide >> [intro, theory, tiers]
+        scope_template >> [tier0, tier1, tier2, tier3, tier4, tier5]
+        [tier0, tier1, tier2, tier3, tier4, tier5] >> tools_dir
+        meta_dir >> codebase_guide
 
 
 def main():

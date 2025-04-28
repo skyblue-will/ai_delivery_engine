@@ -1,50 +1,63 @@
 # Codebase Guide
 
-*Generated: 2023-09-22*
+*Generated: 2023-10-01*
 
-This guide provides an authoritative description of the current codebase state. All contributors should update this document after significant changes.
+This guide provides an authoritative description of the current codebase state.
 
-## Core Repository Structure
+## 1. Project Structure
 
-| Category | Location | Purpose |
-|----------|----------|---------|
-| **Governance Core** | `codebase_guide.md` | Current system state reference |
-| | `meta/scope_doc_template.md` | Versioned plans for future changes |
-| | `meta/context_wrappers/*` | Delivery tier-specific disciplinary controls |
-| **Documentation** | `docs/introduction.md` | Framework onboarding |
-| | `docs/theory_of_operation.md` | Conceptual foundation |
-| | `docs/delivery_tiers.md` | Progressive rigor model details |
-| **Tools & Examples** | `tools/` | Reference material on AI tooling landscape |
-| | `examples/` | Sample implementations |
-| **Operational** | `.github/workflows/` | CI/CD configurations |
+| Directory | Purpose |
+|-----------|---------|
+| `core/` | Contains governance core components: codebase guide, scope template, context wrappers |
+| `meta/` | Framework design documentation and templates |
+| `docs/` | User-facing documentation and architecture diagrams |
+| `tools/` | Tool recommendations and tooling landscape information |
+| `.github/` | CI/CD workflows and repository configuration |
 
-## Key Components
+## 2. Key Modules & Components
 
-| Component | Purpose | Update Frequency |
-|-----------|---------|------------------|
-| **Context Wrappers** | Structure AI development by delivery tier | When new practices emerge |
-| **Scope Template** | Guide versioned evolution plans | When planning process evolves |
-| **Documentation** | Explain framework mechanisms | When significant features change |
+| Component | Purpose |
+|-----------|---------|
+| `core/codebase_guide.md` | Authoritative description of current codebase state |
+| `core/scope_doc_template.md` | Template for creating versioned evolution plans |
+| `core/context_wrappers/tier*` | Delivery tier-specific disciplinary controls (0-5) |
+| `docs/introduction.md` | Framework onboarding documentation |
+| `docs/theory_of_operation.md` | Conceptual foundation explanation |
+| `docs/delivery_tiers.md` | Progressive rigor model details |
+| `meta/governance_core.md` | Framework governance principles |
+| `tools/recommended_tool_criteria.md` | Criteria for tool selection |
+| `tools/current_tooling_landscape.md` | Overview of available AI tools |
 
-## Development Flow
+## 3. Data Flow
 
 ```
-Contributor → Selects Delivery Tier → Creates Scope Doc → Uses Context Wrapper with AI →
-            → Implements Code → Updates Codebase Guide → Repeats
+Contributor → Selects Delivery Tier → Uses Context Wrapper with AI →
+            → Implements Code → Updates Codebase Guide
 ```
 
-## Update Process
+## 4. Entry Points & Core Logic
 
-This guide should be regenerated whenever:
+1. Begin with `docs/introduction.md` for framework overview
+2. Select appropriate delivery tier from `core/context_wrappers/`
+3. Use corresponding context wrapper with AI tools
+4. Update codebase guide after significant changes
 
-1. **Structure Changes** - New directories or significant organization changes
-2. **Component Updates** - New context wrappers, templates, or tools added
-3. **Workflow Evolution** - Process changes that affect how the framework is used
+## 5. Known Quirks / Tech Debt
 
-Updates should be performed as the final step in a contribution lifecycle, ensuring this guide remains the authoritative "as-is" reference.
+- Diagram generation requires manual execution of Python script
+- No automated validation of context wrapper adherence
+- Documentation structure needs more cross-linking between components
 
-## Areas for Improvement
+## 6. C4 Diagrams
 
-1. **Automation** - Diagram generation is currently manual; CI/CD integration planned
-2. **Testing** - Future integration tests for context wrappers would be valuable
-3. **Documentation** - Expanded examples of the framework in real-world use
+### Context Diagram
+
+![C4 Context Diagram](../docs/architecture/c4_context.png)
+
+### Container Diagram
+
+![C4 Container Diagram](../docs/architecture/c4_container.png)
+
+### Component Diagram
+
+![C4 Component Diagram](../docs/architecture/c4_component.png)
