@@ -1,5 +1,7 @@
 # Tier 4: Production Context Wrapper
 
+> **Who should use this:** Use this wrapper for production-ready applications with paying customers, public-facing services, and systems where reliability and security are critical.
+
 ## Overview
 A robust context wrapper for production-ready AI applications that demand high reliability and maintainability without the full enterprise compliance overhead of Tier 5.
 

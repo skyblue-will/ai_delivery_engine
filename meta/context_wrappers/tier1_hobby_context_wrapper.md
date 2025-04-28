@@ -1,5 +1,7 @@
 # Tier 1: Hobby Context Wrapper
 
+> **Who should use this:** Use this wrapper for personal projects, learning exercises, and low-risk prototypes where you want minimal but helpful structure.
+
 ## Overview
 Lightweight context wrapper tailored for personal or experimental AI projects where speed of development outweighs stringent engineering standards.
 

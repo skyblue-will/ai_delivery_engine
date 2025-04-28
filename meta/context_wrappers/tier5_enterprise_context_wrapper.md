@@ -1,5 +1,7 @@
 # Tier 5: Enterprise Context Wrapper
 
+> **Who should use this:** Use this wrapper for enterprise-grade applications, regulated industry systems, and projects requiring the highest levels of security, compliance, and reliability.
+
 ## Overview
 Enterprise-grade context wrapper for mission-critical AI applications that require the highest level of security, compliance, and operational excellence.
 

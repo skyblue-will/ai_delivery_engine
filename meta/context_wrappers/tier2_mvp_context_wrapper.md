@@ -1,5 +1,7 @@
 # Tier 2: MVP Context Wrapper
 
+> **Who should use this:** Use this wrapper for early-stage startup MVPs, proof-of-concept projects for stakeholders, and projects that may handle basic user data.
+
 ## Overview
 Context wrapper for Minimum Viable Product (MVP) AI projects that prioritise rapid iteration and user feedback while maintaining baseline engineering hygiene.
 

@@ -1,5 +1,7 @@
 # Tier 3: Beta Context Wrapper
 
+> **Who should use this:** Use this wrapper for public betas, early scaling products with real users, and projects requiring professional-grade engineering standards.
+
 ## Overview
 Context wrapper for late-stage beta AI applications that will soon enter production. Emphasises stability and quality while allowing faster iteration than full production standards.
 

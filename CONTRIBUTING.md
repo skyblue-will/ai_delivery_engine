@@ -32,6 +32,8 @@ Thank you for considering contributing to the AI Delivery Framework.
 3. Keep improvements scoped and modular.
 4. Clearly describe the reasoning behind your suggestion or change.
 5. Submit a pull request with a clear explanation.
+6. Apply the appropriate [Delivery Tier](docs/delivery_tiers.md) to determine the depth of review required for your contribution.
+7. Update the [Codebase Guide](meta/codebase_guide_template.md) if your change affects the repository structure.
 
 ---
 
