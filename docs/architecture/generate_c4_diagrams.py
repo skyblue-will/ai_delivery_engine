@@ -14,12 +14,12 @@ def container_diagram():
         repo = Blank("AI Delivery Framework Repo")
         with Cluster("Top-level Directories"):
             core = Blank("core/")
-            meta = Blank("meta/")
+            prompts = Blank("prompts/")
             docs = Blank("docs/")
             tools = Blank("tools/")
             scripts = Blank("scripts/")
             github = Blank(".github/")
-        repo >> [core, meta, docs, tools, scripts, github]
+        repo >> [core, prompts, docs, tools, scripts, github]
 
 
 def component_diagram():
@@ -35,22 +35,28 @@ def component_diagram():
                 tier3 = Blank("tier3_beta")
                 tier4 = Blank("tier4_production")
                 tier5 = Blank("tier5_enterprise")
+            
+            with Cluster("Engine"):
+                governance = Blank("governance_core.md")
+                assurance = Blank("assurance_core.md")
         
         with Cluster("Documentation"):
             intro = Blank("introduction.md")
-            theory = Blank("theory_of_operation.md")
             tiers = Blank("delivery_tiers.md")
             arch = Blank("architecture/")
         
-        with Cluster("Tools & Meta"):
+        with Cluster("Tools"):
             tools_dir = Blank("tools/")
-            meta_dir = Blank("meta/")
             scripts_dir = Blank("scripts/")
         
-        codebase_guide >> [intro, theory, tiers]
+        with Cluster("Prompts"):
+            codebase_update = Blank("codebase_guide_update_template.md")
+        
+        codebase_guide >> [intro, tiers]
+        codebase_guide >> [governance, assurance]
         scope_template >> [tier0, tier1, tier2, tier3, tier4, tier5]
         [tier0, tier1, tier2, tier3, tier4, tier5] >> tools_dir
-        meta_dir >> codebase_guide
+        codebase_update >> codebase_guide
         scripts_dir >> codebase_guide
 
 

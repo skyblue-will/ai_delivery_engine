@@ -131,7 +131,6 @@ graph TD
 
 | Topic | Document |
 |-------|----------|
-| Engine Theory | [Theory of Operation](theory_of_operation.md) |
 | Workflow | [Workflow](workflow.md) |
 | Roadmap | [Roadmap](../roadmap.md) |
 
