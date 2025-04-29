@@ -84,6 +84,23 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 
 ---
 
+## Workflow Overview
+
+> The Delivery Engine moves in a six-stage, repeatable cycle that pairs Governance definition with Assurance verification.
+
+| Stage | Purpose |
+|-------|---------|
+| **Scope** | Define goals and acceptance criteria in a versioned Scope Document |
+| **Engine Setup** | Select Delivery Tier, load Context Wrapper, ensure Codebase Guide is accurate |
+| **Modular Build** | Implement features in small branches using AI prompts within governance guardrails |
+| **Governance Check** | Run Assurance Core checks (human review, LLM diff, automated tests) until binary compliance passes |
+| **Ship** | Merge & release via tier-appropriate CI/CD |
+| **Repeat** | Start the next scoped cycle, upgrading tiers as risk/scale grows |
+
+A fuller explanation lives in [`docs/workflow.md`](docs/workflow.md).
+
+---
+
 ## Where to Start
 
 1. **Read the Overview** — Start with [`docs/introduction.md`](docs/introduction.md) for an end-to-end orientation.
