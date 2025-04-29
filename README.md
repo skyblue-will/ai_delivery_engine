@@ -1,151 +1,103 @@
 # AI Delivery Framework
 
-> **Governance-first delivery system for AI-enabled software**
-
-[![License](https://img.shields.io/github/license/skyblue-will/AI-Delivery-Framework)](LICENSE)
-[![Last Update](https://img.shields.io/github/last-commit/skyblue-will/AI-Delivery-Framework)](https://github.com/skyblue-will/AI-Delivery-Framework/commits/main)
-
-**At a Glance:**
-* **Structured Process** — Govern AI coding with live documentation that evolves with your codebase.
-* **Tiered Rigor** — Scale engineering standards progressively from prototype to enterprise-grade.
-* **Tool Agnostic** — Works with any AI assistant, any language, and any development toolchain.
-* **Fast Implementation** — Adopt in minutes, see benefits in your first sprint.
-
-**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.
-
-> **Documentation-First Reminder**  
-> This repository is intentionally **doc-heavy**; the framework itself *is the product*.  
-> All code samples, scripts, and CI pieces serve only to demonstrate and enforce the governance model.  
-> We actively invite **real-world pilot projects** to validate and refine the Delivery Tiers, metrics, and compliance gates.  
-> See the updated [Roadmap](roadmap.md#04x-pilot-validation) and [Contributing](CONTRIBUTING.md#pilot-project-contributions) guides for participation.
+**Lightweight Governance and Assurance for AI-Assisted Software Delivery**
 
 ---
 
-## Table of Contents
+## What This Framework Is
 
-1. [Executive Summary](#1-executive-summary)
-2. [The Governance Triangle](#2-the-governance-triangle)
-3. [Delivery Tiers at a Glance](#3-delivery-tiers-at-a-glance)
-4. [High-Level Workflow](#4-high-level-workflow)
-5. [Quickstart](#5-quickstart)
-6. [Repository Map](#6-repository-map)
-7. [Documentation Index](#7-documentation-index)
-8. [Contributing](#8-contributing)
-9. [License](#9-license)
+The **AI Delivery Framework** governs AI-assisted software projects using two tightly coupled cores:
 
----
+- **Governance Core**: Defines what should be built and how it must be structured.
+- **Assurance Core**: Checks that what exists matches what was defined.
 
-## 1. Executive Summary
+This dialogue between Governance and Assurance drives clean, auditable, maintainable delivery — without heavyweight process.
 
-AI Delivery Framework is a version-controlled governance system that lets teams use AI coding assistants without losing:
-
-* Engineering discipline
-* Compliance and auditability
-* Long-term maintainability
-
-The framework enforces these guardrails through three linked assets—**Codebase Guide, Scope Documents, and Context Wrappers**—coordinated by escalating **Delivery Tiers**.
+All activity is executed inside a **Docker-first environment** to guarantee execution consistency from local to production.
 
 ---
 
-## 2. The Governance Triangle
+## Governance Core
 
-| Component | Role | Maintained By |
-|-----------|------|--------------|
-| **[Codebase Guide](core/codebase_guide.md)** | Canonical "as-is" description of the system | Engineers after each merge |
-| **[Scope Documents](core/scope_doc_template.md)** | "To-be" plan for each version, including acceptance criteria | Product & Engineering before work starts |
-| **Context Wrappers** | Tier-specific rules injected into AI tools & CI/CD | Prompt layer + automation |
+| Component          | Purpose                                    |
+|:-------------------|:-------------------------------------------|
+| **Scope Document**  | Defines what is being built (versioned)    |
+| **Codebase Guide**  | Documents what exists (versioned)          |
+| **Context Wrapper** | Defines required engineering standards    |
 
-Together these assets form a **closed-loop control system** that keeps AI-generated code aligned with business goals and compliance requirements. Each **Scope Document** defines target changes that, when implemented, require updates to the **Codebase Guide** to maintain an accurate system description.
-
----
-
-## 3. Delivery Tiers at a Glance
-
-| Tier | Typical Use | Key Engineering Gates |
-|------|-------------|-----------------------|
-| **0 – Exploration** | Chat-only experimentation | None |
-| **1 – Prototype** | Internal spikes | Minimal checks |
-| **2 – MVP** | Early user validation | Tests + GDPR Lite* |
-| **3 – Beta** | Public pilot | Full test suite + secure coding review |
-| **4 – Production** | Launched product | CI/CD, SRE readiness, compliance gates |
-| **5 – Enterprise** | Regulated, high-security | Continuous compliance, advanced audit |
-
-\* GDPR Lite activates if personal data is processed.
+**Governance Core = Living Source of Truth.**
 
 ---
 
-## 4. High-Level Workflow
+## Assurance Core
 
-```mermaid
-sequenceDiagram
-    participant Dev as Developer
-    participant AI as AI Model + Context Wrapper
-    participant PR as Pull Request
-    participant CI as CI/CD Pipeline
-    participant Ops as Ops/SRE
+| Check | Purpose |
+|:------|:--------|
+| **Scope Alignment (Human)** | Manually verify that features match the scoped plan |
+| **Structural Diff (LLM)** | LLM compares Scope, Codebase Guide, Actual Codebase, and Context Wrapper standards |
+| **Runtime Validation (Tests)** | Automated tests confirm functional correctness per Delivery Tier requirements |
 
-    Dev->>AI: 1. Draft Scope Document
-    AI->>Dev: 2. Generate Code under Context Rules
-    Dev->>PR: 3. Submit Pull Request
-    PR->>CI: 4. Automated Checks (tests, lint, security)
-    CI->>Ops: 5. Deploy Artifacts
-    Ops->>Dev: 6. Observability & Feedback
-    Dev->>AI: 7. Update Codebase Guide
+**Assurance Core = Living Verification Against Truth.**
+
+---
+
+## Delivery Tiers
+
+Delivery Tiers determine which Context Wrapper standards apply, scaling with project complexity:
+
+| Tier | Intended Use | Standards Profile |
+|:-----|:-------------|:------------------|
+| Tier 1 | Hobby/Prototype | Minimal basic standards |
+| Tier 3 | Growth Project | Full testing, code quality enforcement |
+| Tier 5 | Enterprise Delivery | Maximum compliance (e.g., mutation testing, provenance enforcement) |
+
+**Compliance to the active Context Wrapper is always strict (pass/fail).**
+Only the *level of required standards* changes by Tier.
+
+---
+
+## Quickstart
+
+1. Create a Scope Document (`docs/scope/v0.x.0.md`)
+2. Create a Codebase Guide (`docs/codebase_guide.md`)
+3. Choose or define a Context Wrapper (`docs/meta/context_wrapper.md`)
+4. Build inside a Docker-first workflow
+5. Run regular Governance and Assurance checks
+
+---
+
+## Project Structure (Minimal)
+
+```
+/docs
+   /scope
+       v0.1.0.md
+   /meta
+       context_wrapper.md
+   codebase_guide.md
+/prompts
+   compare_scope_to_codebase.md
+   check_context_wrapper_compliance.md
+/src
+   (application code)
 ```
 
-The workflow creates a continuous feedback loop:
-1. **[Scope Document](core/scope_doc_template.md)** defines what you're building (future state)
-2. Code is generated with AI assistance, following tier rules
-3. Code is reviewed and deployed
-4. **[Codebase Guide](core/codebase_guide.md)** is updated to document what you built (current state) using the [update template](meta/codebase_guide_update_template.md)
-5. Cycle repeats with each new version
+---
+
+## Why It Matters
+
+Without structured governance, AI-driven development can easily drift into undocumented, unmaintainable chaos.
+
+The AI Delivery Framework ensures:
+- Codebases evolve predictably from scope
+- Documentation tracks reality, not fantasy
+- Quality remains enforceable across Tiers
+- Delivery is traceable, auditable, and consistent
 
 ---
 
-## 5. Quickstart
+## Status
 
-1. **Clone / Fork** the repository.
-2. **Select** your [delivery tier](docs/delivery_tiers.md) based on project risk.
-3. **Create** a Scope Document from [`core/scope_doc_template.md`](core/scope_doc_template.md).
-4. **Develop** using the Context Wrapper for your tier (`core/context_wrappers/`).
-5. **Run** CI/CD and ship. Update the Codebase Guide on merge.
+This framework is a work in progress (**v0.1.0**), actively refined through real-world application.
 
----
-
-## 6. Repository Map
-
-| Path | Purpose |
-|------|---------|
-| `core/` | Governance core (codebase guide, scope template, context wrappers) |
-| `docs/` | User & architecture documentation |
-| `meta/` | Framework design notes & templates |
-| `tools/` | Recommended tooling landscape |
-| `.github/` | CI/CD workflows |
-
----
-
-## 7. Documentation Index
-
-| Topic | Entry Point |
-|-------|-------------|
-| Onboarding | [`docs/introduction.md`](docs/introduction.md) |
-| Theory of Operation | [`docs/theory_of_operation.md`](docs/theory_of_operation.md) |
-| Delivery Tiers | [`docs/delivery_tiers.md`](docs/delivery_tiers.md) |
-| Roadmap | [`roadmap.md`](roadmap.md) |
-| Contribution Guide | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
-
----
-
-## 8. Contributing
-
-Contributions that reinforce the governance core are welcome. Before opening a pull request:
-
-* Link to an approved Scope Document.
-* Update the Codebase Guide if you change structure.
-* Pass the Context Wrapper checks for your tier.
-
----
-
-## 9. License
-
-This project is licensed under the MIT License – see [`LICENSE`](LICENSE) for details.
+Contributions, testing, and feedback are welcome.
