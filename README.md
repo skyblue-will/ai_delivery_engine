@@ -6,7 +6,7 @@ Lightweight, binary governance **and** assurance for AI-assisted software delive
 
 ## Why Now?
 
-Modern AI coding assistants (e.g. **Cursor**, **Winsurf**, GitHub Copilot Chat) can scaffold an entire repository in minutes.  
+Modern AI coding assistants (e.g. **Cursor**, **Winsurf**) can scaffold an entire repository in minutes.  
 That velocity is a double-edged sword:
 
 * Pros — dramatic reduction in boilerplate and prototyping overhead; unleashes unprecedented productivity, fuels rapid innovation, and unlocks unknown upside with incredible potential.
