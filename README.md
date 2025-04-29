@@ -1,72 +1,87 @@
-# AI Delivery Framework
+# AI Delivery Engine
 
-**Lightweight Governance and Assurance for AI-Assisted Software Delivery**
-
----
-
-## What This Framework Is
-
-The **AI Delivery Framework** governs AI-assisted software projects using two tightly coupled cores:
-
-- **Governance Core**: Defines what should be built and how it must be structured.
-- **Assurance Core**: Checks that what exists matches what was defined.
-
-This dialogue between Governance and Assurance drives clean, auditable, maintainable delivery — without heavyweight process.
-
-All activity is executed inside a **Docker-first environment** to guarantee execution consistency from local to production.
+Lightweight, binary governance **and** assurance for AI-assisted software delivery.
 
 ---
 
-## Governance Core
+## Engine Overview
 
-| Component          | Purpose                                    |
-|:-------------------|:-------------------------------------------|
-| **Scope Document**  | Defines what is being built (versioned)    |
-| **Codebase Guide**  | Documents what exists (versioned)          |
-| **Context Wrapper** | Defines required engineering standards    |
+Governance Core **defines** what to build and how it must be built.  
+Assurance Core **verifies** that reality matches that definition.  
+Their continuous interaction is the **Delivery Engine**.
 
-**Governance Core = Living Source of Truth.**
+All execution occurs in a **Docker-first** pipeline to guarantee identical behaviour across dev, CI, and production.
 
 ---
 
-## Assurance Core
+## Governance Core (Define)
+
+| Component | Purpose |
+|-----------|---------|
+| **Scope Document** | Declares intended features and boundaries (versioned) |
+| **Codebase Guide** | Maps the current codebase (versioned) |
+| **Context Wrapper** | Specifies mandatory engineering standards (Tier-aware) |
+
+Governance = **living source of truth**.
+
+---
+
+## Assurance Core (Verify)
 
 | Check | Purpose |
-|:------|:--------|
-| **Scope Alignment (Human)** | Manually verify that features match the scoped plan |
-| **Structural Diff (LLM)** | LLM compares Scope, Codebase Guide, Actual Codebase, and Context Wrapper standards |
-| **Runtime Validation (Tests)** | Automated tests confirm functional correctness per Delivery Tier requirements |
+|-------|---------|
+| **Scope Alignment — Human** | Confirm delivered features match scoped intent |
+| **Structural Diff — LLM** | Compare Scope, Guide, Codebase, and Standards |
+| **Runtime Validation — Tests** | Automated tests enforce functional correctness per Tier |
 
-**Assurance Core = Living Verification Against Truth.**
+Assurance = **living verification of truth**.
 
 ---
 
 ## Delivery Tiers
 
-Delivery Tiers determine which Context Wrapper standards apply, scaling with project complexity:
+The active **Tier** selects *which* standards apply — never *how* strictly they are enforced. Compliance is always **pass/fail**.
 
-| Tier | Intended Use | Standards Profile |
-|:-----|:-------------|:------------------|
-| Tier 1 | Hobby/Prototype | Minimal basic standards |
-| Tier 3 | Growth Project | Full testing, code quality enforcement |
-| Tier 5 | Enterprise Delivery | Maximum compliance (e.g., mutation testing, provenance enforcement) |
+| Tier | Typical Use | Standards Snapshot |
+|------|-------------|--------------------|
+| 1 | Hobby / Prototype | Linting, smoke tests |
+| 3 | Growth / Team | Full test suite, code-quality gates |
+| 5 | Enterprise | Mutation testing, provenance, SBOM |
 
-**Compliance to the active Context Wrapper is always strict (pass/fail).**
-Only the *level of required standards* changes by Tier.
+---
+
+## Core Principles
+
+1. **Reflect Reality** — Documents match the actual system, always.  
+2. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
+3. **Tiers Drive Strictness** — Higher Tier → stricter Context Wrapper.  
+4. **Simplicity is Power** — No meta-frameworks or speculative complexity.  
+5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
 
 ---
 
 ## Quickstart
 
-1. Create a Scope Document (`docs/scope/v0.x.0.md`)
-2. Create a Codebase Guide (`docs/codebase_guide.md`)
-3. Choose or define a Context Wrapper (`docs/meta/context_wrapper.md`)
-4. Build inside a Docker-first workflow
-5. Run regular Governance and Assurance checks
+```bash
+# clone & enter
+git clone <repo>
+cd ai_delivery_framework
+
+# build baseline image
+docker compose build
+```
+
+1. Create a **Scope Document**: `docs/scope/v0.x.y.md`  
+2. Write the **Codebase Guide**: `docs/codebase_guide.md`  
+3. Choose or author a **Context Wrapper**: `docs/meta/context_wrapper.md`  
+4. Run Governance & Assurance checks:
+   - Human review: scope ↔︎ features.
+   - LLM prompts in `prompts/` or `scripts/`.
+   - CI tests inside Docker.
 
 ---
 
-## Project Structure (Minimal)
+## Repository Skeleton
 
 ```
 /docs
@@ -86,18 +101,16 @@ Only the *level of required standards* changes by Tier.
 
 ## Why It Matters
 
-Without structured governance, AI-driven development can easily drift into undocumented, unmaintainable chaos.
+Unchecked AI-generated code drifts fast. The AI Delivery Engine keeps:
 
-The AI Delivery Framework ensures:
-- Codebases evolve predictably from scope
-- Documentation tracks reality, not fantasy
-- Quality remains enforceable across Tiers
-- Delivery is traceable, auditable, and consistent
+- Scope, documentation, and code in **permanent alignment**
+- Quality **enforceable** across Delivery Tiers
+- Delivery **traceable, auditable, and consistent**
 
 ---
 
 ## Status
 
-This framework is a work in progress (**v0.1.0**), actively refined through real-world application.
+**v0.1.0** — actively refined through real-world use.
 
-Contributions, testing, and feedback are welcome.
+Contributions and feedback are welcome.
