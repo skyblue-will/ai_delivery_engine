@@ -4,6 +4,9 @@
 
 ## **Overview**
 
+The Governance Core works in **lock-step** with the Assurance Core.   
+Governance **defines** the intention; Assurance **verifies** reality.  
+
 The AI Delivery Engine is governed by three active, living mechanisms:
 
 - A continuously updated map of the codebase's current structure (`codebase_guide.md`)
@@ -11,6 +14,8 @@ The AI Delivery Engine is governed by three active, living mechanisms:
 - Context Wrappers that enforce development discipline at each stage based on the assigned Delivery Tier
 
 Together, these components ensure that every project built using the engine remains **structured, controlled, and continuously improving** — without drifting into chaos or technical debt.
+
+The Assurance Core continually tests these artefacts (via human review, automated tests, and LLM diff) to detect drift the moment it occurs.
 
 > **Remember:** Standards scale by *Delivery Tier* (Tier 1–5).
 > Enforcement is always binary — pass/fail.
@@ -91,4 +96,4 @@ This loop ensures every project evolves deliberately — with **clear intentions
 
 > **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Engine's discipline, agility, and long-term scalability.**
 
-By respecting and updating these elements continuously — and enforcing provenance watermarking from Tier 2 upward — developers maintain velocity without sacrificing traceability, compliance, or IP safety.
+By respecting and updating these elements continuously — and pairing them with the Assurance Core's automated verification loop — developers maintain velocity without sacrificing traceability, compliance, or IP safety.
