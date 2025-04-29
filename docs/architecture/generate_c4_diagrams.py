@@ -16,10 +16,9 @@ def container_diagram():
             core = Blank("core/")
             prompts = Blank("prompts/")
             docs = Blank("docs/")
-            tools = Blank("tools/")
             scripts = Blank("scripts/")
             github = Blank(".github/")
-        repo >> [core, prompts, docs, tools, scripts, github]
+        repo >> [core, prompts, docs, scripts, github]
 
 
 def component_diagram():
@@ -46,7 +45,6 @@ def component_diagram():
             arch = Blank("architecture/")
         
         with Cluster("Tools"):
-            tools_dir = Blank("tools/")
             scripts_dir = Blank("scripts/")
         
         with Cluster("Prompts"):
@@ -55,7 +53,6 @@ def component_diagram():
         codebase_guide >> [intro, tiers]
         codebase_guide >> [governance, assurance]
         scope_template >> [tier0, tier1, tier2, tier3, tier4, tier5]
-        [tier0, tier1, tier2, tier3, tier4, tier5] >> tools_dir
         codebase_update >> codebase_guide
         scripts_dir >> codebase_guide
 
