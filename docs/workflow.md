@@ -32,6 +32,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
    • Work in small, well-named branches targeting single user stories.  
    • Use AI prompts to scaffold code, tests, and docs _inside_ the boundaries set by the Context Wrapper.  
    • Keep the Codebase Guide up to date as modules land.  
+   • After each section of the suggested Build Sequence is generated, use the Codebase Guide Update Template prompt (`prompts/update_codebase_guide.md`) to refresh the Codebase Guide accordingly.  
    • _Implementation moves forward under governance guardrails._
 
 4. **Governance Check**  

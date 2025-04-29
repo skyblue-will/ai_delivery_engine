@@ -63,3 +63,4 @@ Your response should be concrete, practical, and directly actionable by develope
 - The LLM may suggest additional clarification questions if the governance artifacts contain ambiguities
 - This prompt is most effective when the Scope Document contains clear functional requirements
 - For complex systems, consider segmenting this prompt into domain-specific modular planning sessions 
+- After each section of the suggested Build Sequence is generated, use the Codebase Guide Update Template prompt (`prompts/update_codebase_guide.md`) to refresh the Codebase Guide accordingly. 
