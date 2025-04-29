@@ -16,15 +16,11 @@ The AI Delivery Engine provides the **professional management layer** that keeps
 
 ## Integrations
 
-The Engine is editor-agnostic but already optimised for:
+Use these AI coding tools to apply the Delivery Engine in your workflow:
 
-| Tool | How the Engine Integrates |
-|------|---------------------------|
-| **Cursor** | Loads Context Wrapper into every prompt; enforces Tier rules in real-time |
-| **Winsurf** | Applies Governance + Assurance prompts while generating/refactoring code |
-| Any LLM IDE | Use the provided prompts/scripts to inject the same governance controls |
-
-As new tools emerge, extending the Engine is just a matter of adding a tailored Context Wrapper or CI check.
+- **Cursor**
+- **Winsurf**
+- Any LLM-based IDE (via provided prompts and scripts)
 
 ---
 
