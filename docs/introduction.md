@@ -85,22 +85,20 @@ The Engine integrates with AI-powered code editors including:
 
 ```mermaid
 graph TD
-    A[Project Initialization] --> B[Scope Document Creation]
-    B --> C[Context Wrapper Selection]
-    C --> D[AI Augmented Development]
-    D --> E[Verification Checks]
-    E --> F[Deployment Pipeline]
-    F --> G[Codebase Guide Update]
-    G --> B
+    A[Scope] --> B[Engine Setup]
+    B --> C[Modular Build]
+    C --> D[Governance Check]
+    D --> E[Ship]
+    E --> F[Repeat]
+    F --> A
 ```
 
-1. **Initialize** — Assess risk profile and set Delivery Tier
-2. **Define Scope** — Document the destination in a versioned markdown file
-3. **Apply Standards** — Load Context Wrapper enforcing tier-specific rules
-4. **Build** — Generate code + tests via AI within defined standards
-5. **Verify** — Run Assurance checks against all dimensions (scope, standards, structure)
-6. **Deploy** — Ship via CI/CD with appropriate tier gates
-7. **Update Guide** — Refresh [Codebase Guide](../core/codebase_guide.md) using [update prompt](../prompts/update_codebase_guide.md)
+1. **Scope** — Draft or update a versioned Scope Document (`docs/scopes/vX.Y.Z.md`).
+2. **Engine Setup** — Select the Delivery Tier, load its Context Wrapper, and ensure the Codebase Guide reflects current reality.
+3. **Modular Build** — Implement features in small branches using AI prompts within Context Wrapper guardrails; keep the Guide updated.
+4. **Governance Check** — Run Assurance Core checks (human review, LLM diff, automated tests) until binary compliance is achieved.
+5. **Ship** — Merge to `main` and release via tier-appropriate CI/CD.
+6. **Repeat** — Begin the next scoped cycle, upgrading tiers when risk/scale increases.
 
 ---
 
@@ -130,7 +128,7 @@ graph TD
 | Topic | Document |
 |-------|----------|
 | Engine Theory | [Theory of Operation](theory_of_operation.md) |
-| Full Workflow | [Workflow](workflow.md) |
+| Workflow | [Workflow](workflow.md) |
 | Roadmap | [Roadmap](../roadmap.md) |
 
 For version history and change plans, see `roadmap.md`.
