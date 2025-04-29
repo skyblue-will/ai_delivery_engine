@@ -22,7 +22,7 @@ All execution occurs in a **Docker-first** pipeline to guarantee identical behav
 | **Codebase Guide** | Maps the current codebase (versioned) |
 | **Context Wrapper** | Specifies mandatory engineering standards (Tier-aware) |
 
-Governance = **present reality** (gemba) with **defined destination**.
+Governance = **present reality** (gemba) with **defined destination** through **enforced standards**.
 
 ---
 
