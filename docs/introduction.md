@@ -2,7 +2,7 @@
 
 The AI Delivery Engine is a **practical governance layer** for AI-assisted software delivery. It lets teams tap AI coding speed without giving up traceability, security, or quality.
 
-### Executive Summary
+### Quick Summary
 
 - **Velocity with Governance** — Ship faster while meeting security, compliance, and audit demands.
 - **Binary Assurance** — A Governance Core *defines*, an Assurance Core *verifies*; no grey areas, only pass/fail.
@@ -13,7 +13,7 @@ This document explains how the Engine works and when to use it.
 
 ---
 
-## 1. Why CIOs Should Care
+## 1. Why the Engine Matters
 
 Uncontrolled AI code generation creates audit, security, and reliability gaps. The Engine closes those gaps **without throttling delivery speed**.
 
@@ -63,9 +63,10 @@ All tiers enforce standards in binary fashion - compliance is pass/fail, never "
 
 ## 5. Target Audience
 
+* **Individual developers & hobbyists** ready to move from side-project to production-ready code
 * **Engineering Teams** seeking velocity with control
-* **Startups** progressively scaling governance with product risk
-* **Enterprises** requiring compliance and auditability in AI workflows
+* **Startups** that must scale governance with product risk
+* **Enterprises** requiring auditability and compliance in AI workflows
 
 ---
 
