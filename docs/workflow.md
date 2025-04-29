@@ -89,6 +89,15 @@ Teams gain speed from AI generation **without sacrificing trust, compliance, or 
 
 ---
 
-## Diagram (Placeholder)
+## Diagram
 
-_A visual sequence diagram of the six stages will be linked here once available._ 
+```mermaid
+flowchart LR
+    scope[Scope]
+    setup[Engine Setup]
+    build[Modular Build]
+    check[Governance Check]
+    ship[Ship]
+    repeat[Repeat]
+    scope --> setup --> build --> check --> ship --> repeat --> scope
+``` 
