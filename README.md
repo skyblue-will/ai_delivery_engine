@@ -1,6 +1,6 @@
 # AI Delivery Engine
 
-Lightweight, binary governance **and** assurance for AI-assisted software delivery.
+End-to-end, tiered governance and automated assurance for AI-accelerated software delivery.
 
 ---
 
