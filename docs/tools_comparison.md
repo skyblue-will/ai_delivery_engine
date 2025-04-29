@@ -6,16 +6,16 @@ Legend: ✓ = fully supported  |  ~ = partly/indirectly supported  |  ✗ = not 
 
 | # | Feature / Requirement | Why It Matters to Governance ↔ Assurance Engine | Cursor | GitHub Copilot |
 |---|-----------------------|-----------------------------------------------|:------:|:-------------:|
-|1|**Context Wrapper Injection**|Governance Core standards must ride with every prompt.|✓|✗|
-|2|**Custom System Directives**|Allows repository-specific rules (tiers, compliance gates).|✓|✗|
-|3|**Semantic Multi-File Retrieval**|Assurance Core needs accurate, on-demand code context.|✓|~|
-|4|**Rule-based Conversation Control**|Engine requires deterministic behaviour; rules must bind the assistant.|✓|✗|
-|5|**Tier-Driven Strictness Toggle**|Supports graduated enforcement without code changes.|✓|✗|
-|6|**Assurance Test Hooks**|Seamless execution of unit/integration tests from the chat.|~|✗|
-|7|**Docker-First Workflow Support**|Reproducible builds & tests across environments.|~|✗|
-|8|**Local / Private Operation**|Sensitive codebases may forbid cloud completion.|✓ (self-host option)|✗|
-|9|**Structured Diff Visualisation**|Rapid drift detection between intent and reality.|✓|~|
-|10|**CLI / Automation APIs**|Automate Governance ↔ Assurance loops outside the IDE.|✓|✗|
+|1|**Persistent Context Wrapper**|Governance Core rules must accompany every prompt.|✓|~|
+|2|**Custom System Directives**|Inject tier, compliance, or repo-specific policies.|✓|~|
+|3|**Semantic Multi-File Retrieval**|Assurance Core needs full-repo reasoning to spot drift.|✓|~|
+|4|**Rule-Based Conversation Control**|Deterministic behaviour; prevents rule slippage.|✓|✗|
+|5|**Tier-Driven Strictness Toggle**|Switch enforcement levels without rewriting rules.|~|✗|
+|6|**Assurance Test Hooks**|Run & surface test output directly from chat.|~|~|
+|7|**Docker-First Workflow Support**|Facilitate container builds/tests inside the IDE.|~|~|
+|8|**Local / Private Execution Option**|Operate in air-gapped or self-hosted mode.|~|✗|
+|9|**Structured Diff / Patch Flow**|Highlights changes vs. intent; safe commit flow.|✓|~|
+|10|**CLI / Automation APIs**|Trigger Governance ↔ Assurance loops from scripts.|~|~|
 
 ### Summary
 
