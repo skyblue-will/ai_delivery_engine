@@ -12,6 +12,10 @@ The AI Delivery Engine is governed by three active, living mechanisms:
 
 Together, these components ensure that every project built using the engine remains **structured, controlled, and continuously improving** — without drifting into chaos or technical debt.
 
+> **Remember:** Standards scale by *Delivery Tier* (Tier 1–5).
+> Enforcement is always binary — pass/fail.
+> From **Tier 2 upward**, provenance watermarking is mandatory for every AI-generated artifact.
+
 ---
 
 ## **1. Codebase Guide (`codebase_guide.md`)**
@@ -21,9 +25,10 @@ The single source of truth describing the *current* state of the codebase.
 
 **Characteristics:**
 - Version-controlled alongside the codebase.
-- Updated only after real, approved changes are merged.
+- Updated only after real, approved changes are merged (the CI pipeline blocks if the Guide is stale).
 - Every section must map directly to real code — no speculative or aspirational content.
 - Acts as the foundation for onboarding, auditing, and further development.
+- Must include provenance notes when the file itself is generated or updated by AI (see Watermarking section).
 
 **Responsibilities:**
 - Whenever major features, refactors, or reorganisations occur, the Codebase Guide must be updated.
@@ -38,8 +43,9 @@ A structured, versioned record of the *next planned iteration* of the project.
 
 **Characteristics:**
 - Clearly defines the goals, features, refactors, compliance upgrades, and improvements targeted for a specific semantic version.
-- Defines the boundary of what \"done\" means for each version.
+- Defines the boundary of what "done" means for each version.
 - Written before major iteration begins; reviewed and locked once approved.
+- Watermark the Scope file header if drafted by AI tooling.
 
 **Responsibilities:**
 - New development is guided by the current active Scope Document.
@@ -54,10 +60,10 @@ A structured, versioned record of the *next planned iteration* of the project.
 An enforced AI system prompt (or equivalent ruleset) that governs how development is approached during an iteration.
 
 **Characteristics:**
-- Sets standards for modularity, testing, compliance, documentation, and CI/CD discipline.
+- Sets standards for modularity, testing, compliance, documentation, CI/CD discipline, and **provenance watermarking** (mandatory Tier ≥ 2).
 - Tailored to the Delivery Tier assigned to the project or iteration (Tier 1–5).
-- Applied inside tools like Cursor, Windsurf, Continue, or any LLM coding interface.
-- Explicitly defines how AI outputs must be structured, verified, and documented.
+- Applied inside tools like Cursor, Winsurf, Continue, or any LLM coding interface.
+- Explicitly defines how AI outputs must be structured, verified, **watermarked**, and documented.
 
 **Responsibilities:**
 - Context Wrapper must be activated at project/iteration start.
@@ -74,7 +80,7 @@ The three governance elements operate in a continuous loop:
 |:------|:-------|
 | Plan | Write a versioned Scope Document (`v0.x.0.md`) |
 | Build | Enforce rules via Context Wrapper during development |
-| Update | Update Codebase Guide (`codebase_guide.md`) to reflect changes |
+| Update | Update Codebase Guide (`codebase_guide.md`) to reflect changes; verify watermark presence |
 | Reflect | Lessons learned inform the next Scope Document |
 
 This loop ensures every project evolves deliberately — with **clear intentions, real outputs, and constant accountability**.
@@ -83,6 +89,6 @@ This loop ensures every project evolves deliberately — with **clear intentions
 
 # **Summary**
 
-> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Engine’s discipline, agility, and long-term scalability.**
+> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Engine's discipline, agility, and long-term scalability.**
 
-By respecting and updating these elements continuously, teams maintain momentum without losing structure or trust.
+By respecting and updating these elements continuously — and enforcing provenance watermarking from Tier 2 upward — developers maintain velocity without sacrificing traceability, compliance, or IP safety.
