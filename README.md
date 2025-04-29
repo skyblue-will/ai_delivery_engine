@@ -10,8 +10,7 @@ Modern AI coding assistants (e.g. **Cursor**, **Winsurf**, GitHub Copilot Chat) 
 That velocity is a double-edged sword:
 
 * Pros — dramatic reduction in boilerplate and prototype time.
-* Cons — unchecked drift, security holes, and compliance gaps appear just as quickly.
-* Cons — potential *IP infringement* risk when provenance metadata is missing or obscured.
+* Cons — unchecked drift, security holes, compliance gaps, and potential IP infringement when provenance metadata is missing or obscured.
 
 The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
 
