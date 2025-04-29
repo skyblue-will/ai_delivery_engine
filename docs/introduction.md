@@ -8,6 +8,7 @@ The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops
 - **Binary Assurance** — A Governance Core *defines*, an Assurance Core *verifies*; no grey areas, only pass/fail.
 - **Tiered Rigor** — Standards scale with risk: prototype today, regulated production tomorrow.
 - **Tool & Cloud Agnostic** — Works with any language, any AI assistant, and enforces Docker-first consistency.
+- **IP Risk Mitigation** — Embedded watermarking and provenance tracking guard against IP infringement by ensuring every AI-generated artifact carries verifiable attribution.
 
 This document explains how the Engine works and when to use it.
 
