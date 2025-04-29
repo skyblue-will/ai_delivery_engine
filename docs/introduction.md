@@ -1,6 +1,6 @@
 # Introduction
 
-The AI Delivery Engine is a **delivery engine**—a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It lets teams tap AI coding speed without giving up traceability, security, or quality.
+The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It lets developers tap AI coding speed without giving up traceability, security, or quality.
 
 ### Quick Summary
 
@@ -64,7 +64,7 @@ All tiers enforce standards in binary fashion - compliance is pass/fail, never "
 ## 5. Target Audience
 
 * **Individual developers & hobbyists** ready to move from side-project to production-ready code
-* **Engineering Teams** seeking velocity with control
+* **Collaborating developers** seeking velocity with control
 * **Startups** that must scale governance with product risk
 * **Enterprises** requiring auditability and compliance in AI workflows
 
