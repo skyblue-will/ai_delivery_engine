@@ -74,6 +74,6 @@ This flexibility enables incremental adoption, applying first to critical govern
 
 1. **Reflect Reality** — Documentation must mirror the system's true state
 2. **Compliance is Binary** — Pass or fail; no "mostly compliant" state
-3. **Tiers Drive Strictness** — Higher tier = stricter standards
+3. **Tiers Control Standards** — The active tier determines *which* standards apply; enforcement is always binary.
 4. **Simplicity is Power** — No meta-frameworks or speculation
 5. **Docker-First Discipline** — Runs identically everywhere or fails early 
