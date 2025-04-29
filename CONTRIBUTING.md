@@ -2,9 +2,9 @@
 
 ---
 
-# Contributing to AI Delivery Framework
+# Contributing to AI Delivery Engine
 
-This document outlines how to effectively contribute to the framework.
+This document outlines how to effectively contribute to the engine.
 
 ---
 
@@ -18,10 +18,10 @@ This document outlines how to effectively contribute to the framework.
 
 ## **How to Contribute**
 
-- Suggest improvements to the framework's structure, clarity, or delivery process.
+- Suggest improvements to the engine's structure, clarity, or delivery process.
 - Propose refinements to documentation, workflows, or compliance models.
-- Recommend new tools, templates, or practices that align with the framework principles.
-- Identify areas where the framework can better serve real-world delivery needs.
+- Recommend new tools, templates, or practices that align with the engine principles.
+- Identify areas where the engine can better serve real-world delivery needs.
 
 ---
 
@@ -39,21 +39,21 @@ This document outlines how to effectively contribute to the framework.
 
 ## **Focus Areas for Contribution**
 
-- Improving clarity and usability of framework documentation.
+- Improving clarity and usability of engine documentation.
 - Suggesting new modular compliance options.
 - Proposing tool integrations that remain vendor-neutral.
 - Enhancing example projects to show real-world usage.
 
 ### **Pilot Project Contributions**
 
-If your team runs a delivery using the framework, consider contributing:
+If your team runs a delivery using the engine, consider contributing:
 
 1. A **Scope Document** that defined the work.
 2. The resulting **Codebase Guide** delta.
 3. A short **Case Study** (metrics table + lessons learned) under `docs/scopes/`.
 4. Any automation scripts or CI checks you built to enforce Delivery Tier rules.
 
-These real-world artefacts are the fastest way to move the framework from theory to proven practice.
+These real-world artefacts are the fastest way to move the engine from theory to proven practice.
 
 ---
 

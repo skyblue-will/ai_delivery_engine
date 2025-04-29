@@ -1,10 +1,10 @@
-# **AI Model Guide — AI Delivery Framework**
+# **AI Model Guide — AI Delivery Engine**
 
 ---
 
 ## 🎯 Purpose
 
-This guide helps teams make practical decisions about **selecting and using AI models** in projects that follow the AI Delivery Framework. It connects everyday technical choices to the framework's core governance components (Codebase Guide, Scope Documents, and Context Wrappers).
+This guide helps teams make practical decisions about **selecting and using AI models** in projects that follow the AI Delivery Engine. It connects everyday technical choices to the engine's core governance components (Codebase Guide, Scope Documents, and Context Wrappers).
 
 *Who should read this?* Project leads, developers, and architects who need clear guidelines for using AI effectively in their projects.
 
@@ -12,7 +12,7 @@ This guide helps teams make practical decisions about **selecting and using AI m
 
 ## 1. Model Selection Guidelines
 
-| Question | What to Consider | How It Connects to Framework |
+| Question | What to Consider | How It Connects to Engine |
 |-----------|-----------------|-------------------|
 | **What are you trying to accomplish?** | • What specific output do you need?<br>• How fast must it work? | Document these requirements in your *Scope Document* under **Functional Requirements**. |
 | **What data are you working with?** | • Does your task involve sensitive data? | Determines which *Delivery Tier* applies and what compliance rules to follow. |
@@ -85,6 +85,6 @@ Document your deployment process in the Codebase Guide.
 
 ## 6. Summary
 
-This guide connects practical AI implementation decisions to the AI Delivery Framework's governance structure. By following these guidelines, teams can work efficiently while maintaining appropriate standards for quality, security, and compliance.
+This guide connects practical AI implementation decisions to the AI Delivery Engine's governance structure. By following these guidelines, teams can work efficiently while maintaining appropriate standards for quality, security, and compliance.
 
 > **Remember:** Good AI implementation requires both technical skill and responsible governance. 

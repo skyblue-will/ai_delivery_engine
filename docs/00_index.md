@@ -1,6 +1,6 @@
-## What the Framework Addresses
+## What the Engine Addresses
 
-Teams working with AI coding tools often struggle to maintain structure and engineering discipline. The AI Delivery Framework addresses this by:
+Teams working with AI coding tools often struggle to maintain structure and engineering discipline. The AI Delivery Engine addresses this by:
 
 1. **Providing Structure** - Common governance patterns for AI-assisted development
 2. **Progressive Rigor** - Scalable standards that grow with your project

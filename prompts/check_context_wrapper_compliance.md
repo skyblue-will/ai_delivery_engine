@@ -14,7 +14,7 @@ I need you to conduct a thorough compliance check of the codebase against our ac
 2. **Codebase Files**:
    - Implementation files relevant to the assessment (provide as context)
 
-## Compliance Framework
+## Compliance Engine
 
 For each standard category in the Context Wrapper:
 
@@ -59,4 +59,4 @@ Provide a structured assessment with:
 /check_context_wrapper_compliance 3
 ```
 
-This verification enforces the principle that compliance is binary - either ALL standards are met (PASS) or the project is non-compliant (FAIL). There is no "mostly compliant" state accepted in the AI Delivery Framework. 
+This verification enforces the principle that compliance is binary - either ALL standards are met (PASS) or the project is non-compliant (FAIL). There is no "mostly compliant" state accepted in the AI Delivery Engine. 

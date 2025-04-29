@@ -59,4 +59,4 @@ Provide a structured diff with:
 /diff_codebase_guide_vs_reality
 ```
 
-The goal is to maintain the Codebase Guide as a **precise mirror** of the system's true state. Documentation that diverges from reality is actively harmful and violates the framework's core principle that governance documents must reflect the actual system. 
+The goal is to maintain the Codebase Guide as a **precise mirror** of the system's true state. Documentation that diverges from reality is actively harmful and violates the engine's core principle that governance documents must reflect the actual system. 

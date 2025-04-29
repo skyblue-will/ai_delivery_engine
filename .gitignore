@@ -40,4 +40,7 @@ coverage.xml
 *.gv
 
 # Cursor-specific
-.cursor/ 
+.cursor/
+
+# Scripts directory
+scripts/ 

@@ -1,23 +1,23 @@
 # Roadmap
 
-This document outlines the planned evolution of the AI Delivery Framework using semantic versioning principles.
+This document outlines the planned evolution of the AI Delivery Engine using semantic versioning principles.
 
-## Introduction: A Living Framework
+## Introduction: A Living Engine
 
-The AI Delivery Framework is intentionally designed as a starting point, not a finished product. As teams apply this framework to build increasingly complex software projects, we expect to:
+The AI Delivery Engine is intentionally designed as a starting point, not a finished product. As teams apply this engine to build increasingly complex software projects, we expect to:
 
 - Refine the governance mechanisms based on real-world feedback
 - Adapt best practices as AI capabilities evolve
 - Address gaps identified through practical application
-- Scale the framework to handle more diverse project types
+- Scale the engine to handle more diverse project types
 
-**This roadmap represents our current vision, but will itself evolve based on the insights gained through road testing the framework in real projects.** We encourage users to share their experiences, challenges, and successes to help improve future iterations.
+**This roadmap represents our current vision, but will itself evolve based on the insights gained through road testing the engine in real projects.** We encourage users to share their experiences, challenges, and successes to help improve future iterations.
 
 ## 0.1.x (Initial Release)
 
 | Goal | Current State | Target State | Benefit |
 |------|--------------|--------------|---------|
-| **Core Framework** | Pre-release | Stable foundation | Framework ready for early testing |
+| **Core Engine** | Pre-release | Stable foundation | Engine ready for early testing |
 | **Documentation** | In development | Essential guides complete | Clear pathway for adoption |
 | **Delivery Tiers** | Tiers 0-5 defined | Initial implementation | Structured approach to governance |
 
@@ -35,13 +35,13 @@ The AI Delivery Framework is intentionally designed as a starting point, not a f
 |------|--------------|--------------|---------|
 | **Governance Core** | Basic templates | Enhanced templates with traceability | Better planning and accountability |
 | **Compliance** | Referenced but unstructured | Formal GDPR/HIPAA modules | Actionable regulatory integration |
-| **CI/CD** | Basic validation | Framework compliance checks | Automatic governance enforcement |
+| **CI/CD** | Basic validation | Engine compliance checks | Automatic governance enforcement |
 
 ## 0.4.x (Pilot Validation)
 
 | Goal | Current State | Target State | Benefit |
 |------|--------------|--------------|---------|
-| **Real-World Pilots** | No formal pilots | 2 projects (greenfield & brownfield) | Proof of framework effectiveness |
+| **Real-World Pilots** | No formal pilots | 2 projects (greenfield & brownfield) | Proof of engine effectiveness |
 | **Metrics Dashboard** | Not started | Lead-time, defect, compliance KPIs | Quantifiable value for adopters |
 | **Slim Documentation** | Theory-heavy | Remove / archive unused sections | Leaner, easier adoption |
 | **Case Study Publication** | None | Publish detailed write-ups | Credibility & community learning |
@@ -51,15 +51,15 @@ The AI Delivery Framework is intentionally designed as a starting point, not a f
 | Goal | Current State | Target State | Benefit |
 |------|--------------|--------------|---------|
 | **Enterprise** | Individual focus | Enterprise integration patterns | Potential for large organization adoption |
-| **Analytics** | No measurement | Governance impact metrics | Framework effectiveness measurements |
+| **Analytics** | No measurement | Governance impact metrics | Engine effectiveness measurements |
 | **Certification** | No program | Certified professionals program | Industry recognition and standardization |
 
 ## Long-term Vision
 
 | Goal | Description | Benefit |
 |------|------------|---------|
-| **Agentic AI Integration** | AI agents that operate within the framework | Reduced human intervention while maintaining governance |
-| **Framework Evolution** | Self-improving system based on real-world usage | Continuous optimization of delivery practices |
+| **Agentic AI Integration** | AI agents that operate within the engine | Reduced human intervention while maintaining governance |
+| **Engine Evolution** | Self-improving system based on real-world usage | Continuous optimization of delivery practices |
 | **Industry Standard** | Recognized methodology for AI-assisted development | Common language for professional AI development |
 
-All updates tracked via versioned scope documents and governed by the framework's own processes. 
+All updates tracked via versioned scope documents and governed by the engine's own processes. 

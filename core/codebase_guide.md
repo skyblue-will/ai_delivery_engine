@@ -9,7 +9,7 @@ This guide provides an authoritative description of the current codebase state.
 | Directory | Purpose |
 |-----------|---------|
 | `core/` | Contains governance core components: codebase guide, scope template, context wrappers |
-| `meta/` | Framework design documentation and templates |
+| `meta/` | Engine design documentation and templates |
 | `docs/` | User-facing documentation and architecture diagrams |
 | `tools/` | Tool recommendations and tooling landscape information |
 | `scripts/` | Utility scripts for repository maintenance |
@@ -22,11 +22,11 @@ This guide provides an authoritative description of the current codebase state.
 | `core/codebase_guide.md` | Authoritative description of current codebase state |
 | `core/scope_doc_template.md` | Template for creating versioned evolution plans |
 | `core/context_wrappers/tier*` | Delivery tier-specific disciplinary controls (0-5) |
-| `docs/introduction.md` | Framework onboarding documentation |
+| `docs/introduction.md` | Engine onboarding documentation |
 | `docs/theory_of_operation.md` | Conceptual foundation explanation |
 | `docs/delivery_tiers.md` | Progressive rigor model details |
 | `docs/architecture/generate_c4_diagrams.py` | Script to generate architecture diagrams |
-| `meta/governance_core.md` | Framework governance principles |
+| `meta/governance_core.md` | Engine governance principles |
 | `meta/full_workflow.md` | Detailed workflow documentation |
 | `meta/model_strategy.md` | Strategy for model interaction and usage |
 | `tools/recommended_tool_criteria.md` | Criteria for tool selection |
@@ -42,7 +42,7 @@ Contributor → Selects Delivery Tier → Uses Context Wrapper with AI →
 
 ## 4. Entry Points & Core Logic
 
-1. Begin with `docs/introduction.md` for framework overview
+1. Begin with `docs/introduction.md` for engine overview
 2. Select appropriate delivery tier from `core/context_wrappers/`
 3. Use corresponding context wrapper with AI tools
 4. Update codebase guide after significant changes

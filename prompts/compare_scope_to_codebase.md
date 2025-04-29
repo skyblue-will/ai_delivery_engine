@@ -15,7 +15,7 @@ I need you to perform a rigorous diff between our intended scope and what exists
    - `core/codebase_guide.md` (high-level reality overview)
    - Actual implementation files (provide as context)
 
-## Comparison Framework
+## Comparison Engine
 
 For each feature or component in the Scope Document:
 

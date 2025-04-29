@@ -1,0 +1,85 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex ae15b5c..6a3480c 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -40,4 +40,7 @@[m [mcoverage.xml[m
+ *.gv[m
+ [m
+ # Cursor-specific[m
+[31m-.cursor/ [m
+\ No newline at end of file[m
+[32m+[m[32m.cursor/[m
+[32m+[m
+[32m+[m[32m# Scripts directory[m
+[32m+[m[32mscripts/[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m
+[1mindex 3483c37..09b9c21 100644[m
+[1m--- a/CONTRIBUTING.md[m
+[1m+++ b/CONTRIBUTING.md[m
+[36m@@ -44,6 +44,17 @@[m [mThis document outlines how to effectively contribute to the framework.[m
+ - Proposing tool integrations that remain vendor-neutral.[m
+ - Enhancing example projects to show real-world usage.[m
+ [m
+[32m+[m[32m### **Pilot Project Contributions**[m
+[32m+[m
+[32m+[m[32mIf your team runs a delivery using the framework, consider contributing:[m
+[32m+[m
+[32m+[m[32m1. A **Scope Document** that defined the work.[m
+[32m+[m[32m2. The resulting **Codebase Guide** delta.[m
+[32m+[m[32m3. A short **Case Study** (metrics table + lessons learned) under `docs/scopes/`.[m
+[32m+[m[32m4. Any automation scripts or CI checks you built to enforce Delivery Tier rules.[m
+[32m+[m
+[32m+[m[32mThese real-world artefacts are the fastest way to move the framework from theory to proven practice.[m
+[32m+[m
+ ---[m
+ [m
+ ## **Community Expectations**[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex d368c8a..92bc681 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -11,6 +11,14 @@[m
+ * **Tool Agnostic** — Works with any AI assistant, any language, and any development toolchain.[m
+ * **Fast Implementation** — Adopt in minutes, see benefits in your first sprint.[m
+ [m
+[32m+[m[32m**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.[m
+[32m+[m
+[32m+[m[32m> **Documentation-First Reminder**[m[41m  [m
+[32m+[m[32m> This repository is intentionally **doc-heavy**; the framework itself *is the product*.[m[41m  [m
+[32m+[m[32m> All code samples, scripts, and CI pieces serve only to demonstrate and enforce the governance model.[m[41m  [m
+[32m+[m[32m> We actively invite **real-world pilot projects** to validate and refine the Delivery Tiers, metrics, and compliance gates.[m[41m  [m
+[32m+[m[32m> See the updated [Roadmap](roadmap.md#04x-pilot-validation) and [Contributing](CONTRIBUTING.md#pilot-project-contributions) guides for participation.[m
+[32m+[m
+ ---[m
+ [m
+ ## Table of Contents[m
+[36m@@ -37,8 +45,6 @@[m [mAI Delivery Framework is a version-controlled governance system that lets teams[m
+ [m
+ The framework enforces these guardrails through three linked assets—**Codebase Guide, Scope Documents, and Context Wrappers**—coordinated by escalating **Delivery Tiers**.[m
+ [m
+[31m-**Who should use it?** Engineering leaders and delivery teams who want AI speed with professional rigor.[m
+[31m-[m
+ ---[m
+ [m
+ ## 2. The Governance Triangle[m
+[1mdiff --git a/roadmap.md b/roadmap.md[m
+[1mindex d43b54c..10407fe 100644[m
+[1m--- a/roadmap.md[m
+[1m+++ b/roadmap.md[m
+[36m@@ -37,6 +37,15 @@[m [mThe AI Delivery Framework is intentionally designed as a starting point, not a f[m
+ | **Compliance** | Referenced but unstructured | Formal GDPR/HIPAA modules | Actionable regulatory integration |[m
+ | **CI/CD** | Basic validation | Framework compliance checks | Automatic governance enforcement |[m
+ [m
+[32m+[m[32m## 0.4.x (Pilot Validation)[m
+[32m+[m
+[32m+[m[32m| Goal | Current State | Target State | Benefit |[m
+[32m+[m[32m|------|--------------|--------------|---------|[m
+[32m+[m[32m| **Real-World Pilots** | No formal pilots | 2 projects (greenfield & brownfield) | Proof of framework effectiveness |[m
+[32m+[m[32m| **Metrics Dashboard** | Not started | Lead-time, defect, compliance KPIs | Quantifiable value for adopters |[m
+[32m+[m[32m| **Slim Documentation** | Theory-heavy | Remove / archive unused sections | Leaner, easier adoption |[m
+[32m+[m[32m| **Case Study Publication** | None | Publish detailed write-ups | Credibility & community learning |[m
+[32m+[m
+ ## 1.0.x (Production)[m
+ [m
+ | Goal | Current State | Target State | Benefit |[m

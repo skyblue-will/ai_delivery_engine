@@ -25,7 +25,7 @@ This includes maintainers, users, and contributors at all levels.
 - Personal attacks, insults, or discriminatory remarks.
 - Harassment, intimidation, or abuse of any kind.
 - Sustained disruption of constructive discussions.
-- Repeated refusal to respect framework principles and contribution guidelines.
+- Repeated refusal to respect engine principles and contribution guidelines.
 
 ---
 

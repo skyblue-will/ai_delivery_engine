@@ -3,7 +3,7 @@
 ## Purpose
 This document defines the end-to-end workflow for delivering technology solutions with an **AI-first delivery approach** using the **AI Delivery Engine**. It maps each lifecycle phase to the engine's governance artefacts—**Codebase Guide**, **Scope Documents**, and **Context Wrappers**—so teams can maintain engineering discipline, compliance, and executive-grade transparency.
 
-> **When to use this file**: Refer to it as the canonical, high-level playbook when kicking off a new project or auditing progress against framework standards.
+> **When to use this file**: Refer to it as the canonical, high-level playbook when kicking off a new project or auditing progress against engine standards.
 
 ### Engine Alignment
 
@@ -74,7 +74,7 @@ Security and legal teams validate data-handling requirements _before_ developmen
 - **Primary**: Claude 3.7 Sonnet - Optimal balance of code quality and development speed
 - **Alternative**: GPT-4o - Particularly strong for cross-language development and complex refactoring
 
-### Framework Tie-in
+### Engine Tie-in
 Context Wrappers enforce branch discipline, test coverage thresholds, and documentation completeness, preventing drift from the approved plan.
 
 ---

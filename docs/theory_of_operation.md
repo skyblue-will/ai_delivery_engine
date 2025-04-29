@@ -10,7 +10,7 @@ Many AI-generated codebases suffer from common issues:
 - Inconsistent compliance with requirements
 - Difficulty scaling beyond initial implementation
 
-Rather than constraining AI's generative power, the Engine provides a structured framework that guides AI generation toward maintainable, professional, and compliant results.
+Rather than constraining AI's generative power, the Engine provides a structured engine that guides AI generation toward maintainable, professional, and compliant results.
 
 ## Core Mechanisms: The Engine Model
 

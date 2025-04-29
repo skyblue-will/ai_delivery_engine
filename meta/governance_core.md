@@ -1,16 +1,16 @@
-# **Governance Core — AI Delivery Framework**
+# **Governance Core — AI Delivery Engine**
 
 ---
 
 ## **Overview**
 
-The AI Delivery Framework is governed by three active, living mechanisms:
+The AI Delivery Engine is governed by three active, living mechanisms:
 
 - A continuously updated map of the codebase's current structure (`codebase_guide.md`)
 - A versioned plan for each next targeted iteration (`v0.x.0.md`, `v0.x.1.md`, etc.)
 - Context Wrappers that enforce development discipline at each stage based on the assigned Delivery Tier
 
-Together, these components ensure that every project built using the framework remains **structured, controlled, and continuously improving** — without drifting into chaos or technical debt.
+Together, these components ensure that every project built using the engine remains **structured, controlled, and continuously improving** — without drifting into chaos or technical debt.
 
 ---
 
@@ -62,7 +62,7 @@ An enforced AI system prompt (or equivalent ruleset) that governs how developmen
 **Responsibilities:**
 - Context Wrapper must be activated at project/iteration start.
 - Any override or adjustment to the Context Wrapper must be documented and reviewed.
-- Context Wrappers evolve as the framework matures.
+- Context Wrappers evolve as the engine matures.
 
 ---
 
@@ -83,6 +83,6 @@ This loop ensures every project evolves deliberately — with **clear intentions
 
 # **Summary**
 
-> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Framework’s discipline, agility, and long-term scalability.**
+> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Engine’s discipline, agility, and long-term scalability.**
 
 By respecting and updating these elements continuously, teams maintain momentum without losing structure or trust.
