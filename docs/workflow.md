@@ -2,7 +2,7 @@
 
 ## Overview – What this workflow is and what it solves
 
-The **AI Delivery Engine (AIDE)** is a disciplined yet lightweight workflow for shipping AI-powered software **quickly _and_ responsibly**. It solves the classic dilemma of "move fast vs. stay compliant" by pairing two tightly-coupled cores:
+The **AI Delivery Engine (AIDE)** is a disciplined yet lightweight workflow for shipping AI-powered software **quickly _and_ responsibly**. It solves the classic dilemma of "move fast vs. stay compliant" by pairing two tightly-coupled cores **inside a single mono-repo and IDE workspace**:
 
 | Core | Role |
 |------|------|
@@ -18,7 +18,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
 > Six repeatable stages power every version, from Tier-1 hobby apps to Tier-5 regulated systems.
 
 1. **Scope**  
-   • Draft or update a **Scope Document** (`docs/scopes/vX.Y.Z.md`).  
+   • Draft or update a **Scope Document** (`docs/scopes/vX.Y.Z.md`) **directly inside this repository**.  
    • Capture goals, in/out scope, acceptance criteria, and delivery tier.  
    • _Governance sets the destination._
 
@@ -88,6 +88,7 @@ Following this workflow produces:
 * **Living Documentation** – The Codebase Guide always describes the current system.
 * **Automated Proof** – CI artifacts demonstrate that code, docs, and tests satisfy the active Context Wrapper.
 * **Audit Trail** – Every change is traceable back to scope intent and tier requirements.
+* **Data Privacy by Default** – All work remains within the repo; telemetry is off unless explicitly enabled.
 
 Teams gain speed from AI generation **without sacrificing trust, compliance, or maintainability**.
 
@@ -97,11 +98,13 @@ Teams gain speed from AI generation **without sacrificing trust, compliance, or 
 
 ```mermaid
 flowchart LR
-    scope[Scope]
-    setup[Engine Setup]
-    build[Modular Build]
-    check[Governance Check]
-    ship[Ship]
-    repeat[Repeat]
-    scope --> setup --> build --> check --> ship --> repeat --> scope
+    subgraph IDE+Repo["IDE + Mono-Repo Boundary"]
+        scope[Scope]
+        setup[Engine Setup]
+        build[Modular Build]
+        check[Governance Check]
+        ship[Ship]
+        repeat[Repeat]
+        scope --> setup --> build --> check --> ship --> repeat --> scope
+    end
 ``` 

@@ -1,6 +1,6 @@
 # Introduction
 
-The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It lets developers tap AI coding speed without giving up traceability, security, or quality.
+The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It enforces that **every stage—Scope, Setup, Build, Governance Check, Shipping, Repeat—occurs *inside* this mono-repo and your IDE workspace.** It lets developers tap AI coding speed without giving up traceability, security, or quality.
 
 ### Quick Summary
 
@@ -9,6 +9,7 @@ The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops
 - **Tiered Rigor** — Standards scale with risk: prototype today, regulated production tomorrow.
 - **Tool & Cloud Agnostic** — Works with any language, any AI assistant, and enforces Docker-first consistency.
 - **IP Risk Mitigation** — Embedded watermarking and provenance tracking guard against IP infringement by ensuring every AI-generated artifact carries verifiable attribution.
+- **Privacy & Telemetry-Off** — Source and data never leave the repo boundary unless explicitly permitted; disable outbound telemetry by default.
 
 This document explains how the Engine works and when to use it.
 

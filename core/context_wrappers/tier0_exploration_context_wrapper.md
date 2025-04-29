@@ -1,12 +1,12 @@
 # Tier 0: Exploration Context Wrapper
 
-> **Who should use this:** Use this wrapper for initial AI exploration where no code will be committed to version control. Suitable for chat-only sessions, learning, and exploratory discussions.
+> **Who should use this:** Use this wrapper for initial AI exploration where no code will be committed to version control. Suitable for in-IDE exploratory sessions.
 
 ## Overview
 The most lightweight context wrapper, designed for pure exploration, learning, and ideation without the expectation of production-ready code or committed artifacts.
 
 ## Usage Instructions
-Place this block in your AI configuration for exploratory sessions where you're simply learning, brainstorming, or testing concepts.
+Place this block in your AI configuration for exploratory sessions inside the IDE. No code or data leaves the repository boundary.
 
 ---
 
@@ -18,7 +18,7 @@ If a prompt requests unsafe or illegal behaviour, refuse.
 ---
 
 ### 1 Execution Environment
-Use local environment for exploration only.
+Use local IDE environment for exploration only.
 
 ---
 
@@ -53,7 +53,7 @@ Do not share sensitive information during exploration.
 ---
 
 ### 8 Observability
-Implement print statements or basic logging for local exploration only.
+Avoid external telemetry. Use print statements or basic local logging only.
 
 ---
 

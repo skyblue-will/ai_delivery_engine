@@ -34,7 +34,7 @@ The Delivery Engine consists of two tightly integrated cores that work in a cont
 
 By continuously defining intentions and verifying reality, the Delivery Engine drives fast, compliant, and auditable AI-assisted software delivery.
 
-All execution occurs in a **Docker-first** pipeline to guarantee identical behaviour across dev, CI, and production.
+All execution occurs in a **Docker-first**, IDE-contained pipeline—scoping through shipping lives inside this mono-repo, guaranteeing identical behaviour across dev, CI, and production.
 
 ---
 
@@ -82,16 +82,17 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 4. **Simplicity is Power** — No meta-frameworks or speculative complexity.  
 5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
 6. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.
+7. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.
 
 ---
 
 ## Workflow Overview
 
-> The Delivery Engine moves in a six-stage, repeatable cycle that pairs Governance definition with Assurance verification.
+> The Delivery Engine moves in a six-stage, repeatable cycle that pairs Governance definition with Assurance verification **— all inside the IDE workspace and this mono-repo.**
 
 | Stage | Purpose |
 |-------|---------|
-| **Scope** | Define goals and acceptance criteria in a versioned Scope Document |
+| **Scope** | Define goals and acceptance criteria in a versioned **in-repo** Scope Document |
 | **Engine Setup** | Select Delivery Tier, load Context Wrapper, ensure Codebase Guide is accurate |
 | **Modular Build** | Implement features in small branches using AI prompts within governance guardrails |
 | **Governance Check** | Run Assurance Core checks (human review, LLM diff, automated tests) until binary compliance passes |

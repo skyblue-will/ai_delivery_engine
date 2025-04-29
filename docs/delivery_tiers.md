@@ -6,7 +6,7 @@ The AI Delivery Engine employs a progressive rigor model that scales standards w
 
 | Tier | Use Case | Standards Level | Context Wrapper |
 |------|----------|-----------------|-----------------|
-| **0 – Exploration** | Learning, chat-only exploration | None (no code committed) | [tier0_exploration_context_wrapper.md](../core/context_wrappers/tier0_exploration_context_wrapper.md) |
+| **0 – Exploration** | Learning, in-IDE exploration (no committed code) | None (no code committed) | [tier0_exploration_context_wrapper.md](../core/context_wrappers/tier0_exploration_context_wrapper.md) |
 | **1 – Hobby** | Personal projects, internal proofs | Minimal | [tier1_hobby_context_wrapper.md](../core/context_wrappers/tier1_hobby_context_wrapper.md) |
 | **2 – MVP** | Early user validation | Moderate | [tier2_mvp_context_wrapper.md](../core/context_wrappers/tier2_mvp_context_wrapper.md) |
 | **3 – Beta** | Public pilots, initial scaling | High | [tier3_beta_context_wrapper.md](../core/context_wrappers/tier3_beta_context_wrapper.md) |
