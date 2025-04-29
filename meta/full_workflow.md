@@ -1,7 +1,7 @@
 # AI Project Full Workflow
 
 ## Purpose
-This document defines the end-to-end workflow for delivering technology solutions with an **AI-first delivery approach** using the **AI Delivery Framework**. It maps each lifecycle phase to the framework's governance artefacts—**Codebase Guide**, **Scope Documents**, and **Context Wrappers**—so teams can maintain engineering discipline, compliance, and executive-grade transparency.
+This document defines the end-to-end workflow for delivering technology solutions with an **AI-first delivery approach** using the **AI Delivery Engine**. It maps each lifecycle phase to the engine's governance artefacts—**Codebase Guide**, **Scope Documents**, and **Context Wrappers**—so teams can maintain engineering discipline, compliance, and executive-grade transparency.
 
 > **When to use this file**: Refer to it as the canonical, high-level playbook when kicking off a new project or auditing progress against framework standards.
 
@@ -125,7 +125,7 @@ Findings feed back into the **Planning** and **Development** phases for iterativ
 ---
 
 ## Summary
-The AI Project Full Workflow provides a disciplined, end-to-end roadmap anchored by the AI Delivery Framework's governance artefacts:
+The AI Project Full Workflow provides a disciplined, end-to-end roadmap anchored by the AI Delivery Engine's governance artefacts:
 
 - **Codebase Guide**: Live technical truth-source.
 - **Scope Documents & Version Plans**: Contract between business and engineering.
