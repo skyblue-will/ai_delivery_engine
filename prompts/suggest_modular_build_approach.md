@@ -24,27 +24,19 @@ Use this prompt after:
 1. Copy the content between the lines below
 2. Replace the `{placeholders}` with your project specifics
 3. Submit to your LLM in your preferred AI coding environment
+4. Ensure your governance documents are accessible as context to the LLM
 
 ---
 
 **System Instructions: You are an architectural planning assistant tasked with suggesting the optimal modular approach for implementing a software project. You will analyze governance documents and propose a clear, organized build strategy.**
 
-I have the following governance artifacts for my project:
+I need you to suggest an optimal modular build approach for my project. The following governance artifacts are available in the context:
 
-### Scope Document
-```
-{paste scope document content here}
-```
+- Scope Document: {path_to_scope_document} (version {version})
+- Codebase Guide: {path_to_codebase_guide}
+- Context Wrapper: {path_to_context_wrapper} (Tier {tier_number})
 
-### Codebase Guide (Current State)
-```
-{paste codebase guide content here}
-```
-
-### Context Wrapper (Selected Delivery Tier: {tier_number})
-```
-{paste context wrapper content here}
-```
+Please use these documents as context rather than requiring me to copy their full content.
 
 Based on these governance artifacts, please provide:
 
@@ -67,6 +59,7 @@ Your response should be concrete, practical, and directly actionable by develope
 
 ## Notes
 
+- This prompt works best with AI systems that can access multiple documents as context
 - The LLM may suggest additional clarification questions if the governance artifacts contain ambiguities
 - This prompt is most effective when the Scope Document contains clear functional requirements
 - For complex systems, consider segmenting this prompt into domain-specific modular planning sessions 
