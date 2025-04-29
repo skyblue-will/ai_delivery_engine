@@ -20,6 +20,7 @@ Use these AI coding tools to apply the Delivery Engine in your workflow:
 
 - **Cursor**
 - **Winsurf**
+- **GitHub Copilot**
 - Any LLM-based IDE (via provided prompts and scripts)
 
 ---
