@@ -54,75 +54,37 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 
 1. **Reflect Reality** — Documents match the actual system, always.  
 2. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
-3. **Tiers Drive Strictness** — Higher Tier → stricter Context Wrapper.  
+3. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
 4. **Simplicity is Power** — No meta-frameworks or speculative complexity.  
 5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
+
+---
+
+## Why Now?
+
+Modern AI coding assistants (e.g. **Cursor**, **Winsurf**, GitHub Copilot Chat) can scaffold an entire repository in minutes.  
+That velocity is a double-edged sword:
+
+* Pros — dramatic reduction in boilerplate and prototype time.
+* Cons — unchecked drift, security holes, and compliance gaps appear just as quickly.
+
+The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
+
+## Integrations
+
+The Engine is editor-agnostic but already optimised for:
+
+| Tool | How the Engine Integrates |
+|------|---------------------------|
+| **Cursor** | Loads Context Wrapper into every prompt; enforces Tier rules in real-time |
+| **Winsurf** | Applies Governance + Assurance prompts while generating/refactoring code |
+| Any LLM IDE | Use the provided prompts/scripts to inject the same governance controls |
+
+As new tools emerge, extending the Engine is just a matter of adding a tailored Context Wrapper or CI check.
 
 ---
 
 ## Where to Start
 
 1. **Read the Overview** — Start with [`docs/introduction.md`](docs/introduction.md) for an end-to-end orientation.
-2. **Understand the Engine** — Dive into [`docs/theory_of_operation.md`](docs/theory_of_operation.md) to see how Governance and Assurance interact.
-3. **Follow the Workflow** — Use the high-level step-by-step in [`meta/full_workflow.md`](meta/full_workflow.md).
-4. **Pick Your Tier** — Select a Delivery Tier in [`docs/delivery_tiers.md`](docs/delivery_tiers.md) and load its Context Wrapper.
-5. **Create Scope & Guide** — Scaffold your first Scope Document (`docs/scopes/v0.x.0.md`) and update `core/codebase_guide.md`.
-
-After those five steps you're ready to clone, build, and start shipping.
-
----
-
-## Quickstart (after "Where to Start")
-
-```bash
-# clone & enter
-git clone <repo>
-cd ai_delivery_framework
-
-# build baseline image
-docker compose build
-```
-
-1. Create a **Scope Document**: `docs/scope/v0.x.y.md`  
-2. Write the **Codebase Guide**: `docs/codebase_guide.md`  
-3. Choose or author a **Context Wrapper**: `docs/meta/context_wrapper.md`  
-4. Run Governance & Assurance checks:
-   - Human review: scope ↔︎ features.
-   - LLM prompts in `prompts/` or `scripts/`.
-   - CI tests inside Docker.
-
----
-
-## Repository Skeleton
-
-```
-/docs
-   /scope
-       v0.1.0.md
-   /meta
-       context_wrapper.md
-   codebase_guide.md
-/prompts
-   compare_scope_to_codebase.md
-   check_context_wrapper_compliance.md
-/src
-   (application code)
-```
-
----
-
-## Why It Matters
-
-Unchecked AI-generated code drifts fast. The AI Delivery Engine keeps:
-
-- Scope, documentation, and code in **permanent alignment**
-- Quality **enforceable** across Delivery Tiers
-- Delivery **traceable, auditable, and consistent**
-
----
-
-## Status
-
-**v0.1.0** — actively refined through real-world use.
-
-Contributions and feedback are welcome.
+2. **Understand the Engine** — Dive into [`
