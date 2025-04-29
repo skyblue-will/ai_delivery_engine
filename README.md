@@ -4,6 +4,30 @@ Lightweight, binary governance **and** assurance for AI-assisted software delive
 
 ---
 
+## Why Now?
+
+Modern AI coding assistants (e.g. **Cursor**, **Winsurf**, GitHub Copilot Chat) can scaffold an entire repository in minutes.  
+That velocity is a double-edged sword:
+
+* Pros — dramatic reduction in boilerplate and prototype time.
+* Cons — unchecked drift, security holes, and compliance gaps appear just as quickly.
+
+The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
+
+## Integrations
+
+The Engine is editor-agnostic but already optimised for:
+
+| Tool | How the Engine Integrates |
+|------|---------------------------|
+| **Cursor** | Loads Context Wrapper into every prompt; enforces Tier rules in real-time |
+| **Winsurf** | Applies Governance + Assurance prompts while generating/refactoring code |
+| Any LLM IDE | Use the provided prompts/scripts to inject the same governance controls |
+
+As new tools emerge, extending the Engine is just a matter of adding a tailored Context Wrapper or CI check.
+
+---
+
 ## Engine Overview
 
 Governance Core **defines** what to build and how it must be built.  
@@ -57,30 +81,6 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 3. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
 4. **Simplicity is Power** — No meta-frameworks or speculative complexity.  
 5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
-
----
-
-## Why Now?
-
-Modern AI coding assistants (e.g. **Cursor**, **Winsurf**, GitHub Copilot Chat) can scaffold an entire repository in minutes.  
-That velocity is a double-edged sword:
-
-* Pros — dramatic reduction in boilerplate and prototype time.
-* Cons — unchecked drift, security holes, and compliance gaps appear just as quickly.
-
-The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
-
-## Integrations
-
-The Engine is editor-agnostic but already optimised for:
-
-| Tool | How the Engine Integrates |
-|------|---------------------------|
-| **Cursor** | Loads Context Wrapper into every prompt; enforces Tier rules in real-time |
-| **Winsurf** | Applies Governance + Assurance prompts while generating/refactoring code |
-| Any LLM IDE | Use the provided prompts/scripts to inject the same governance controls |
-
-As new tools emerge, extending the Engine is just a matter of adding a tailored Context Wrapper or CI check.
 
 ---
 
