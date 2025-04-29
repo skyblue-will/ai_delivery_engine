@@ -26,9 +26,12 @@ Use these AI coding tools to apply the Delivery Engine in your workflow:
 
 ## Engine Overview
 
-Governance Core **defines** what to build and how it must be built.  
-Assurance Core **verifies** that reality matches that definition.  
-Their continuous interaction is the **Delivery Engine**.
+The Delivery Engine consists of two tightly integrated cores that work in a continuous loop:
+
+- **Governance Core (Define)** — Maintains the living contract for development: it keeps the Codebase Guide up to date, drafts versioned Scope Documents outlining goals and acceptance criteria, and applies Context Wrappers that enforce tier-specific engineering standards.
+- **Assurance Core (Verify)** — Provides structured verification: human reviews align implementation to scope, automated tests validate functional requirements, and LLM-driven structural diffs ensure documentation and code remain in sync.
+
+By continuously defining intentions and verifying reality, the Delivery Engine drives fast, compliant, and auditable AI-assisted software delivery.
 
 All execution occurs in a **Docker-first** pipeline to guarantee identical behaviour across dev, CI, and production.
 
