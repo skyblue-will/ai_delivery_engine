@@ -130,7 +130,7 @@ graph TD
 | Topic | Document |
 |-------|----------|
 | Engine Theory | [Theory of Operation](theory_of_operation.md) |
-| Full Workflow | [Full Workflow](../meta/full_workflow.md) |
+| Full Workflow | [Workflow](workflow.md) |
 | Roadmap | [Roadmap](../roadmap.md) |
 
 For version history and change plans, see `roadmap.md`.

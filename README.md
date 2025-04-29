@@ -88,7 +88,7 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 
 1. **Read the Overview** — Start with [`docs/introduction.md`](docs/introduction.md) for an end-to-end orientation.
 2. **Understand the Engine** — Dive into [`docs/theory_of_operation.md`](docs/theory_of_operation.md) to see how Governance and Assurance interact.
-3. **Follow the Workflow** — Use the high-level step-by-step in [`meta/full_workflow.md`](meta/full_workflow.md).
+3. **Follow the Workflow** — See the high-level roll-up in [`docs/workflow.md`](docs/workflow.md).
 4. **Pick Your Tier** — Select a Delivery Tier in [`docs/delivery_tiers.md`](docs/delivery_tiers.md) and load its Context Wrapper.
 5. **Create Scope & Guide** — Scaffold your first Scope Document (`docs/scopes/v0.x.0.md`) and update `core/codebase_guide.md`.
 

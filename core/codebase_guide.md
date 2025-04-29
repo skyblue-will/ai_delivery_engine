@@ -27,7 +27,7 @@ This guide provides an authoritative description of the current codebase state.
 | `docs/delivery_tiers.md` | Progressive rigor model details |
 | `docs/architecture/generate_c4_diagrams.py` | Script to generate architecture diagrams |
 | `meta/governance_core.md` | Engine governance principles |
-| `meta/full_workflow.md` | Detailed workflow documentation |
+| `docs/workflow.md` | Detailed workflow documentation |
 | `meta/model_strategy.md` | Strategy for model interaction and usage |
 | `tools/recommended_tool_criteria.md` | Criteria for tool selection |
 | `tools/current_tooling_landscape.md` | Overview of available AI tools |
