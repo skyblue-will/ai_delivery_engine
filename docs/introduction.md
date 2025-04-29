@@ -1,12 +1,21 @@
 # Introduction
 
-AI Delivery Engine is a structured approach to AI-assisted software delivery. This document outlines what it is, how it works, and when to use it.
+AI Delivery Engine is an **executive-grade control system** for AI-assisted software delivery.
+
+### Executive Summary
+
+- **Velocity with Governance** — Ship faster while meeting security, compliance, and audit demands.
+- **Binary Assurance** — A Governance Core *defines*, an Assurance Core *verifies*; no grey areas, only pass/fail.
+- **Tiered Rigor** — Standards scale with risk: prototype today, regulated production tomorrow.
+- **Tool & Cloud Agnostic** — Works with any language, any AI assistant, and enforces Docker-first consistency.
+
+This document explains how the Engine works and when to use it.
 
 ---
 
-## 1. Why the Engine Exists
+## 1. Why CIOs Should Care
 
-Bolting an LLM onto existing processes rarely works. Teams need AI speed without sacrificing rigor, compliance, or maintainability.
+Uncontrolled AI code generation creates audit, security, and reliability gaps. The Engine closes those gaps **without throttling delivery speed**.
 
 The Engine delivers this through:
 
