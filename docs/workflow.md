@@ -34,6 +34,8 @@ The constant handshake between these cores is the **Engine**. When Governance is
    • Remember you are the human — don't follow the LLM blindly; if something doesn't look right, question it.  
    • Keep the Codebase Guide up to date as modules land.  
    • After each section of the suggested Build Sequence is generated, use the Codebase Guide Update Template prompt (`prompts/update_codebase_guide.md`) to refresh the Codebase Guide accordingly.  
+   • Use your IDE's 'ASK' function: if a technology or approach doesn't make sense, ask the LLM to explain what it is and why it's needed.  
+   • Scopes can be changed mid-build but must be managed carefully—refer to the upcoming scope management documentation for guidance.  
    • _Implementation moves forward under governance guardrails._
 
 4. **Governance Check**  
