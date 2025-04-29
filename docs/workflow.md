@@ -34,6 +34,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
    • Remember you are the human — don't follow the LLM blindly; if something doesn't look right, question it.  
    • Keep the Codebase Guide up to date as modules land.  
    • After each section of the suggested Build Sequence is generated, use the Codebase Guide Update Template prompt (`prompts/update_codebase_guide.md`) to refresh the Codebase Guide accordingly.  
+   • When encountering unfamiliar technologies or concepts, use the Learn As You Build prompt (`prompts/learn_as_you_build.md`) to gain genuine understanding rather than blindly implementing suggestions.  
    • Use your IDE's 'ASK' function: if a technology or approach doesn't make sense, ask the LLM to explain what it is and why it's needed.  
    • Scopes can be changed mid-build but must be managed carefully—refer to the upcoming scope management documentation for guidance.  
    • _Implementation moves forward under governance guardrails._
@@ -71,12 +72,13 @@ Moving up a tier means swapping to a stricter Context Wrapper and retro-fitting 
 
 ## AI Prompt Usage
 
-Prompts are **first-class tooling** in AIDE, used in two primary ways:
+Prompts are **first-class tooling** in AIDE, used in three primary ways:
 
 1. **Build Prompts** – Guide modular implementation (e.g., "generate API skeleton for US-03 using FastAPI & pydantic").  
-2. **Verification Prompts** – Run structured analysis (e.g., `prompts/check_context_wrapper_compliance.md`, `prompts/compare_scope_to_codebase.md`).
+2. **Learning Prompts** – Build genuine understanding of technologies and approaches (e.g., `prompts/learn_as_you_build.md`).
+3. **Verification Prompts** – Run structured analysis (e.g., `prompts/check_context_wrapper_compliance.md`, `prompts/compare_scope_to_codebase.md`).
 
-This dual use keeps AI assistance aligned with Governance rather than bypassing it.
+This approach ensures AI assistance enhances human expertise and remains aligned with Governance rather than bypassing it.
 
 ---
 
