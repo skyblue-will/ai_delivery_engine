@@ -100,5 +100,21 @@ app/
 
 ---
 
+### 12 Provenance & Watermarking Requirement
+All AI-generated code or content must include embedded attribution indicating:
+- The tool used (e.g. Cursor, Copilot, etc.)
+- Generation timestamp (ISO 8601 format)
+- Responsible entity: {{ CompanyNameOrDeveloper }}
+
+This watermark must be:
+- Included in file headers or docstrings (for code)
+- Persistently trackable across commits
+- Verifiable during audits via structured diff or metadata analysis
+
+**Compliance is binary**: any generated artifact without a valid watermark fails verification.  
+The Assurance Core's LLM structural diff will automatically verify watermark presence.
+
+---
+
 ## Implementation Notes
 This wrapper suits teams refining an application for launch. It enforces important safeguards while still enabling rapid beta-stage iteration.

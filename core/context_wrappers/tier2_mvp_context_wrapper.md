@@ -90,5 +90,21 @@ Maintain an up-to-date README.
 
 ---
 
+### 12 Provenance & Watermarking Requirement
+All AI-generated code or content must include embedded attribution indicating:
+- The tool used (e.g. Cursor, Copilot, etc.)
+- Generation timestamp (ISO 8601 format)
+- Responsible entity: {{ CompanyNameOrDeveloper }}
+
+This watermark must be:
+- Included in file headers or docstrings (for code)
+- Persistently trackable across commits
+- Verifiable during audits via structured diff or metadata analysis
+
+**Compliance is binary**: any generated artifact without a valid watermark fails verification.  
+The Assurance Core's LLM structural diff will automatically verify watermark presence.
+
+---
+
 ## Implementation Notes
 Tier 2 focuses on shipping value quickly to validate market fit while maintaining baseline quality standards.
