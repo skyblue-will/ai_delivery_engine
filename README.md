@@ -34,7 +34,7 @@ Governance = **present reality** (gemba) with **defined destination** through **
 | **Structural Diff — LLM** | Compare Scope, Guide, Codebase, and Standards |
 | **Runtime Validation — Tests** | Automated tests enforce functional correctness per Tier |
 
-Assurance = **living verification of truth**.
+Assurance = **continuous verification** of **current state**, **intended path**, and **standards adherence**.
 
 ---
 
