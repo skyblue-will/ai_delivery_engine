@@ -25,7 +25,6 @@ This guide provides an authoritative description of the current codebase state.
 | `docs/delivery_tiers.md` | Progressive rigor model details |
 | `docs/workflow.md` | Detailed workflow documentation |
 | `docs/tools_comparison.md` | Comparison of available tools |
-| `docs/when_you_can_change_scope_mid_workflow_and_when_you_cant.md` | Guidance on scope management |
 | `docs/architecture/generate_c4_diagrams.py` | Script to generate architecture diagrams |
 | `core/engine/governance_core.md` | Engine governance principles |
 | `core/engine/assurance_core.md` | Assurance mechanisms documentation |
