@@ -1,6 +1,6 @@
 # Introduction
 
-AI Delivery Engine is an **executive-grade control system** for AI-assisted software delivery.
+The AI Delivery Engine is a **practical governance layer** for AI-assisted software delivery. It lets teams tap AI coding speed without giving up traceability, security, or quality.
 
 ### Executive Summary
 
