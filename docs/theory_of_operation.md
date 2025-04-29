@@ -2,57 +2,78 @@
 
 ## Genesis & Philosophy
 
-The AI Delivery Framework emerged in response to a critical challenge in modern software development: how to harness the extraordinary speed of AI-assisted development while aiming to maintain engineering discipline, governance, and compliance.
+The AI Delivery Engine emerged in response to a critical challenge: harnessing the extraordinary speed of AI-assisted development while maintaining engineering discipline, governance, and compliance.
 
-The framework was built on the fundamental observation that many AI-generated codebases suffer from similar problems:
+Many AI-generated codebases suffer from common issues:
 - Lack of clear structure and documentation
-- Poor testing coverage and verification
-- Inconsistent compliance with regulatory requirements
-- Difficulty scaling beyond the initial implementation
+- Insufficient testing and verification
+- Inconsistent compliance with requirements
+- Difficulty scaling beyond initial implementation
 
-Rather than constrain AI's generative capabilities, the framework provides a structured container that guides AI generation toward maintainable, professional, and compliant results.
+Rather than constraining AI's generative power, the Engine provides a structured framework that guides AI generation toward maintainable, professional, and compliant results.
 
-## Core Mechanisms
+## Core Mechanisms: The Engine Model
 
-### The Governance Triangle
+The Engine operates through two integrated cores with continuous interaction:
 
-The framework operates through three integrated governance mechanisms:
+### Governance Core (Define)
 
-1. **Codebase Guide (As-Is)** - Provides a continuously updated reference to the current state of the system, allowing new team members and AI tools to comprehend existing code.
+1. **Codebase Guide** — Maps the **present reality** of the system, providing an accurate reference to the current state that all team members and AI tools can comprehend.
 
-2. **Scope Documents (To-Be)** - Codifies the specific changes planned for each version, with clear acceptance criteria and traceability to business requirements.
+2. **Scope Documents** — Define the **destination** for each version, with clear acceptance criteria and traceability to business requirements.
 
-3. **Context Wrappers (Rules)** - Enforces appropriate engineering discipline on AI-generated code based on the project's delivery tier, ensuring standards match the project's maturity.
+3. **Context Wrappers** — Specify **enforced standards** based on the project's Delivery Tier, ensuring discipline matches the project's maturity.
 
-Together, these three mechanisms form a "governance triangle" that keeps AI-assisted development predictable, auditable, and scalable.
+### Assurance Core (Verify)
+
+1. **Human Verification** — Expert review confirms that implementation matches scope intent.
+
+2. **LLM Analysis** — Structured diff between documentation, code, and standards.
+
+3. **Automated Testing** — Technical validation of functional correctness and compliance.
+
+The continuous interaction between these cores creates a self-reinforcing system that drives development forward while maintaining alignment.
 
 ### Practical Driving Analogy
 
-To illustrate how the three mechanisms work together in day-to-day delivery, imagine operating a modern vehicle:
+To illustrate how the Engine works in day-to-day delivery:
 
-| Framework Element | Driving Analogy | Responsibility |
+| Engine Component | Driving Analogy | Responsibility |
 |-------------------|-----------------|----------------|
-| **Scope Documents (v0.x.0)** | The **map & route** – clearly defines where you are going and which path to follow. | Sets direction and measures progress. |
-| **Codebase Guide** | The **dashboard** – shows real-time status of speed, fuel, and system health. | Provides continuous visibility of the current state. |
-| **Context Wrappers** | The **safety systems** – lane assist, automatic braking, compliance alerts. | Enforces guardrails appropriate to the delivery tier. |
-| **AI + Human Implementation** | The **driver** holding the steering wheel. | Makes tactical decisions within the governed boundaries. |
+| **Scope Documents** | The **GPS & route** — clearly defining destination and path | Sets direction and measures progress |
+| **Codebase Guide** | The **real-time dashboard** — showing current system state | Provides visibility of present reality |
+| **Context Wrappers** | The **vehicle safety systems** — enforcing guardrails | Maintains standards appropriate to tier |
+| **Assurance Checks** | The **"Are we there yet?"** verification | Drives progress through feedback |
+| **AI + Human Implementation** | The **driver + vehicle** partnership | Makes tactical decisions within governed boundaries |
 
-This analogy underscores that the governance triangle is not bureaucratic overhead – it is an integrated control system that guides and protects every step toward the defined outcomes.
+This analogy underscores that the Engine is not bureaucratic overhead — it's an integrated control system guiding every step toward defined outcomes.
 
 ## Progressive Rigor Model
 
-A key innovation of the framework is its progressive rigor model, which recognizes that engineering standards should scale with project maturity. Early prototypes need minimal structure, while production systems require comprehensive governance.
+A key innovation is the progressive rigor model that scales engineering standards with project maturity:
 
-This approach prevents over-engineering early-stage projects while ensuring mature systems meet necessary standards. It provides a clear roadmap for how engineering practices should evolve as projects mature.
+- Tier 1: Hobby/prototype projects need minimal structure
+- Tier 3: Growth/team projects require solid quality gates
+- Tier 5: Enterprise/regulated systems demand comprehensive governance
+
+This prevents over-engineering early-stage work while ensuring mature systems meet necessary standards. Critically, at every tier, compliance is binary (pass/fail) — only the standards themselves scale, not the strictness of their enforcement.
 
 ## Implementation Strategy
 
-While the framework is designed to be tool and model agnostic, it is particularly optimized for integration with AI-powered code editors such as **Cursor** and **Winsurf**. These tools provide the ideal environment to apply the governance triangle in real-time as code is being generated.
+While designed to be tool and model agnostic, the Engine is optimized for integration with AI-powered code editors like **Cursor** and **Winsurf**, which provide ideal environments to apply governance in real-time as code is generated.
 
-The framework works with:
+The Engine works with:
 - Any AI coding model or assistant
 - Any development toolchain
 - Any programming language
 - Any cloud or on-premises infrastructure
 
-This flexibility helps teams adopt the framework incrementally, first applying it to the most critical governance areas and expanding coverage as the project matures. 
+This flexibility enables incremental adoption, applying first to critical governance areas and expanding as projects mature.
+
+## Core Principles
+
+1. **Reflect Reality** — Documentation must mirror the system's true state
+2. **Compliance is Binary** — Pass or fail; no "mostly compliant" state
+3. **Tiers Drive Strictness** — Higher tier = stricter standards
+4. **Simplicity is Power** — No meta-frameworks or speculation
+5. **Docker-First Discipline** — Runs identically everywhere or fails early 

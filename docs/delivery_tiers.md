@@ -1,39 +1,56 @@
 # Delivery Tiers
 
-The AI Delivery Framework uses a progressive rigor model that scales engineering discipline based on project maturity and risk. This aims to help early-stage projects move quickly while supporting appropriate standards for production systems.
+The AI Delivery Engine employs a progressive rigor model that scales standards with project maturity and risk. This enables early-stage projects to move quickly while ensuring appropriate governance for production systems.
 
 ## Tier Structure
 
-| Tier | Use Case | Engineering Rigor | Context Wrapper |
-|------|----------|-------------------|-----------------|
-| **0 – Exploration** | Initial learning, chat-only exploration | None (no code committed) | [tier0_exploration_context_wrapper.md](../core/context_wrappers/tier0_exploration_context_wrapper.md) |
-| **1 – Prototype** | Exploratory spikes, internal proofs | Minimal | [tier1_hobby_context_wrapper.md](../core/context_wrappers/tier1_hobby_context_wrapper.md) |
-| **2 – MVP** | Early user validation | Moderate (GDPR Lite if personal data) | [tier2_mvp_context_wrapper.md](../core/context_wrappers/tier2_mvp_context_wrapper.md) |
-| **3 – Beta** | Public pilots, early scaling | High | [tier3_beta_context_wrapper.md](../core/context_wrappers/tier3_beta_context_wrapper.md) |
-| **4 – Production** | Launched products | Full | [tier4_production_context_wrapper.md](../core/context_wrappers/tier4_production_context_wrapper.md) |
-| **5 – Enterprise** | Highly regulated, high-security | Maximum | [tier5_enterprise_context_wrapper.md](../core/context_wrappers/tier5_enterprise_context_wrapper.md) |
+| Tier | Use Case | Standards Level | Context Wrapper |
+|------|----------|-----------------|-----------------|
+| **0 – Exploration** | Learning, chat-only exploration | None (no code committed) | [tier0_exploration_context_wrapper.md](../core/context_wrappers/tier0_exploration_context_wrapper.md) |
+| **1 – Hobby** | Personal projects, internal proofs | Minimal | [tier1_hobby_context_wrapper.md](../core/context_wrappers/tier1_hobby_context_wrapper.md) |
+| **2 – MVP** | Early user validation | Moderate | [tier2_mvp_context_wrapper.md](../core/context_wrappers/tier2_mvp_context_wrapper.md) |
+| **3 – Beta** | Public pilots, initial scaling | High | [tier3_beta_context_wrapper.md](../core/context_wrappers/tier3_beta_context_wrapper.md) |
+| **4 – Production** | Launched products | Comprehensive | [tier4_production_context_wrapper.md](../core/context_wrappers/tier4_production_context_wrapper.md) |
+| **5 – Enterprise** | Regulated, high-security | Maximum | [tier5_enterprise_context_wrapper.md](../core/context_wrappers/tier5_enterprise_context_wrapper.md) |
+
+## Binary Compliance Principle
+
+**Important**: At all tiers, compliance is binary (pass/fail). Only the *level* of required standards changes by tier—never the strictness of enforcement.
+
+A Tier 1 project with minimal standards must still meet 100% of Tier 1 requirements to be compliant.
 
 ## Key Dimensions by Tier
 
-The framework scales requirements across multiple engineering dimensions:
+The Engine scales requirements across these dimensions:
 
-| Dimension | Tier 0 | Tier 1 | Tier 2 | Tier 3 | Tier 4 | Tier 5 |
-|-----------|--------|--------|--------|--------|--------|--------|
-| **Testing** | None | Basic unit tests (20%) | Unit tests (50%) | Unit + Integration (70%) | Comprehensive (85%+) | Exhaustive (95%+) |
-| **Security** | None | Basic practices | OWASP Top 10 | Automated scanning | Pentesting | Advanced threat modeling |
-| **CI/CD** | None | Optional | Basic | Required | Staging pipeline | Multiple environments |
-| **Documentation** | Notes | Basic README | User docs | Architecture docs | Full system docs | Compliance docs |
-| **Observability** | Print statements | Basic logging | Structured logging | Metrics | APM | Distributed tracing |
-| **Data Management** | In-memory | SQLite | Single database | Data validation | Backup/DR | Full data governance |
+| Dimension | Tier 1 | Tier 3 | Tier 5 |
+|-----------|--------|--------|--------|
+| **Testing** | Basic unit tests (20%) | Unit + Integration (70%) | Exhaustive (95%+) |
+| **Security** | Basic practices | Automated scanning | Advanced threat modeling |
+| **CI/CD** | Optional | Required | Multiple environments |
+| **Documentation** | Basic README | Architecture docs | Compliance docs |
+| **Observability** | Basic logging | Metrics | Distributed tracing |
+| **Data Management** | SQLite | Data validation | Full data governance |
 
-## Selecting the Right Tier
+## Selecting Your Tier
 
 Consider these factors when choosing a delivery tier:
 
-1. **User Impact** - Who will use the system and what's at stake?
-2. **Data Sensitivity** - What type of data will be processed?
-3. **Scale Requirements** - How many users/transactions are expected?
-4. **Regulatory Context** - What compliance standards apply?
-5. **Business Criticality** - How important is the system to operations?
+1. **User Impact** — Who will use the system and what's at stake?
+2. **Data Sensitivity** — What types of data will be processed?
+3. **Scale Requirements** — Expected user/transaction volume?
+4. **Regulatory Context** — Applicable compliance standards?
+5. **Business Criticality** — Importance to operations?
 
-Projects can and should upgrade tiers as they mature. Many successful products begin at Tier 1-2 and progressively adopt more rigorous practices as they scale. 
+Projects should upgrade tiers as they mature. Many successful products begin at Tier 1-2 and progressively adopt stricter standards as they scale.
+
+## Tier Transition
+
+When upgrading tiers:
+
+1. Select the new Context Wrapper
+2. Document the transition in the next Scope Document
+3. Conduct a gap analysis using the [compliance checker](../prompts/check_context_wrapper_compliance.md)
+4. Implement required standards to achieve binary compliance with the new tier
+
+The Engine accelerates this transition by providing clear, executable standards at each tier. 

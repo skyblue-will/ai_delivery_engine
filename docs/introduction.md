@@ -1,120 +1,125 @@
 # Introduction
 
-AI Delivery Framework is a governance-first approach to AI-assisted software delivery. This document covers why it exists, how it works, and when to use it.
+AI Delivery Engine is a structured approach to AI-assisted software delivery. This document outlines what it is, how it works, and when to use it.
 
 ---
 
-## 1. Why the Framework Exists
+## 1. Why the Engine Exists
 
-Bolting an LLM onto a legacy process rarely works. Teams need AI speed without losing rigour, compliance, or maintainability.
+Bolting an LLM onto existing processes rarely works. Teams need AI speed without sacrificing rigor, compliance, or maintainability.
 
-The framework delivers that through:
+The Engine delivers this through:
 
-* A **clear governance core** (Codebase Guide + Scope Docs + Context Wrappers).
-* A **tiered maturity model** that lets standards grow with product risk.
-* A **tool- and model-agnostic approach** so teams can adopt new AI capabilities rapidly.
-
----
-
-## 2. Governance Core
-
-| Asset | Role | Maintained By |
-|-------|------|--------------|
-| **[Codebase Guide](../core/codebase_guide.md)** | Canonical reference for the *current* system. | Engineers after each merge |
-| **[Versioned Scope Document](../core/scope_doc_template.md)** | Defines the *target* state for each release. | Product + Engineering before work starts |
-| **Context Wrapper** | Enforces delivery discipline according to Delivery Tier. | Prompt layer & CI/CD hooks |
-
-These three assets act as **living contracts** that keep AI-generated work auditable and aligned with business goals. The **Scope Document** and **Codebase Guide** work together in a continuous cycle—scope defines what you will build, and the guide documents what you've built.
+* A **Governance Core** defining **present reality**, **defined destination**, and **enforced standards**.
+* An **Assurance Core** providing **action-driven verification** via human, LLM, and testing.
+* **Delivery Tiers** that scale standards precisely with project risk.
 
 ---
 
-## 3. Delivery Tiers (Snapshot)
+## 2. Governance Core (Define)
 
-| Tier | Typical Use | Key Engineering Gates |
-|------|-------------|-----------------------|
-| 1 – Prototype | Internal spikes | Minimal checks |
-| 2 – MVP | Early user validation | Tests + GDPR Lite* |
-| 3 – Beta | Public pilot | Full test suite + secure coding review |
-| 4 – Production | Launched product | CI/CD, SRE readiness, compliance gates |
-| 5 – Enterprise | Regulated, high-security | Continuous compliance, advanced audit |
+| Component | Purpose | Maintained By |
+|-----------|---------|--------------|
+| **[Codebase Guide](../core/codebase_guide.md)** | Maps the **present reality** of the system. | Engineers after each merge |
+| **[Scope Document](../core/scope_doc_template.md)** | Defines the **destination** for each release. | Product + Engineering before work |
+| **Context Wrapper** | Specifies **standards** for the active Delivery Tier. | Prompt layer & CI/CD hooks |
 
-\* GDPR Lite applies if personal data is processed.
+These three components form a living contract that keeps AI-assisted work auditable and aligned with business goals.
 
 ---
 
-## 4. Target Audience
+## 3. Assurance Core (Verify)
 
-* **Engineering Teams** looking to boost velocity with AI while retaining discipline.
-* **Start-ups** that need to scale standards progressively as they find product-market fit.
-* **Enterprises** that must prove compliance and auditability when integrating LLM tooling.
+| Check | Purpose | Verification Method |
+|-------|---------|---------------------|
+| **Scope Alignment** | Verify implementation matches scope | Human review with [prompts](../prompts/compare_scope_to_codebase.md) |
+| **Structural Diff** | Compare Guide, Scope, Code & Standards | LLM analysis with [prompts](../prompts/diff_codebase_guide_vs_reality.md) |
+| **Standards Compliance** | Verify Context Wrapper adherence | Automated tests with [checks](../prompts/check_context_wrapper_compliance.md) |
 
----
-
-## 5. Supported AI Tools
-
-The framework is specifically designed for integration with AI-powered code editors including:
-
-* **Cursor** - Uses the governance triangle to guide AI generation within established boundaries
-* **Winsurf** - Leverages context wrappers to maintain discipline in AI-assisted development
-* Other AI coding assistants that support custom context/rules injection
-
-By providing structured governance through these tools, the framework keeps AI development on track while maximizing productivity benefits.
+Assurance provides continuous verification that reality matches intent, driving progress through structured feedback.
 
 ---
 
-## 6. Workflow Overview
+## 4. Delivery Tiers (Binary Standards)
+
+| Tier | Typical Use | Standards Profile |
+|------|-------------|-------------------|
+| 1 | Hobby / Prototype | Linting, smoke tests |
+| 3 | Growth / Team | Full test suite, code-quality gates |
+| 5 | Enterprise | Mutation testing, provenance, SBOM |
+
+All tiers enforce standards in binary fashion - compliance is pass/fail, never "mostly compliant."
+
+---
+
+## 5. Target Audience
+
+* **Engineering Teams** seeking velocity with control
+* **Startups** progressively scaling governance with product risk
+* **Enterprises** requiring compliance and auditability in AI workflows
+
+---
+
+## 6. Supported AI Tools
+
+The Engine integrates with AI-powered code editors including:
+
+* **Cursor** - Uses the Governance Core to guide AI generation
+* **Winsurf** - Leverages Context Wrappers for disciplined development
+* Other AI coding assistants supporting custom context injection
+
+---
+
+## 7. Engine Workflow
 
 ```mermaid
 graph TD
-    A[Project Initialisation] --> B[Scope Document]
+    A[Project Initialization] --> B[Scope Document Creation]
     B --> C[Context Wrapper Selection]
-    C --> D[Prompt-Driven Development]
-    D --> E[Automated + Human Review]
-    E --> F[CI/CD Deployment]
-    F --> G[Governance Update]
+    C --> D[AI Augmented Development]
+    D --> E[Verification Checks]
+    E --> F[Deployment Pipeline]
+    F --> G[Codebase Guide Update]
+    G --> B
 ```
 
-1. **Project Initialisation** – set risk profile and assign Delivery Tier.
-2. **Scope Document** – capture the to-be state in a versioned markdown file.
-3. **Context Wrapper** – load prompts that enforce tier-specific rules.
-4. **Prompt-Driven Development** – generate modular code + tests via AI.
-5. **Review & Deployment** – automated checks plus human approval; ship via CI/CD.
-6. **Governance Update** – update [Codebase Guide](../core/codebase_guide.md) using the [update template](../meta/codebase_guide_update_template.md) and plan the next iteration.
+1. **Initialize** — Assess risk profile and set Delivery Tier
+2. **Define Scope** — Document the destination in a versioned markdown file
+3. **Apply Standards** — Load Context Wrapper enforcing tier-specific rules
+4. **Build** — Generate code + tests via AI within defined standards
+5. **Verify** — Run Assurance checks against all dimensions (scope, standards, structure)
+6. **Deploy** — Ship via CI/CD with appropriate tier gates
+7. **Update Guide** — Refresh [Codebase Guide](../core/codebase_guide.md) using [update prompt](../prompts/update_codebase_guide.md)
 
 ---
 
-## 7. Compliance Philosophy
+## 8. Core Principles
 
-Compliance is **modular and progressive**:
-
-* **Start minimal** – no premature heavyweight controls at Tier 1.
-* **Add as needed** – GDPR Lite from Tier 2 when personal data appears.
-* **Scale to full** – HIPAA, SOC2, PCI-DSS integrated only when required.
-
-This balances early agility with the audit trail production demands.
+1. **Reflect Reality** — Documentation must mirror the actual system
+2. **Compliance is Binary** — Pass or fail; no "mostly compliant"
+3. **Tiers Drive Strictness** — Higher Tier = stricter standards
+4. **Simplicity is Power** — No meta-frameworks or speculative complexity
+5. **Docker-First** — Runs identically everywhere or fails fast
 
 ---
 
-## 8. Getting Started (Quick Steps)
+## 9. Getting Started
 
-1. **Clone / Fork** this repository.
-2. **Read** the sample [`core/codebase_guide.md`](../core/codebase_guide.md) and [`core/scope_doc_template.md`](../core/scope_doc_template.md).
-3. **Define** your Delivery Tier in [`docs/delivery_tiers.md`](delivery_tiers.md).
-4. **Draft** your first Scope Document (e.g. `v0.1.0.md`) based on the template.
-5. **Follow** the workflow described above, using the Context Wrapper for your tier.
-6. **Commit** code and tests; **update the Codebase Guide after each significant change** to maintain system documentation.
+1. **Clone repository**
+2. **Read** [Codebase Guide](../core/codebase_guide.md) and [Scope Template](../core/scope_doc_template.md)
+3. **Set** your [Delivery Tier](delivery_tiers.md)
+4. **Create** your first Scope Document (e.g., `v0.1.0.md`)
+5. **Follow** the Engine workflow with appropriate Context Wrapper
+6. **Update** the Codebase Guide after each significant change
 
 ---
 
-## 9. Further Reading
+## 10. Further Reading
 
 | Topic | Document |
 |-------|----------|
-| Full Workflow | `docs/why_framework.md` |
-| FAQ | `docs/faq.md` |
-| Roadmap | `roadmap.md` |
-| Lessons Learned | `docs/lessons_learned.md` |
+| Engine Theory | [Theory of Operation](theory_of_operation.md) |
+| Full Workflow | [Full Workflow](../meta/full_workflow.md) |
+| Roadmap | [Roadmap](../roadmap.md) |
 
----
-
-For planned changes and version history, see `roadmap.md`.
+For version history and change plans, see `roadmap.md`.
