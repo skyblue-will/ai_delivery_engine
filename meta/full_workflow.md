@@ -53,7 +53,7 @@ The discovery artefacts ensure decision-makers have a clear **business case** be
 
 | Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
 |-----------|----------------|-----------------------|-----------------|
-| Convert discovery insights into a scoped, budgeted, and time-boxed delivery plan. | • Define MVP vs. future scope<br>• Select Delivery Tier<br>• Establish success metrics<br>• Architecture & risk assessment | • `v0.x.0.md` plan drafted and approved<br>• Context Wrapper template selected | • Approved Version Plan (`v0.x.0.md`)<br>• Architecture Decision Records (ADRs)<br>• Updated Scope Document |
+| Convert discovery insights into a scoped, budgeted, and time-boxed delivery plan. | • Define MVP vs. future scope<br>• Select Delivery Tier<br>• Establish success metrics<br>• Architecture & risk assessment<br>• **Leverage LLM with Scope, Guide, and Wrapper to propose optimal modular build approach** | • `v0.x.0.md` plan drafted and approved<br>• Context Wrapper template selected | • Approved Version Plan (`v0.x.0.md`)<br>• Architecture Decision Records (ADRs)<br>• Updated Scope Document |
 
 ### Recommended AI Models
 - **Primary**: Claude 3.7 Opus - Exceptional architecture reasoning and technical planning
