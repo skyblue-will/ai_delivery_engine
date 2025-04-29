@@ -105,11 +105,14 @@ graph TD
 
 ## 8. Core Principles
 
-1. **Reflect Reality** — Documentation must mirror the actual system
-2. **Compliance is Binary** — Pass or fail; no "mostly compliant"
-3. **Tiers Drive Strictness** — Higher Tier = stricter standards
-4. **Simplicity is Power** — No meta-frameworks or speculative complexity
-5. **Docker-First** — Runs identically everywhere or fails fast
+1. **Reflect Reality** — Documentation must mirror the actual system, always.  
+2. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
+3. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
+4. **Human-Led Development** — You lead the build, not the LLM; know when to trust and when to intervene, just as any effective leader would.
+5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
+6. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.
+7. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.
+8. **ASK Questions, Learn as You Build** — This is not a shortcut to expertise; continuous learning is essential to successfully navigate the technical landscape even with AI assistance.
 
 ---
 
