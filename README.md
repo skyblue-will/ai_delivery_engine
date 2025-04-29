@@ -11,6 +11,7 @@ That velocity is a double-edged sword:
 
 * Pros — dramatic reduction in boilerplate and prototype time.
 * Cons — unchecked drift, security holes, and compliance gaps appear just as quickly.
+* Cons — potential *IP infringement* risk when provenance metadata is missing or obscured.
 
 The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
 
@@ -80,6 +81,7 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 3. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
 4. **Simplicity is Power** — No meta-frameworks or speculative complexity.  
 5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
+6. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.
 
 ---
 
