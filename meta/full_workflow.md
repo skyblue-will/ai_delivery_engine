@@ -5,6 +5,22 @@ This document defines the end-to-end workflow for delivering technology solution
 
 > **When to use this file**: Refer to it as the canonical, high-level playbook when kicking off a new project or auditing progress against framework standards.
 
+### Engine Alignment
+
+Every phase is powered by the Delivery Engine's twin cores:
+
+* **Governance Core** — *defines* present reality, desired destination, and mandatory standards.
+* **Assurance Core** — *verifies* that reality matches the definition through human review, LLM diff, and automated tests.
+
+Compliance is always **binary** (pass/fail). Delivery Tiers scale *which* standards apply, never **how strictly** they are enforced.
+
+### Pre-flight Checklist (Before Day-1 Code)
+
+1. **Choose Delivery Tier** and load its Context Wrapper.
+2. **Draft a Scope Document** (`v0.x.0.md`) capturing objectives, boundaries, and acceptance criteria.
+3. **Create / Update the Codebase Guide** so it accurately reflects the starting codebase (or empty stub).
+4. **Wire up CI** to run Assurance checks aligned with the selected tier.
+
 ---
 
 ## Table of Contents
@@ -20,8 +36,8 @@ This document defines the end-to-end workflow for delivering technology solution
 
 ## Discovery Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Validate that a digital/software solution is the right answer to the business problem, and if so, determine the appropriate approach. | • Stakeholder interviews<br>• Current-state analysis<br>• Process vs. technology assessment<br>• Data feasibility assessment | • Initial **Scope Document** stub created<br>• Compliance constraints (e.g., GDPR Lite) captured | • Discovery Report<br>• Initial Scope Document |
 
 ### Recommended AI Models
@@ -35,8 +51,8 @@ The discovery artefacts ensure decision-makers have a clear **business case** be
 
 ## Planning Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Convert discovery insights into a scoped, budgeted, and time-boxed delivery plan. | • Define MVP vs. future scope<br>• Select Delivery Tier<br>• Establish success metrics<br>• Architecture & risk assessment | • `v0.x.0.md` plan drafted and approved<br>• Context Wrapper template selected | • Approved Version Plan (`v0.x.0.md`)<br>• Architecture Decision Records (ADRs)<br>• Updated Scope Document |
 
 ### Recommended AI Models
@@ -50,8 +66,8 @@ Security and legal teams validate data-handling requirements _before_ developmen
 
 ## Development Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Build the solution iteratively with disciplined, AI-assisted development practices. | • Implement features in short cycles (feature branches)<br>• Apply **Context Wrappers** based on Delivery Tier<br>• Continuous code review & linting<br>• Update **Codebase Guide** with each significant change | • Automated CI checks green<br>• Codebase Guide updated in PRs<br>• Scope creep flagged in weekly triage | • Incremental feature branches<br>• Updated Codebase Guide<br>• Technical documentation |
 
 ### Recommended AI Models
@@ -65,8 +81,8 @@ Context Wrappers enforce branch discipline, test coverage thresholds, and docume
 
 ## Testing Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Validate that the implementation meets functional, non-functional, and compliance requirements. | • Unit & integration testing<br>• Model performance validation<br>• Security & privacy audits | • Test matrices approved<br>• CI pipeline enforces required coverage<br>• Privacy impact assessment signed off | • Test Reports<br>• Model Evaluation Metrics<br>• Compliance Sign-off |
 
 ### Recommended AI Models
@@ -80,8 +96,8 @@ Shift-left testing: integrate synthetic data generation for edge-case coverage e
 
 ## Deployment Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Release the solution safely into the target environment with rollback capability. | • Infrastructure-as-Code (IaC) updates<br>• Blue/green or canary releases<br>• Release notes & change log | • Deployment runbooks reviewed<br>• Release approved by change authority | • Deployed artefacts<br>• Release Notes<br>• Updated runbooks |
 
 ### Recommended AI Models
@@ -95,8 +111,8 @@ Data residency and user-consent mechanisms go live; legal signs off on productio
 
 ## Monitoring Phase
 
-| Objective | Key Activities | Governance Checkpoints | Primary Outputs |
-|-----------|----------------|------------------------|-----------------|
+| Objective | Key Activities | Gov & Assurance Gates | Primary Outputs |
+|-----------|----------------|-----------------------|-----------------|
 | Ensure the solution remains reliable, performant, and compliant in production. | • Implement observability (logs, metrics, traces)<br>• Model drift detection<br>• Post-release incident reviews | • SLO dashboards reviewed weekly<br>• Monthly compliance health check | • Monitoring Dashboards<br>• Incident Reports<br>• Continuous Improvement Tasks |
 
 ### Recommended AI Models
