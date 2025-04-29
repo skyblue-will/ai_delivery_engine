@@ -12,7 +12,7 @@ Analyze both the Codebase Guide (`core/codebase_guide.md`) and the actual codeba
 
 1. **Structure Comparison**
    - Compare directory structure documented vs. actual
-   - Validate file organization descriptions
+   - Validate file organisation descriptions
 
 2. **Component Validation**
    - Verify all documented components actually exist

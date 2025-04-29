@@ -74,7 +74,7 @@ date: "YYYY-MM-DD"
 | Database | [Technology] | [Why selected] |
 | Processing | [Technology] | [Why selected] |
 | Authentication | [Technology] | [Why selected] |
-| Containerization | [Technology] | [Why selected] |
+| Containerisation | [Technology] | [Why selected] |
 | CI/CD | [Technology] | [Why selected] |
 | Observability | [Technology] | [Why selected] |
 | Hosting | [Technology] | [Why selected] |

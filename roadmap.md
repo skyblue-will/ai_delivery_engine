@@ -50,16 +50,16 @@ The AI Delivery Engine is intentionally designed as a starting point, not a fini
 
 | Goal | Current State | Target State | Benefit |
 |------|--------------|--------------|---------|
-| **Enterprise** | Individual focus | Enterprise integration patterns | Potential for large organization adoption |
+| **Enterprise** | Individual focus | Enterprise integration patterns | Potential for large organisation adoption |
 | **Analytics** | No measurement | Governance impact metrics | Engine effectiveness measurements |
-| **Certification** | No program | Certified professionals program | Industry recognition and standardization |
+| **Certification** | No program | Certified professionals program | Industry recognition and standardisation |
 
 ## Long-term Vision
 
 | Goal | Description | Benefit |
 |------|------------|---------|
 | **Agentic AI Integration** | AI agents that operate within the engine | Reduced human intervention while maintaining governance |
-| **Engine Evolution** | Self-improving system based on real-world usage | Continuous optimization of delivery practices |
+| **Engine Evolution** | Self-improving system based on real-world usage | Continuous optimisation of delivery practices |
 | **Industry Standard** | Recognized methodology for AI-assisted development | Common language for professional AI development |
 
 All updates tracked via versioned scope documents and governed by the engine's own processes. 

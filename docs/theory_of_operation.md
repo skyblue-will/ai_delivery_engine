@@ -60,7 +60,7 @@ This prevents over-engineering early-stage work while ensuring mature systems me
 
 ## Implementation Strategy
 
-While designed to be tool and model agnostic, the Engine is optimized for integration with AI-powered code editors like **Cursor** and **Winsurf**, which provide ideal environments to apply governance in real-time as code is generated.
+While designed to be tool and model agnostic, the Engine is optimised for integration with AI-powered code editors like **Cursor** and **Winsurf**, which provide ideal environments to apply governance in real-time as code is generated.
 
 The Engine works with:
 - Any AI coding model or assistant
