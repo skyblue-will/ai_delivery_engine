@@ -9,7 +9,9 @@ This guide provides an authoritative description of the current codebase state.
 | Directory | Purpose |
 |-----------|---------|
 | `core/` | Contains governance core components: codebase guide, scope template, context wrappers |
+| `meta/` | Engine design documentation and templates |
 | `docs/` | User-facing documentation and architecture diagrams |
+| `tools/` | Tool recommendations and tooling landscape information |
 | `scripts/` | Utility scripts for repository maintenance |
 | `.github/` | CI/CD workflows and repository configuration |
 
@@ -24,10 +26,15 @@ This guide provides an authoritative description of the current codebase state.
 | `docs/delivery_tiers.md` | Progressive rigor model details |
 | `docs/workflow.md` | Detailed workflow documentation |
 | `docs/tools_comparison.md` | Comparison of available tools |
+| `docs/when_you_can_change_scope_mid_workflow_and_when_you_cant.md` | Guidance on scope management |
+| `docs/example_ai_coding_policy.md` | Template for ISO27001 and Cyber Essentials compliant AI coding policy |
 | `docs/architecture/generate_c4_diagrams.py` | Script to generate architecture diagrams |
-| `core/engine/governance_core.md` | Engine governance principles |
-| `core/engine/assurance_core.md` | Assurance mechanisms documentation |
-| `prompts/codebase_guide_update_template.md` | Template for updating the codebase guide |
+| `meta/governance_core.md` | Engine governance principles |
+| `meta/assurance_core.md` | Assurance mechanisms documentation |
+| `meta/OPEN_CHALLENGES.md` | Documentation of current challenges |
+| `meta/codebase_guide_update_template.md` | Template for updating the codebase guide |
+| `tools/recommended_tool_criteria.md` | Criteria for tool selection |
+| `tools/current_tooling_landscape.md` | Overview of available AI tools |
 | `scripts/consolidate_codebase.py` | Script to consolidate codebase into a single text file |
 | `scripts/consolidated_codebase.txt` | Consolidated view of the entire codebase |
 

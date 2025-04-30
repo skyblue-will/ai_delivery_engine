@@ -110,7 +110,8 @@ A fuller explanation lives in [`docs/workflow.md`](docs/workflow.md).
 2. **Follow the Workflow** — See the high-level roll-up in [`docs/workflow.md`](docs/workflow.md).
 3. **Pick Your Tier** — Select a Delivery Tier in [`docs/delivery_tiers.md`](docs/delivery_tiers.md) and load its Context Wrapper.
 4. **Create Scope & Guide** — Scaffold your first Scope Document (`docs/scopes/v0.x.0.md`) and update `core/codebase_guide.md`.
+5. **Compliance Framework** — For regulated environments, use the [`docs/example_ai_coding_policy.md`](docs/example_ai_coding_policy.md) template to establish ISO27001 and Cyber Essentials compliance.
 
-After these four steps you're ready to clone, build, and start shipping.
+After these steps you're ready to clone, build, and start shipping.
 
 ---

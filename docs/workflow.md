@@ -68,6 +68,8 @@ Delivery Tiers scale **which** standards apply, never **how strictly** they are 
 
 Moving up a tier means swapping to a stricter Context Wrapper and retro-fitting any gaps until **binary compliance** is restored.
 
+For organizations implementing AIDE in regulated environments, see the [Example AI Coding Policy](example_ai_coding_policy.md) for a template that aligns with ISO27001 and Cyber Essentials standards.
+
 ---
 
 ## AI Prompt Usage

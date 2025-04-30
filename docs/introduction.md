@@ -133,5 +133,6 @@ graph TD
 |-------|----------|
 | Workflow | [Workflow](workflow.md) |
 | Roadmap | [Roadmap](../roadmap.md) |
+| Compliance Policy | [Example AI Coding Policy](example_ai_coding_policy.md) |
 
 For version history and change plans, see `roadmap.md`.
