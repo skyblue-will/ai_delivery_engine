@@ -19,6 +19,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
 
 1. **Scope**  
    • Draft or update a **Scope Document** (`docs/scopes/vX.Y.Z.md`) **directly inside this repository** — treating documentation as a first-class deliverable.  
+   • Apply "Think before you code" evaluation to each proposed feature: validate user need, explore existing solutions, assess value-to-effort ratio, and alignment with product strategy.
    • Capture goals, in/out scope, acceptance criteria, and delivery tier.  
    • _Governance sets the destination._
 

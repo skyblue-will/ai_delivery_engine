@@ -12,6 +12,7 @@ This document provides an example policy framework for organisations implementin
 | Scope | All AI-assisted software engineering activities |
 | Compliance | ISO27001 (Information Security) and Cyber Essentials |
 | Implementation | AI Product Delivery Engine (AIPDE) with appropriate Delivery Tier |
+| Philosophy | Product-first, "Think before you code" approach to development |
 
 ## 1. Information Security Requirements (ISO27001)
 
@@ -36,6 +37,18 @@ This document provides an example policy framework for organisations implementin
 
 ## 3. Implementation Using AI Product Delivery Engine
 
+### Core Philosophy: Think Before You Code
+
+Before initiating any development work, teams must evaluate whether the proposed code is truly necessary by asking:
+
+1. Does this code directly address a verified user/customer need?
+2. Is there an existing solution that could be reused or modified instead?
+3. Will this code deliver measurable value to the product?
+4. Does the business value justify the maintenance cost?
+5. Is this solution aligned with our product strategy?
+
+Only after answering these questions should the team proceed to implementation.
+
 ### Required Delivery Tier Selection
 
 | Risk Level | Example System | Required AIPDE Tier |
@@ -56,14 +69,16 @@ This document provides an example policy framework for organisations implementin
 
 ### Required Developer Practices
 
-1. Follow the Engine Workflow (Scope → Setup → Build → Governance Check → Ship → Repeat)
-2. Treat documentation as a first-class deliverable alongside code
-3. Maintain a product-first mindset in all development activities
-4. Update the Codebase Guide after security-relevant changes
-5. Document security controls in Scope Documents
-6. Use AI assistants only within the Context Wrapper boundaries
-7. Submit all code to Assurance Core verification before release
-8. Report any AI-generated security concerns through standard incident procedures
+1. Apply "Think before you code" evaluation to every feature and component
+2. Follow the Engine Workflow (Scope → Setup → Build → Governance Check → Ship → Repeat)
+3. Treat documentation as a first-class deliverable alongside code
+4. Maintain a product-first mindset in all development activities
+5. Update the Codebase Guide after security-relevant changes
+6. Document security controls in Scope Documents
+7. Use AI assistants only within the Context Wrapper boundaries
+8. Submit all code to Assurance Core verification before release
+9. Report any AI-generated security concerns through standard incident procedures
+10. Regularly evaluate existing code for continued relevance and value
 
 ## 4. Governance & Assurance
 

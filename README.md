@@ -77,14 +77,15 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 ## Core Principles
 
 1. **Product-First Mindset** — Every change must deliver stakeholder value; technology choices serve the product, not the other way around.  
-2. **Documentation _is_ Delivery** — Docs ship with code and tests; incomplete docs mean the feature isn't done.  
-3. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
-4. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
-5. **AI-Assisted, Human-Led** — The LLM is a powerful contributor; you remain the decision-maker.  
-6. **Docker-First Discipline** — Runs the same everywhere, or fails early.  
-7. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.  
-8. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.  
-9. **ASK Questions, Learn as You Build** — This is not a shortcut to expertise; continuous learning is essential even with AI assistance.
+2. **Think Before You Code** — Question if code is truly necessary; the best solution may not involve writing new code at all.  
+3. **Documentation _is_ Delivery** — Docs ship with code and tests; incomplete docs mean the feature isn't done.  
+4. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
+5. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
+6. **AI-Assisted, Human-Led** — The LLM is a powerful contributor; you remain the decision-maker.  
+7. **Docker-First Discipline** — Runs the same everywhere, or fails early.  
+8. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.  
+9. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.  
+10. **ASK Questions, Learn as You Build** — This is not a shortcut to expertise; continuous learning is essential even with AI assistance.
 
 ---
 
