@@ -9,6 +9,8 @@ This guide provides an authoritative description of the current codebase state.
 | Directory | Purpose |
 |-----------|---------|
 | `core/` | Contains governance core components: codebase guide, scope template, context wrappers |
+| `product_management/` | Scoped product documents defining intent and priority |
+| `meta/context_wrappers/` | Tier-specific context wrappers enforcing governance rules |
 | `meta/` | Engine design documentation and templates |
 | `docs/` | User-facing documentation and architecture diagrams |
 | `tools/` | Tool recommendations and tooling landscape information |
@@ -37,6 +39,8 @@ This guide provides an authoritative description of the current codebase state.
 | `tools/current_tooling_landscape.md` | Overview of available AI tools |
 | `scripts/consolidate_codebase.py` | Script to consolidate codebase into a single text file |
 | `scripts/consolidated_codebase.txt` | Consolidated view of the entire codebase |
+| `product_management/v0.X.X.md` | Source-of-truth scoped product document |
+| `meta/context_wrappers/` | Delivery tier context wrappers referenced by Governance Core |
 
 ## 3. Data Flow
 
