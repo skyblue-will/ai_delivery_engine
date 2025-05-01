@@ -2,7 +2,7 @@
 
 ---
 
-# Contributing to AI Delivery Engine
+# Contributing to AI Product Delivery Engine
 
 This document outlines how to effectively contribute to the engine.
 

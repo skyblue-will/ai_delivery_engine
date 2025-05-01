@@ -1,6 +1,6 @@
-# AI Delivery Engine
+# AI Product Delivery Engine
 
-End-to-end, tiered governance and automated assurance for AI-accelerated software delivery.
+Product-first, tiered governance and automated assurance for AI-accelerated software delivery.
 
 ---
 
@@ -12,7 +12,7 @@ That velocity is a double-edged sword:
 * Pros — dramatic reduction in boilerplate and prototyping overhead; unleashes unprecedented productivity, fuels rapid innovation, and unlocks unknown upside with incredible potential.
 * Cons — unchecked drift, security holes, compliance gaps, and potential IP infringement.
 
-The AI Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
+The AI Product Delivery Engine provides the **professional management layer** that keeps this firepower under control — so you ship fast *and* meet engineering standards.
 
 ## Integrations
 
@@ -27,12 +27,12 @@ Use these AI coding tools to apply the Delivery Engine in your workflow:
 
 ## Engine Overview
 
-The Delivery Engine consists of two tightly integrated cores that work in a continuous loop:
+The AI Product Delivery Engine consists of two tightly integrated cores that work in a continuous loop:
 
 - **Governance Core (Define)** — Maintains the living contract for development: it keeps the Codebase Guide up to date, drafts versioned Scope Documents outlining goals and acceptance criteria, and applies Context Wrappers that enforce tier-specific engineering standards.
 - **Assurance Core (Verify)** — Provides structured verification: human reviews align implementation to scope, automated tests validate functional requirements, and LLM-driven structural diffs ensure documentation and code remain in sync.
 
-By continuously defining intentions and verifying reality, the Delivery Engine drives fast, compliant, and auditable AI-assisted software delivery.
+By continuously defining intentions and verifying reality, the AI Product Delivery Engine drives fast, compliant, and auditable AI-assisted software delivery.
 
 All execution occurs in a **Docker-first**, IDE-contained pipeline—scoping through shipping lives inside this mono-repo, guaranteeing identical behaviour across dev, CI, and production.
 
@@ -76,20 +76,21 @@ The active **Tier** selects *which* standards apply — never *how* strictly the
 
 ## Core Principles
 
-1. **Reflect Reality** — Documentation must mirror the actual system, always.  
-2. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
-3. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
-4. **Human-Led Development** — You lead the build, not the LLM; know when to trust and when to intervene, just as any effective leader would.
-5. **Docker-First Discipline** — Runs the same everywhere, or fails early.
-6. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.
-7. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.
-8. **ASK Questions, Learn as You Build** — This is not a shortcut to expertise; continuous learning is essential to successfully navigate the technical landscape even with AI assistance.
+1. **Product-First Mindset** — Every change must deliver stakeholder value; technology choices serve the product, not the other way around.  
+2. **Documentation _is_ Delivery** — Docs ship with code and tests; incomplete docs mean the feature isn't done.  
+3. **Compliance is Binary** — Pass or fail; no "mostly compliant."  
+4. **Tiers Control Standards** — The active Tier selects *which* standards apply; enforcement is always binary.  
+5. **AI-Assisted, Human-Led** — The LLM is a powerful contributor; you remain the decision-maker.  
+6. **Docker-First Discipline** — Runs the same everywhere, or fails early.  
+7. **IP Risk Mitigation** — Watermarking and provenance tracking ensure every AI-generated artifact carries verifiable attribution, preventing IP infringement.  
+8. **Privacy & Telemetry-Off** — All work and data stay inside the repo; outbound telemetry is disabled unless explicitly permitted.  
+9. **ASK Questions, Learn as You Build** — This is not a shortcut to expertise; continuous learning is essential even with AI assistance.
 
 ---
 
 ## Workflow Overview
 
-> The Delivery Engine moves in a six-stage, repeatable cycle that pairs Governance definition with Assurance verification **— all inside the IDE workspace and this mono-repo.**
+> The AI Product Delivery Engine moves in a six-stage, repeatable cycle that pairs Governance definition with Assurance verification **— all inside the IDE workspace and this mono-repo.**
 
 | Stage | Purpose |
 |-------|---------|
@@ -110,8 +111,7 @@ A fuller explanation lives in [`docs/workflow.md`](docs/workflow.md).
 2. **Follow the Workflow** — See the high-level roll-up in [`docs/workflow.md`](docs/workflow.md).
 3. **Pick Your Tier** — Select a Delivery Tier in [`docs/delivery_tiers.md`](docs/delivery_tiers.md) and load its Context Wrapper.
 4. **Create Scope & Guide** — Scaffold your first Scope Document (`docs/scopes/v0.x.0.md`) and update `core/codebase_guide.md`.
-5. **Compliance Framework** — For regulated environments, use the [`docs/example_ai_coding_policy.md`](docs/example_ai_coding_policy.md) template to establish ISO27001 and Cyber Essentials compliance.
 
-After these steps you're ready to clone, build, and start shipping.
+After those five steps you're ready to clone, build, and start shipping.
 
 ---

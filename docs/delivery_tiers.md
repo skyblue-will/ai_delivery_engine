@@ -1,6 +1,6 @@
 # Delivery Tiers
 
-The AI Delivery Engine employs a progressive rigor model that scales standards with project maturity and risk. This enables early-stage projects to move quickly while ensuring appropriate governance for production systems.
+The AI Product Delivery Engine employs a progressive rigor model that scales standards with project maturity and risk. This enables early-stage projects to move quickly while ensuring appropriate governance for production systems.
 
 ## Tier Structure
 

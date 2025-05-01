@@ -1,6 +1,6 @@
-## Key Differences: Cursor vs. GitHub Copilot
+# AI Coding Tools Comparison
 
-This document highlights verified differences between AI coding assistants that impact their compatibility with the AI Delivery Engine's Governance ↔ Assurance workflow.
+This document highlights verified differences between AI coding assistants that impact their compatibility with the AI Product Delivery Engine's Governance ↔ Assurance workflow.
 
 ### Core Verified Differences
 
@@ -16,4 +16,4 @@ This document highlights verified differences between AI coding assistants that 
 
 With Copilot's "Use Instruction Files" setting enabled, the Governance Core can be more effectively implemented, as standards can be persistently applied across interactions, similar to Cursor's approach.
 
-For organisations implementing the AI Delivery Engine framework, understanding these features helps determine how the Governance Core can be implemented and maintained across development workflows. 
+For organisations implementing the AI Product Delivery Engine framework, understanding these features helps determine how the Governance Core can be implemented and maintained across development workflows. 

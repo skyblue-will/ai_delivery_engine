@@ -2,7 +2,7 @@
 
 ## Purpose and Importance
 
-This prompt helps you understand unfamiliar technologies, concepts, or patterns encountered during development with the AI Delivery Engine. Rather than blindly implementing suggestions, use this to build real expertise.
+This prompt helps you understand unfamiliar technologies, concepts, or patterns encountered during development with the AI Product Delivery Engine. Rather than blindly implementing suggestions, use this to build real expertise.
 
 **Why This Matters:**
 - **Genuine Understanding**: Building with AI shouldn't mean blindly accepting code you don't understand.
@@ -68,4 +68,4 @@ SPECIFIC_QUESTIONS:
 - Is this a good choice for our project?
 ```
 
-Remember: This isn't a shortcut to avoid learning—it's a tool to help you learn more effectively as you build. The AI Delivery Engine believes in responsible AI use that enhances human expertise rather than replacing it. 
+Remember: This isn't a shortcut to avoid learning—it's a tool to help you learn more effectively as you build. The AI Product Delivery Engine believes in responsible AI use that enhances human expertise rather than replacing it. 

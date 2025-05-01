@@ -1,6 +1,6 @@
 # Introduction
 
-The AI Delivery Engine is a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It enforces that **every stage—Scope, Setup, Build, Governance Check, Shipping, Repeat—occurs *inside* this mono-repo and your IDE workspace.** It lets developers tap AI coding speed without giving up traceability, security, or quality.
+The AI Product Delivery Engine is a cohesive set of tools, standards, and feedback loops that lets you build software *fast* and *safely* with AI coding assistance. It enforces that **every stage—Scope, Setup, Build, Governance Check, Shipping, Repeat—occurs *inside* this mono-repo and your IDE workspace.** It lets developers tap AI coding speed without giving up traceability, security, or quality.
 
 ### Quick Summary
 
@@ -133,6 +133,5 @@ graph TD
 |-------|----------|
 | Workflow | [Workflow](workflow.md) |
 | Roadmap | [Roadmap](../roadmap.md) |
-| Compliance Policy | [Example AI Coding Policy](example_ai_coding_policy.md) |
 
 For version history and change plans, see `roadmap.md`.

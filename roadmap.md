@@ -2,7 +2,7 @@
 
 ## Introduction: A Living Engine
 
-The AI Delivery Engine provides a lightweight, binary-compliant workflow for shipping AI-powered software. Real-world use will:
+The AI Product Delivery Engine provides a lightweight, binary-compliant workflow for shipping AI-powered software. Real-world use will:
 - Refine governance templates and context wrappers.
 - Evolve verification tools and CI checks.
 - Fill gaps through pilot projects and community feedback.

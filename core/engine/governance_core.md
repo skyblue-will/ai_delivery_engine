@@ -1,4 +1,4 @@
-# **Governance Core — AI Delivery Engine**
+# **Governance Core — AI Product Delivery Engine**
 
 ---
 
@@ -7,7 +7,7 @@
 The Governance Core works in **lock-step** with the Assurance Core.   
 Governance **defines** the intention; Assurance **verifies** reality.  
 
-The AI Delivery Engine is governed by three active, living mechanisms:
+The AI Product Delivery Engine is governed by three active, living mechanisms:
 
 - A continuously updated map of the codebase's current structure (`codebase_guide.md`)
 - A versioned plan for each next targeted iteration (`v0.x.0.md`, `v0.x.1.md`, etc.)
@@ -94,6 +94,6 @@ This loop ensures every project evolves deliberately — with **clear intentions
 
 # **Summary**
 
-> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Delivery Engine's discipline, agility, and long-term scalability.**
+> **The Codebase Guide, Scope Documents, and Context Wrappers together form the beating heart of the AI Product Delivery Engine's discipline, agility, and long-term scalability.**
 
 By respecting and updating these elements continuously — and pairing them with the Assurance Core's automated verification loop — developers maintain velocity without sacrificing traceability, compliance, or IP safety.

@@ -1,8 +1,8 @@
-# AI Delivery Engine Workflow
+# AI Product Delivery Engine Workflow
 
 ## Overview – What this workflow is and what it solves
 
-The **AI Delivery Engine (AIDE)** is a disciplined yet lightweight workflow for shipping AI-powered software **quickly _and_ responsibly**. It solves the classic dilemma of "move fast vs. stay compliant" by pairing two tightly-coupled cores **inside a single mono-repo and IDE workspace**:
+The **AI Product Delivery Engine (AIPDE)** is a disciplined yet lightweight workflow for shipping AI-powered software **quickly _and_ responsibly**. It solves the classic dilemma of "move fast vs. stay compliant" by pairing two tightly-coupled cores **inside a single mono-repo and IDE workspace**:
 
 | Core | Role |
 |------|------|
@@ -18,7 +18,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
 > Six repeatable stages power every version, from Tier-1 hobby apps to Tier-5 regulated systems.
 
 1. **Scope**  
-   • Draft or update a **Scope Document** (`docs/scopes/vX.Y.Z.md`) **directly inside this repository**.  
+   • Draft or update a **Scope Document** (`docs/scopes/vX.Y.Z.md`) **directly inside this repository** — treating documentation as a first-class deliverable.  
    • Capture goals, in/out scope, acceptance criteria, and delivery tier.  
    • _Governance sets the destination._
 
@@ -31,7 +31,7 @@ The constant handshake between these cores is the **Engine**. When Governance is
 3. **Modular Build**  
    • Work in small, well-named branches targeting single user stories.  
    • Use AI prompts to scaffold code, tests, and docs _inside_ the boundaries set by the Context Wrapper.  
-   • Remember you are the human — don't follow the LLM blindly; if something doesn't look right, question it.  
+   • The LLM is a contributor, not the leader — you make the calls; question everything that looks wrong or misaligned with product goals.  
    • Keep the Codebase Guide up to date as modules land.  
    • After each section of the suggested Build Sequence is generated, use the Codebase Guide Update Template prompt (`prompts/update_codebase_guide.md`) to refresh the Codebase Guide accordingly.  
    • When encountering unfamiliar technologies or concepts, use the Learn As You Build prompt (`prompts/learn_as_you_build.md`) to gain genuine understanding rather than blindly implementing suggestions.  
@@ -68,13 +68,11 @@ Delivery Tiers scale **which** standards apply, never **how strictly** they are 
 
 Moving up a tier means swapping to a stricter Context Wrapper and retro-fitting any gaps until **binary compliance** is restored.
 
-For organizations implementing AIDE in regulated environments, see the [Example AI Coding Policy](example_ai_coding_policy.md) for a template that aligns with ISO27001 and Cyber Essentials standards.
-
 ---
 
 ## AI Prompt Usage
 
-Prompts are **first-class tooling** in AIDE, used in three primary ways:
+Prompts are **first-class tooling** in AIPDE, used in three primary ways:
 
 1. **Build Prompts** – Guide modular implementation (e.g., "generate API skeleton for US-03 using FastAPI & pydantic").  
 2. **Learning Prompts** – Build genuine understanding of technologies and approaches (e.g., `prompts/learn_as_you_build.md`).

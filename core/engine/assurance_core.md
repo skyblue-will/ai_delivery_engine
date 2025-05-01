@@ -1,4 +1,4 @@
-# **Assurance Core — AI Delivery Engine**
+# **Assurance Core — AI Product Delivery Engine**
 
 ---
 

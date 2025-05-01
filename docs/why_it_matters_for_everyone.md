@@ -1,4 +1,4 @@
-# Why the AI Delivery Engine Matters (Non-Technical Overview)
+# Why the AI Product Delivery Engine Matters (Non-Technical Overview)
 
 *Audience: founders, product managers, investors, and anyone who needs the *outcomes* of good engineering without diving into the code.*
 
@@ -12,7 +12,7 @@ Modern AI coding tools can spin up an entire software project in minutes. That r
 - Hidden security gaps and compliance failures
 - Code that no one can understand or maintain
 
-The **AI Delivery Engine (AIDE)** adds a lightweight control layer so teams can *keep moving fast* **and** stay aligned with quality, security, and business goals.
+The **AI Product Delivery Engine (AIPDE)** adds a lightweight control layer so teams can *keep moving fast* **and** stay aligned with quality, security, and business goals.
 
 ## 2. How It Works (Plain English)
 
@@ -51,4 +51,4 @@ Everything lives in one repository and runs in Docker, so the rules travel with 
 
 **Bottom Line**
 
-The AI Delivery Engine turns the *promise* of AI-accelerated development into reliable, repeatable delivery. You get speed **and** assurance—without choosing between them. 
+The AI Product Delivery Engine turns the *promise* of AI-accelerated development into reliable, repeatable delivery. You get speed **and** assurance—without choosing between them. 

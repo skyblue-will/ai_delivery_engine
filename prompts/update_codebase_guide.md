@@ -1,8 +1,8 @@
-# Codebase Guide Update Template
+# Update Codebase Guide
 
 ## Purpose and Importance
 
-This template helps you update the AI Delivery Engine's `core/codebase_guide.md`, which serves as the authoritative reference for the current state of the codebase.
+This template helps you update the AI Product Delivery Engine's `core/codebase_guide.md`, which serves as the authoritative reference for the current state of the codebase.
 
 **Why This Matters:**
 - **Single Source of Truth**: The codebase guide provides an accurate snapshot of the system that all team members and AI tools can rely on.

@@ -59,4 +59,4 @@ Provide a structured assessment with:
 /check_context_wrapper_compliance 3
 ```
 
-This verification enforces the principle that compliance is binary - either ALL standards are met (PASS) or the project is non-compliant (FAIL). There is no "mostly compliant" state accepted in the AI Delivery Engine. 
+This verification enforces the principle that compliance is binary - either ALL standards are met (PASS) or the project is non-compliant (FAIL). **Remember:** Strict binary compliance with the selected tier is a foundational principle—there is no "mostly compliant" state accepted in the AI Product Delivery Engine. 

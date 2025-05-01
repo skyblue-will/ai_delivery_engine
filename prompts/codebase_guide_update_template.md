@@ -2,7 +2,7 @@
 
 ## Purpose and Importance
 
-This template is designed to be copied and pasted as a prompt for AI tools like Cursor or Winsurf. When provided to these AI assistants, it will guide them to properly update the AI Delivery Engine's `codebase_guide.md`, which serves as the authoritative reference for the current state of the codebase.
+This template is designed to be copied and pasted as a prompt for AI tools like Cursor or Winsurf. When provided to these AI assistants, it will guide them to properly update the AI Product Delivery Engine's `codebase_guide.md`, which serves as the authoritative reference for the current state of the codebase.
 
 **Why This Matters:**
 - **Single Source of Truth**: The codebase guide provides an accurate snapshot of the system that all team members and AI tools can rely on.
